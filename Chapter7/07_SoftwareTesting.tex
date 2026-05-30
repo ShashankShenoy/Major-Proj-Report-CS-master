@@ -1,11 +1,21 @@
 \chapter{Software Testing}
 
+\section{Introduction to the Testing Methodology}
+
+Validating a complex, multi-stage computer vision and trajectory prediction system requires a rigorous, multi-tiered testing strategy. Because the proposed architecture relies on the integration of distinct functional modules—ranging from optical ship detection and appearance-based tracking to geographic sensor fusion and recurrent neural networks—evaluating the software demanded more than just a superficial review of the final output. The testing phase was specifically structured to isolate individual components before assessing their collective performance in a simulated operational environment. This systematic approach ensures that localized logical faults or mathematical anomalies within a single subsystem do not cascade into larger failures during real-time surveillance monitoring.
+
+\section{Unit and Integration Testing}
+
+Prior to assembling the overarching surveillance pipeline, each core software module was subjected to targeted unit testing. For the vision-based components, this involved passing static maritime imagery through the YOLOv8 detector to verify that bounding box coordinates were being extracted and formatted correctly according to the strict structural expectations of the DeepOCSORT tracking algorithm. Concurrently, the mathematical utility functions responsible for calculating Euclidean distances, deriving inter-frame velocity, and executing the Haversine nearest-neighbor algorithm were tested against manually calculated control datasets. This guaranteed that the fundamental geometric and trigonometric operations underlying the system's tracking logic functioned with absolute numerical precision.
+
+Following baseline validation, the evaluation focus shifted toward integration testing to scrutinize the data interfaces between the asynchronously operating modules. A critical integration test involved bridging the continuous computer vision pipeline with the geographic sensor fusion engine. The system was challenged to reliably associate noisy, high-frequency optical coordinate updates with sparse, structured AIS telemetry broadcasts. By simulating scenarios with delayed or incomplete AIS packets, the testing verified that the Kalman filter correctly bridged these telemetry gaps, successfully stabilizing the fused position state without crashing the parent process or disrupting the active video rendering.
+
 \section{System Testing}
 \subsection{Experimental Setup}
 
-% -----------------------------------------------------------------------------
+To comprehensively evaluate the end-to-end performance of the integrated pipeline under realistic operational constraints, all system testing was conducted within a rigidly controlled hardware and software environment. Maintaining a standardized baseline was essential for guaranteeing the reproducibility of all quantitative results. 
 
-I conducted all experiments in a strictly controlled hardware and software environment to guarantee reproducible results. To support the computational demands of real-time deep learning inference, the implementation relied heavily on \gls{gpu} acceleration. Table~\ref{c5:tab:hardware} details the specific libraries and hardware configurations used during testing.
+Handling simultaneous video ingestion, multi-target deep learning inference, and recurrent trajectory forecasting demands significant computational bandwidth. As a result, the implementation relied heavily on parallel GPU acceleration to maintain a fluid operational state. Developing and evaluating the software across mixed operating system environments ensured that the dependencies remained highly adaptable and were not strictly bound to a single ecosystem. Table~\ref{c5:tab:hardware} details the specific architectural specifications and core software libraries deployed throughout the testing phase.
 
 \begin{table}[H]
 \centering
@@ -30,7 +40,11 @@ Evaluation Dataset & \gls{smd} v1.0\\
 \end{tabular}
 \end{table}
 
-Beyond the hardware setup, I locked down several system-level parameters across all evaluation runs to prevent unintentional variations in the output. Table~\ref{c5:tab:parameters} lists the critical thresholds and tracking parameters applied during the experiments.
+\subsection{Standardization of System Parameters}
+
+Beyond establishing the physical hardware constraints, preserving strict control over the internal algorithmic parameters was vital for isolating the true performance metrics of the embedded models. Even minor variations in tracking thresholds or neural network configurations can drastically alter the final output, introducing uncontrolled bias into the evaluation process. To prevent such discrepancies, a static set of operational parameters was locked down across all experimental runs. 
+
+These rigid configurations dictated everything from the minimum statistical confidence required to register a valid vessel detection, to the exact sequence length ingested by the predictive memory networks. Furthermore, the geographic boundaries governing the optical-to-AIS matching algorithms were explicitly fixed to ensure consistency when assessing sensor fusion accuracy. Table~\ref{c5:tab:parameters} lists the critical thresholds and tracking parameters actively enforced throughout the system-level testing.
 
 \begin{table}[H]
 \centering
@@ -56,6 +70,12 @@ Target processing speed & 30 \gls{fps}\\
 \end{tabular}
 \end{table}
 
-% -----------------------------------------------------------------------------
+\section{Performance and Stress Testing}
+
+An essential dimension of the evaluation involved stress testing the software architecture under a heavy computational load. Given the objective to serve as a real-time surveillance platform, the system was subjected to dense maritime video feeds populated with dozens of simultaneously active vessels. The performance monitoring concentrated heavily on identifying latency bottlenecks that could potentially drop the application's processing capability below the critical 30 frames-per-second requirement. 
+
+During these high-density trials, particular attention was paid to the execution times of the DeepOCSORT multi-object tracker and the LSTM forecasting modules. As the number of overlapping ship trajectories naturally increased in crowded waterways, the testing framework closely monitored CPU and GPU memory utilization alongside frame inference latency. This rigorous stress testing ultimately validated the necessity of the system's kinematic linear regression fallback mechanism, proving that it successfully prevents the pipeline from stalling while calculating initial trajectory predictions for newly identified targets.
+
 \section{Summary}
-The experimental setup forms the foundation for evaluating the system's performance.
+
+The software testing phase was systematically executed through a structured progression, beginning with the isolated verification of core mathematical utilities and culminating in demanding, full-system integration trials. By rigidly standardizing the underlying hardware architecture and locking down all internal algorithmic parameters, the evaluation framework ensured a high degree of experimental reproducibility. The deployment of rigorous unit, integration, and computational stress tests effectively validated the pipeline's robust capacity to handle dense vessel traffic while reliably fusing visual telemetry with external broadcast streams. Establishing this highly controlled experimental setup provides the essential foundation required to critically evaluate the quantitative performance and predictive accuracy of the final surveillance system.

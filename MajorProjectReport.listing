@@ -1,17 +1,46 @@
-# Since our design has a clock with name clk,
-## specify that name under [get_port ]
-create_clock -period 40 -waveform {0 20} [get_ports clk]
+# YOLO detection
+try:
+    det_results = yolo_model(
+        frame,
+        conf    = CONFIDENCE,
+        classes = CLASSES,
+        verbose = False
+    )[0]
+    dets = det_results.boxes.data.cpu().numpy()
+except Exception as e:
+    dets = np.empty((0, 6))
 
-# Setting a 'delay' on the clock:
-set_clock_latency 0.3 clk
+# DeepOcSort tracking
+try:
+    if len(dets) > 0:
+        tracks = tracker.update(dets, frame)
+    else:
+        tracks = tracker.update(np.empty((0, 6)), frame)
+except Exception as e:
+    tracks = []
 
-# Setting up constraints on your I/P and O/P pins
-set_input_delay 2.0 -clock clk [all_inputs]!\tikz[remember picture]\node[](c1){};!
-set_output_delay 1.65 -clock clk [all_outputs]!\tikz[remember picture]\node[](c2){};!
+# Build ship list and Predict
+for t in (tracks if tracks is not None and len(tracks) > 0 else []):
+    try:
+        x1, y1, x2, y2 = int(t[0]), int(t[1]), int(t[2]), int(t[3])
+        sid            = int(t[4])
 
-# Set realistic 'loads' on each output pin
-set_load 0.1 [all_outputs]
+        cx = (x1 + x2) // 2
+        cy = (y1 + y2) // 2
+        history[sid].append((cx, cy))
 
-# Set 'maximum' fanin and fan-out for the input and output pins
-set_max_fanout 1 [all_inputs]
-set_fanout_load 8 [all_outputs]
+        smoothed = smooth_history(history[sid])
+
+        # LSTM / kinematic prediction
+        if buffer_complete and frame_count % update_frame_interval == 0:
+            if lstm_engine:
+                lstm_engine.update(str(sid), cx, cy)
+                pred, method = lstm_engine.predict(str(sid))
+                persistent_predictions[sid] = pred
+            else:
+                persistent_predictions[sid] = predict_kinematic(smoothed)
+
+        predicted_path = persistent_predictions.get(sid, [])
+
+    except Exception as e:
+        continue

@@ -1,109 +1,108 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.2.24)  30 MAY 2026 15:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.5.27)  30 MAY 2026 23:00
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
-**MajorProjectReport.tex
-(./MajorProjectReport.tex
+**c:/Users/91944/Downloads/Major-Proj-Report-CS-master/MajorProjectReport.tex
+(c:/Users/91944/Downloads/Major-Proj-Report-CS-master/MajorProjectReport.tex
 LaTeX2e <2025-11-01>
-L3 programming layer <2025-11-06>
-(/usr/local/texlive/2025/texmf-dist/tex/latex/base/book.cls
+L3 programming layer <2026-04-28>
+(C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/base\book.cls
 Document Class: book 2025/01/22 v1.4n Standard LaTeX document class
-(/usr/local/texlive/2025/texmf-dist/tex/latex/base/bk12.clo
+(C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/base\bk12.clo
 File: bk12.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 )
-\c@part=\count275
-\c@chapter=\count276
-\c@section=\count277
-\c@subsection=\count278
-\c@subsubsection=\count279
-\c@paragraph=\count280
-\c@subparagraph=\count281
-\c@figure=\count282
-\c@table=\count283
+\c@part=\count276
+\c@chapter=\count277
+\c@section=\count278
+\c@subsection=\count279
+\c@subsubsection=\count280
+\c@paragraph=\count281
+\c@subparagraph=\count282
+\c@figure=\count283
+\c@table=\count284
 \abovecaptionskip=\skip49
 \belowcaptionskip=\skip50
-\bibindent=\dimen148
-) (./AuxFiles/Packages.tex (./ecproject.sty
+\bibindent=\dimen150
+) (AuxFiles/Packages.tex (ecproject.sty
 Package: ecproject 2026/01/17 v.3.9 an project report package for RVCE
- (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/graphicx.sty
+ (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
 Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
- (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/keyval.sty
+ (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks17
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/graphics.sty
+) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
 Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
- (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/trig.sty
+ (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
 Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 106.
- (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics-def/pdftex.def
+ (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
 File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen149
-\Gin@req@width=\dimen150
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\Gin@req@height=\dimen151
+\Gin@req@width=\dimen152
+) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.sty (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.sty (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-common.tex
 \pgfutil@everybye=\toks18
-\pgfutil@tempdima=\dimen151
-\pgfutil@tempdimb=\dimen152
-) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@tempdima=\dimen153
+\pgfutil@tempdimb=\dimen154
+) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-latex.def
 \pgfutil@abb=\box53
-) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
-(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.code.tex (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex)
 Package: pgfrcs 2025-08-29 v3.1.11a (3.1.11a)
 ))
 Package: pgf 2025-08-29 v3.1.11a (3.1.11a)
- (/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+ (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.sty (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.sty (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys.code.tex
 Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
- (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+ (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex
 \pgfkeys@pathtoks=\toks19
 \pgfkeys@temptoks=\toks20
- (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code.tex
+ (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeyslibraryfiltered.code.tex
 \pgfkeys@tmptoks=\toks21
 ))
-\pgf@x=\dimen153
-\pgf@y=\dimen154
-\pgf@xa=\dimen155
-\pgf@ya=\dimen156
-\pgf@xb=\dimen157
-\pgf@yb=\dimen158
-\pgf@xc=\dimen159
-\pgf@yc=\dimen160
-\pgf@xd=\dimen161
-\pgf@yd=\dimen162
+\pgf@x=\dimen155
+\pgf@y=\dimen156
+\pgf@xa=\dimen157
+\pgf@ya=\dimen158
+\pgf@xb=\dimen159
+\pgf@yb=\dimen160
+\pgf@xc=\dimen161
+\pgf@yc=\dimen162
+\pgf@xd=\dimen163
+\pgf@yd=\dimen164
 \w@pgf@writea=\write3
 \r@pgf@reada=\read2
-\c@pgf@counta=\count284
-\c@pgf@countb=\count285
-\c@pgf@countc=\count286
-\c@pgf@countd=\count287
+\c@pgf@counta=\count285
+\c@pgf@countb=\count286
+\c@pgf@countc=\count287
+\c@pgf@countd=\count288
 \t@pgf@toka=\toks22
 \t@pgf@tokb=\toks23
 \t@pgf@tokc=\toks24
-\pgf@sys@id@count=\count288
- (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+\pgf@sys@id@count=\count289
+ (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.cfg
 File: pgf.cfg 2025-08-29 v3.1.11a (3.1.11a)
 )
 Driver file for pgf: pgfsys-pdftex.def
- (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+ (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-pdftex.def
 File: pgfsys-pdftex.def 2025-08-29 v3.1.11a (3.1.11a)
- (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+ (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-common-pdf.def
 File: pgfsys-common-pdf.def 2025-08-29 v3.1.11a (3.1.11a)
-))) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+))) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfsyssoftpath@smallbuffer@items=\count289
-\pgfsyssoftpath@bigbuffer@items=\count290
-) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+\pgfsyssoftpath@smallbuffer@items=\count290
+\pgfsyssoftpath@bigbuffer@items=\count291
+) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-)) (/usr/local/texlive/2025/texmf-dist/tex/latex/xcolor/xcolor.sty
+)) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
 Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
-
-(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics-cfg/color.cfg
+ (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 274.
- (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+ (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
 Package xcolor Info: Model `RGB' extended on input line 1365.
@@ -113,153 +112,150 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
-) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore.code.tex
 Package: pgfcore 2025-08-29 v3.1.11a (3.1.11a)
- (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen163
-\pgfmath@count=\count291
+ (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil.code.tex) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparser.code.tex
+\pgfmath@dimen=\dimen165
+\pgfmath@count=\count292
 \pgfmath@box=\box54
 \pgfmath@toks=\toks25
 \pgfmath@stack@operand=\toks26
 \pgfmath@stack@operation=\toks27
-) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count292
-)) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.code.tex) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.basic.code.tex) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.trigonometric.code.tex) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.random.code.tex) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.comparison.code.tex) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.base.code.tex) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.round.code.tex) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.misc.code.tex) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.integerarithmetics.code.tex) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc.code.tex) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count293
+)) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.tex) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@picminx=\dimen164
-\pgf@picmaxx=\dimen165
-\pgf@picminy=\dimen166
-\pgf@picmaxy=\dimen167
-\pgf@pathminx=\dimen168
-\pgf@pathmaxx=\dimen169
-\pgf@pathminy=\dimen170
-\pgf@pathmaxy=\dimen171
-\pgf@xx=\dimen172
-\pgf@xy=\dimen173
-\pgf@yx=\dimen174
-\pgf@yy=\dimen175
-\pgf@zx=\dimen176
-\pgf@zy=\dimen177
-) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+\pgf@picminx=\dimen166
+\pgf@picmaxx=\dimen167
+\pgf@picminy=\dimen168
+\pgf@picmaxy=\dimen169
+\pgf@pathminx=\dimen170
+\pgf@pathmaxx=\dimen171
+\pgf@pathminy=\dimen172
+\pgf@pathmaxy=\dimen173
+\pgf@xx=\dimen174
+\pgf@xy=\dimen175
+\pgf@yx=\dimen176
+\pgf@yy=\dimen177
+\pgf@zx=\dimen178
+\pgf@zy=\dimen179
+) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@path@lastx=\dimen178
-\pgf@path@lasty=\dimen179
-) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+\pgf@path@lastx=\dimen180
+\pgf@path@lasty=\dimen181
+) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathusage.code.tex
 File: pgfcorepathusage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@shorten@end@additional=\dimen180
-\pgf@shorten@start@additional=\dimen181
-) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+\pgf@shorten@end@additional=\dimen182
+\pgf@shorten@start@additional=\dimen183
+) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfpic=\box55
 \pgf@hbox=\box56
 \pgf@layerbox@main=\box57
-\pgf@picture@serial@count=\count293
-) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+\pgf@picture@serial@count=\count294
+) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgflinewidth=\dimen182
-)
-(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+\pgflinewidth=\dimen184
+) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransformations.code.tex
 File: pgfcoretransformations.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@pt@x=\dimen183
-\pgf@pt@y=\dimen184
-\pgf@pt@temp=\dimen185
-) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+\pgf@pt@x=\dimen185
+\pgf@pt@y=\dimen186
+\pgf@pt@temp=\dimen187
+) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreobjects.code.tex
 File: pgfcoreobjects.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathprocessing.code.tex
 File: pgfcorepathprocessing.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorearrows.code.tex
 File: pgfcorearrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfarrowsep=\dimen186
-) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+\pgfarrowsep=\dimen188
+) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@max=\dimen187
-\pgf@sys@shading@range@num=\count294
-\pgf@shadingcount=\count295
-) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+\pgf@max=\dimen189
+\pgf@sys@shading@range@num=\count295
+\pgf@shadingcount=\count296
+) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreexternal.code.tex
 File: pgfcoreexternal.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfexternal@startupbox=\box58
-) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorelayers.code.tex
 File: pgfcorelayers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransparency.code.tex
 File: pgfcoretransparency.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepatterns.code.tex
 File: pgfcorepatterns.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-)
-(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorerdf.code.tex
 File: pgfcorerdf.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-))) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+))) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfnodeparttextbox=\box59
-) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-0-65.sty
 Package: pgfcomp-version-0-65 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@nodesepstart=\dimen188
-\pgf@nodesepend=\dimen189
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+\pgf@nodesepstart=\dimen190
+\pgf@nodesepend=\dimen191
+) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-1-18.sty
 Package: pgfcomp-version-1-18 2025-08-29 v3.1.11a (3.1.11a)
-)) (/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/math/pgfmath.sty (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+)) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor.sty (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfkeys.sty (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex)) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.sty (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex)) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor.code.tex
 Package: pgffor 2025-08-29 v3.1.11a (3.1.11a)
-\pgffor@iter=\dimen190
-\pgffor@skip=\dimen191
+\pgffor@iter=\dimen192
+\pgffor@skip=\dimen193
 \pgffor@stack=\toks28
 \pgffor@toks=\toks29
-)) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+)) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz\tikz.code.tex
 Package: tikz 2025-08-29 v3.1.11a (3.1.11a)
-
-(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+ (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@plot@mark@count=\count296
-\pgfplotmarksize=\dimen192
+\pgf@plot@mark@count=\count297
+\pgfplotmarksize=\dimen194
 )
-\tikz@lastx=\dimen193
-\tikz@lasty=\dimen194
-\tikz@lastxsaved=\dimen195
-\tikz@lastysaved=\dimen196
-\tikz@lastmovetox=\dimen197
-\tikz@lastmovetoy=\dimen198
-\tikzleveldistance=\dimen199
-\tikzsiblingdistance=\dimen256
+\tikz@lastx=\dimen195
+\tikz@lasty=\dimen196
+\tikz@lastxsaved=\dimen197
+\tikz@lastysaved=\dimen198
+\tikz@lastmovetox=\dimen199
+\tikz@lastmovetoy=\dimen256
+\tikzleveldistance=\dimen257
+\tikzsiblingdistance=\dimen258
 \tikz@figbox=\box60
 \tikz@figbox@bg=\box61
 \tikz@tempbox=\box62
 \tikz@tempbox@bg=\box63
-\tikztreelevel=\count297
-\tikznumberofchildren=\count298
-\tikznumberofcurrentchild=\count299
-\tikz@fig@count=\count300
- (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+\tikztreelevel=\count298
+\tikznumberofchildren=\count299
+\tikznumberofcurrentchild=\count300
+\tikz@fig@count=\count301
+ (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfmatrixcurrentrow=\count301
-\pgfmatrixcurrentcolumn=\count302
-\pgf@matrix@numberofcolumns=\count303
+\pgfmatrixcurrentrow=\count302
+\pgfmatrixcurrentcolumn=\count303
+\pgf@matrix@numberofcolumns=\count304
 )
-\tikz@expandcount=\count304
- (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+\tikz@expandcount=\count305
+ (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-))) (/usr/local/texlive/2025/texmf-dist/tex/latex/xifthen/xifthen.sty
+))) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/xifthen\xifthen.sty
 Package: xifthen 2015/11/05 v1.4.0 Extended ifthen features
- (/usr/local/texlive/2025/texmf-dist/tex/latex/tools/calc.sty
+ (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
 Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
-\calc@Acount=\count305
-\calc@Bcount=\count306
-\calc@Adimen=\dimen257
-\calc@Bdimen=\dimen258
+\calc@Acount=\count306
+\calc@Bcount=\count307
+\calc@Adimen=\dimen259
+\calc@Bdimen=\dimen260
 \calc@Askip=\skip51
 \calc@Bskip=\skip52
 LaTeX Info: Redefining \setlength on input line 86.
 LaTeX Info: Redefining \addtolength on input line 87.
-\calc@Ccount=\count307
+\calc@Ccount=\count308
 \calc@Cskip=\skip53
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/base/ifthen.sty
+) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
 Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/ifmtarg/ifmtarg.sty
+) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/ifmtarg\ifmtarg.sty
 Package: ifmtarg 2018/04/16 v1.2b check for an empty argument
-)) (/usr/local/texlive/2025/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+)) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
 Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 \f@nch@headwidth=\skip54
 \f@nch@offset@elh=\skip55
@@ -276,47 +272,45 @@ Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 \f@nch@widthC=\skip66
 \f@nch@widthR=\skip67
 \@temptokenb=\toks30
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/qrcode/qrcode.sty
+) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/qrcode\qrcode.sty
 Package: qrcode 2015/01/08 v1.51 QR code generation
- (/usr/local/texlive/2025/texmf-dist/tex/latex/xkeyval/xkeyval.sty
-Package: xkeyval 2025/11/04 v2.10 package option processing (HA)
- (/usr/local/texlive/2025/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/local/texlive/2025/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+ (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+ (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.tex (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.tex
 \XKV@toks=\toks31
 \XKV@tempa@toks=\toks32
-\XKV@tempb@toks=\toks33
 )
-\XKV@depth=\count308
+\XKV@depth=\count309
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
-\c@qr@i=\count309
-\c@qr@j=\count310
-\qr@a=\count311
-\qr@b=\count312
-\qr@c=\count313
-\qr@for@depth=\count314
-\qr@for@maxdepth=\count315
-\qr@for@start=\count316
-\qr@for@end=\count317
-\qr@for@step=\count318
-\qr@newforcount=\count319
+\c@qr@i=\count310
+\c@qr@j=\count311
+\qr@a=\count312
+\qr@b=\count313
+\qr@c=\count314
+\qr@for@depth=\count315
+\qr@for@maxdepth=\count316
+\qr@for@start=\count317
+\qr@for@end=\count318
+\qr@for@step=\count319
 \qr@newforcount=\count320
+\qr@newforcount=\count321
 \qr@desiredheight=\skip68
 \qr@modulesize=\skip69
 \qr@minipagewidth=\skip70
-\c@maski=\count321
-\c@maskj=\count322
-\c@totalones=\count323
-\c@penaltyi=\count324
-\c@penaltyii=\count325
-\c@penaltyiii=\count326
-\c@penaltyiv=\count327
-\c@qr@hexchars=\count328
-\qr@newforcount=\count329
-\c@qr@divisionsremaining=\count330
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/background/background.sty
+\c@maski=\count322
+\c@maskj=\count323
+\c@totalones=\count324
+\c@penaltyi=\count325
+\c@penaltyii=\count326
+\c@penaltyiii=\count327
+\c@penaltyiv=\count328
+\c@qr@hexchars=\count329
+\qr@newforcount=\count330
+\c@qr@divisionsremaining=\count331
+) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/background\background.sty
 Package: background 2014/03/04 v2.1 background material
-
-(/usr/local/texlive/2025/texmf-dist/tex/latex/everypage/everypage.sty
+ (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/everypage\everypage.sty
 Package: everypage 2020/10/17 R2.0b Hooks to run on every page
 
 
@@ -334,181 +328,179 @@ Package everypage Warning: You appear to be running a version of LaTeX
 (everypage)                If truly needed, Use `everypage-1x` to force the
 (everypage)                loading of an older code base.
 
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/tools/afterpage.sty
+) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/tools\afterpage.sty
 Package: afterpage 2023/07/04 v1.08 After-Page Package (DPC)
-\AP@output=\toks34
+\AP@output=\toks33
 \AP@partial=\box64
 \AP@footins=\box65
-)) (/usr/local/texlive/2025/texmf-dist/tex/latex/changepage/changepage.sty
+)) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/changepage\changepage.sty
 Package: changepage 2009/10/20 v1.0c check page and change page layout
-\c@cp@cntr=\count331
-\cp@tempcnt=\count332
+\c@cp@cntr=\count332
+\cp@tempcnt=\count333
 )
-\c@numtitlelines=\count333
-\titlelines=\count334
-) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarycalc.code.tex
+\c@numtitlelines=\count334
+\titlelines=\count335
+) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarycalc.code.tex
 File: tikzlibrarycalc.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/geometry/geometry.sty
-Package: geometry 2020/01/02 v5.9 Page Geometry
- (/usr/local/texlive/2025/texmf-dist/tex/generic/iftex/ifvtex.sty
+) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+Package: geometry 2026/03/07 v6.0 Page Geometry
+ (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
- (/usr/local/texlive/2025/texmf-dist/tex/generic/iftex/iftex.sty
+ (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
 Package: iftex 2024/12/12 v1.0g TeX engine tests
 ))
-\Gm@cnth=\count335
-\Gm@cntv=\count336
-\c@Gm@tempcnt=\count337
-\Gm@bindingoffset=\dimen259
-\Gm@wd@mp=\dimen260
-\Gm@odd@mp=\dimen261
-\Gm@even@mp=\dimen262
-\Gm@layoutwidth=\dimen263
-\Gm@layoutheight=\dimen264
-\Gm@layouthoffset=\dimen265
-\Gm@layoutvoffset=\dimen266
-\Gm@dimlist=\toks35
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/float/float.sty
+\Gm@cnth=\count336
+\Gm@cntv=\count337
+\c@Gm@tempcnt=\count338
+\Gm@bindingoffset=\dimen261
+\Gm@wd@mp=\dimen262
+\Gm@odd@mp=\dimen263
+\Gm@even@mp=\dimen264
+\Gm@layoutwidth=\dimen265
+\Gm@layoutheight=\dimen266
+\Gm@layouthoffset=\dimen267
+\Gm@layoutvoffset=\dimen268
+\Gm@dimlist=\toks34
+ (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count338
-\float@exts=\toks36
+\c@float@type=\count339
+\float@exts=\toks35
 \float@box=\box66
-\@float@everytoks=\toks37
+\@float@everytoks=\toks36
 \@floatcapt=\box67
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2025-07-12 v7.01o Hypertext links for LaTeX
- (/usr/local/texlive/2025/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
+Package: hyperref 2026-04-24 v7.01q Hypertext links for LaTeX
+ (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
-) (/usr/local/texlive/2025/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-) (/usr/local/texlive/2025/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
- (/usr/local/texlive/2025/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+ (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
 Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
-) (/usr/local/texlive/2025/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
-
-(/usr/local/texlive/2025/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+ (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-)) (/usr/local/texlive/2025/texmf-dist/tex/latex/hycolor/hycolor.sty
+)) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/nameref.sty
-Package: nameref 2025-06-21 v2.57 Cross-referencing by name of section
- (/usr/local/texlive/2025/texmf-dist/tex/latex/refcount/refcount.sty
+) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+Package: nameref 2026-01-29 v2.58 Cross-referencing by name of section
+ (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
-) (/usr/local/texlive/2025/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
- (/usr/local/texlive/2025/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+ (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
-\c@section@level=\count339
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+\c@section@level=\count340
+) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
 Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count340
-) (/usr/local/texlive/2025/texmf-dist/tex/generic/stringenc/stringenc.sty
+\etb@tempcnta=\count341
+) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stringenc.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
 )
-\@linkdim=\dimen267
-\Hy@linkcounter=\count341
-\Hy@pagecounter=\count342
- (/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2025-07-12 v7.01o Hyperref: PDFDocEncoding definition (HO)
+\@linkdim=\dimen269
+\Hy@linkcounter=\count342
+\Hy@pagecounter=\count343
+ (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
+File: pd1enc.def 2026-04-24 v7.01q Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
-) (/usr/local/texlive/2025/texmf-dist/tex/generic/intcalc/intcalc.sty
+) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count343
- (/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/puenc.def
-File: puenc.def 2025-07-12 v7.01o Hyperref: PDF Unicode definition (HO)
+\Hy@SavedSpaceFactor=\count344
+ (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
+File: puenc.def 2026-04-24 v7.01q Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
-Package hyperref Info: Hyper figures OFF on input line 4195.
-Package hyperref Info: Link nesting OFF on input line 4200.
-Package hyperref Info: Hyper index ON on input line 4203.
-Package hyperref Info: Plain pages OFF on input line 4210.
-Package hyperref Info: Backreferencing OFF on input line 4215.
+Package hyperref Info: Hyper figures OFF on input line 4199.
+Package hyperref Info: Link nesting OFF on input line 4204.
+Package hyperref Info: Hyper index ON on input line 4207.
+Package hyperref Info: Plain pages OFF on input line 4214.
+Package hyperref Info: Backreferencing OFF on input line 4219.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4462.
-\c@Hy@tempcnt=\count344
- (/usr/local/texlive/2025/texmf-dist/tex/latex/url/url.sty
+Package hyperref Info: Bookmarks ON on input line 4466.
+\c@Hy@tempcnt=\count345
+ (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 4801.
-\XeTeXLinkMargin=\dimen268
- (/usr/local/texlive/2025/texmf-dist/tex/generic/bitset/bitset.sty
+LaTeX Info: Redefining \url on input line 4805.
+\XeTeXLinkMargin=\dimen270
+ (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
- (/usr/local/texlive/2025/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+ (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
-\Fld@menulength=\count345
-\Field@Width=\dimen269
-\Fld@charsize=\dimen270
-Package hyperref Info: Hyper figures OFF on input line 6078.
-Package hyperref Info: Link nesting OFF on input line 6083.
-Package hyperref Info: Hyper index ON on input line 6086.
-Package hyperref Info: backreferencing OFF on input line 6093.
-Package hyperref Info: Link coloring OFF on input line 6098.
-Package hyperref Info: Link coloring with OCG OFF on input line 6103.
-Package hyperref Info: PDF/A mode OFF on input line 6108.
-\Hy@abspage=\count346
-\c@Item=\count347
-\c@Hfootnote=\count348
+\Fld@menulength=\count346
+\Field@Width=\dimen271
+\Fld@charsize=\dimen272
+Package hyperref Info: Hyper figures OFF on input line 6091.
+Package hyperref Info: Link nesting OFF on input line 6096.
+Package hyperref Info: Hyper index ON on input line 6099.
+Package hyperref Info: backreferencing OFF on input line 6106.
+Package hyperref Info: Link coloring OFF on input line 6111.
+Package hyperref Info: Link coloring with OCG OFF on input line 6116.
+Package hyperref Info: PDF/A mode OFF on input line 6121.
+\Hy@abspage=\count347
+\c@Item=\count348
+\c@Hfootnote=\count349
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
-
-(/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2025-07-12 v7.01o Hyperref driver for pdfTeX
-\Fld@listcount=\count349
-\c@bookmark@seq@number=\count350
- (/usr/local/texlive/2025/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+ (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
+File: hpdftex.def 2026-04-24 v7.01q Hyperref driver for pdfTeX
+\Fld@listcount=\count350
+\c@bookmark@seq@number=\count351
+ (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck.sty
 Package: rerunfilecheck 2025-06-21 v1.11 Rerun checks for auxiliary files (HO)
- (/usr/local/texlive/2025/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+ (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 284.
 )
 \Hy@SectionHShift=\skip71
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/glossaries/base/glossaries.sty
-Package: glossaries 2025/11/09 v4.9 (NLCT)
- (/usr/local/texlive/2025/texmf-dist/tex/latex/mfirstuc/mfirstuc.sty
+) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/base\glossaries.sty
+Package: glossaries 2026/04/21 v5.1 (NLCT)
+ (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/mfirstuc\mfirstuc.sty
 Package: mfirstuc 2025/04/03 v2.09 (NLCT)
-\@glsmfirst=\toks38
-\@glsmrest=\toks39
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/xfor/xfor.sty
+\@glsmfirst=\toks37
+\@glsmrest=\toks38
+) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/xfor\xfor.sty
 Package: xfor 2009/02/05 v1.05 (NLCT)
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsgen.sty
+) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks40
-\ex@=\dimen271
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/datatool/datatool-base.sty
-Package: datatool-base 2025/11/06 v3.4.2 (NLCT)
- (/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsmath.sty
+\@emptytoks=\toks39
+\ex@=\dimen273
+) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/datatool\datatool-base.sty
+Package: datatool-base 2025/12/04 v3.4.3 (NLCT)
+ (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2025/07/09 v2.17z AMS math features
 \@mathmargin=\skip72
 
 For additional information on amsmath, use the `?' option.
-(/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amstext.sty
+(C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
 Package: amstext 2024/11/17 v2.01 AMS text
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsbsy.sty
+) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen272
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsopn.sty
+\pmbraise@=\dimen274
+) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count351
+\inf@bad=\count352
 LaTeX Info: Redefining \frac on input line 233.
-\uproot@=\count352
-\leftroot@=\count353
+\uproot@=\count353
+\leftroot@=\count354
 LaTeX Info: Redefining \overline on input line 398.
 LaTeX Info: Redefining \colon on input line 409.
-\classnum@=\count354
-\DOTSCASE@=\count355
+\classnum@=\count355
+\DOTSCASE@=\count356
 LaTeX Info: Redefining \ldots on input line 495.
 LaTeX Info: Redefining \dots on input line 498.
 LaTeX Info: Redefining \cdots on input line 619.
@@ -518,195 +510,194 @@ LaTeX Info: Redefining \big on input line 721.
 LaTeX Info: Redefining \Big on input line 722.
 LaTeX Info: Redefining \bigg on input line 723.
 LaTeX Info: Redefining \Bigg on input line 724.
-\big@size=\dimen273
+\big@size=\dimen275
 LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
-\macc@depth=\count356
+\macc@depth=\count357
 LaTeX Info: Redefining \bmod on input line 904.
 LaTeX Info: Redefining \pmod on input line 909.
 LaTeX Info: Redefining \smash on input line 939.
 LaTeX Info: Redefining \relbar on input line 969.
 LaTeX Info: Redefining \Relbar on input line 970.
-\c@MaxMatrixCols=\count357
+\c@MaxMatrixCols=\count358
 \dotsspace@=\muskip18
-\c@parentequation=\count358
-\dspbrk@lvl=\count359
-\tag@help=\toks41
-\row@=\count360
-\column@=\count361
-\maxfields@=\count362
-\andhelp@=\toks42
-\eqnshift@=\dimen274
-\alignsep@=\dimen275
-\tagshift@=\dimen276
-\tagwidth@=\dimen277
-\totwidth@=\dimen278
-\lineht@=\dimen279
-\@envbody=\toks43
+\c@parentequation=\count359
+\dspbrk@lvl=\count360
+\tag@help=\toks40
+\row@=\count361
+\column@=\count362
+\maxfields@=\count363
+\andhelp@=\toks41
+\eqnshift@=\dimen276
+\alignsep@=\dimen277
+\tagshift@=\dimen278
+\tagwidth@=\dimen279
+\totwidth@=\dimen280
+\lineht@=\dimen281
+\@envbody=\toks42
 \multlinegap=\skip73
 \multlinetaggap=\skip74
-\mathdisplay@stack=\toks44
+\mathdisplay@stack=\toks43
 LaTeX Info: Redefining \[ on input line 2950.
 LaTeX Info: Redefining \] on input line 2951.
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/tracklang/tracklang.sty
-Package: tracklang 2025/03/11 v1.6.6 (NLCT) Track Languages
- (/usr/local/texlive/2025/texmf-dist/tex/generic/tracklang/tracklang.tex))
-\l__datatool_tmpa_int=\count363
-\l__datatool_tmpb_int=\count364
-\l__datatool_tmpc_int=\count365
-\l__datatool_tmpd_int=\count366
-\l__datatool_count_int=\count367
-\l__datatool_tmp_datatype_int=\count368
-\l__datatool_tmpa_dim=\dimen280
-\l__datatool_tmpb_dim=\dimen281
- (/usr/local/texlive/2025/texmf-dist/tex/latex/datatool/datatool-l3fp.def
-File: datatool-l3fp.def 2025/11/06 v3.4.2 (NLCT)
+) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/tracklang\tracklang.sty
+Package: tracklang 2026/05/18 v1.6.7 (NLCT) Track Languages
+ (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/generic/tracklang\tracklang.tex))
+\l__datatool_tmpa_int=\count364
+\l__datatool_tmpb_int=\count365
+\l__datatool_tmpc_int=\count366
+\l__datatool_tmpd_int=\count367
+\l__datatool_count_int=\count368
+\l__datatool_tmp_datatype_int=\count369
+\l__datatool_tmpa_dim=\dimen282
+\l__datatool_tmpb_dim=\dimen283
+ (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/datatool\datatool-l3fp.def
+File: datatool-l3fp.def 2025/12/04 v3.4.3 (NLCT)
 )
-\@dtl@toks=\toks45
-\@dtl@tmpcount=\count369
+\@dtl@toks=\toks44
+\@dtl@tmpcount=\count370
 \dtl@tmplength=\skip75
 \l__datatool_measure_box=\box70
-\dtl@sortresult=\count370
- (/usr/local/texlive/2025/texmf-dist/tex/latex/datatool/datatool-utf8.ldf
-File: datatool-utf8.ldf 2025/11/06 v3.4.2 (NLCT)
+\dtl@sortresult=\count371
+ (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/datatool\datatool-utf8.ldf
+File: datatool-utf8.ldf 2025/12/04 v3.4.3 (NLCT)
 )
-\@dtl@datatype=\count371
-\c_datatool_unknown_int=\count372
-\l__datatool_year_int=\count373
-\l__datatool_month_int=\count374
-\l__datatool_day_int=\count375
-\l__datatool_hour_int=\count376
-\l__datatool_minute_int=\count377
-\l__datatool_second_int=\count378
-\l__datatool_tzhour_int=\count379
-\l__datatool_tzminute_int=\count380
-\l__datatool_julian_int=\count381
-\l__datatool_local_julian_int=\count382
-\l__datatool_prefix_int=\count383
-\l__datatool_suffix_int=\count384
-\@dtl@foreach@level=\count385
-\dtl@codeA=\count386
-\dtl@codeB=\count387
+\@dtl@datatype=\count372
+\c_datatool_unknown_int=\count373
+\l__datatool_year_int=\count374
+\l__datatool_month_int=\count375
+\l__datatool_day_int=\count376
+\l__datatool_hour_int=\count377
+\l__datatool_minute_int=\count378
+\l__datatool_second_int=\count379
+\l__datatool_tzhour_int=\count380
+\l__datatool_tzminute_int=\count381
+\l__datatool_julian_int=\count382
+\l__datatool_local_julian_int=\count383
+\l__datatool_prefix_int=\count384
+\l__datatool_suffix_int=\count385
+\@dtl@foreach@level=\count386
+\dtl@codeA=\count387
+\dtl@codeB=\count388
 )
-\gls@level=\count388
-\@gls@tmpb=\toks46
+\gls@level=\count389
+\@gls@tmpb=\toks45
 \gls@tmplen=\skip76
-\l__glossaries_tmpa_dim=\dimen282
-\l__glossaries_tmpb_dim=\dimen283
-\glskeylisttok=\toks47
-\glslabeltok=\toks48
-\glsshorttok=\toks49
-\glslongtok=\toks50
- (/usr/local/texlive/2025/texmf-dist/tex/latex/glossaries/styles/glossary-hypernav.sty
-Package: glossary-hypernav 2025/11/09 v4.9 (NLCT)
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/glossaries/styles/glossary-list.sty
-Package: glossary-list 2025/11/09 v4.9 (NLCT)
+\l__glossaries_tmpa_dim=\dimen284
+\l__glossaries_tmpb_dim=\dimen285
+\glskeylisttok=\toks46
+\glslabeltok=\toks47
+\glsshorttok=\toks48
+\glslongtok=\toks49
+ (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/styles\glossary-hypernav.sty
+Package: glossary-hypernav 2026/04/21 v5.1 (NLCT)
+) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/styles\glossary-list.sty
+Package: glossary-list 2026/04/21 v5.1 (NLCT)
 \glslistdottedwidth=\skip77
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/glossaries/styles/glossary-long.sty
-Package: glossary-long 2025/11/09 v4.9 (NLCT)
- (/usr/local/texlive/2025/texmf-dist/tex/latex/tools/longtable.sty
+) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/styles\glossary-long.sty
+Package: glossary-long 2026/04/21 v5.1 (NLCT)
+ (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/tools\longtable.sty
 Package: longtable 2025-10-13 v4.24 Multi-page Table package (DPC)
 \LTleft=\skip78
 \LTright=\skip79
 \LTpre=\skip80
 \LTpost=\skip81
-\LTchunksize=\count389
-\LTcapwidth=\dimen284
+\LTchunksize=\count390
+\LTcapwidth=\dimen286
 \LT@head=\box71
 \LT@firsthead=\box72
 \LT@foot=\box73
 \LT@lastfoot=\box74
 \LT@gbox=\box75
-\LT@cols=\count390
-\LT@rows=\count391
-\c@LT@tables=\count392
-\c@LT@chunks=\count393
-\LT@p@ftn=\toks51
+\LT@cols=\count391
+\LT@rows=\count392
+\c@LT@tables=\count393
+\c@LT@chunks=\count394
+\LT@p@ftn=\toks50
 )
 \glsdescwidth=\skip82
 \glspagelistwidth=\skip83
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/glossaries/styles/glossary-super.sty
-Package: glossary-super 2025/11/09 v4.9 (NLCT)
- (/usr/local/texlive/2025/texmf-dist/tex/latex/supertabular/supertabular.sty
-Package: supertabular 2024/07/20 v4.2c the supertabular environment
-\c@tracingst=\count394
-\ST@wd=\dimen285
+) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/styles\glossary-super.sty
+Package: glossary-super 2026/04/21 v5.1 (NLCT)
+ (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/supertabular\supertabular.sty
+Package: supertabular 2025/06/26 v4.2d the supertabular environment
+\c@tracingst=\count395
+\ST@wd=\dimen287
 \ST@rightskip=\skip84
 \ST@leftskip=\skip85
 \ST@parfillskip=\skip86
-\ST@pageleft=\dimen286
-\ST@headht=\dimen287
-\ST@tailht=\dimen288
-\ST@pagesofar=\dimen289
-\ST@pboxht=\dimen290
-\ST@rowht=\dimen291
-\ST@prevht=\dimen292
-\ST@toadd=\dimen293
-\ST@dimen=\dimen294
+\ST@pageleft=\dimen288
+\ST@headht=\dimen289
+\ST@tailht=\dimen290
+\ST@pagesofar=\dimen291
+\ST@pboxht=\dimen292
+\ST@rowht=\dimen293
+\ST@prevht=\dimen294
+\ST@toadd=\dimen295
+\ST@dimen=\dimen296
 \ST@pbox=\box76
-))
-(/usr/local/texlive/2025/texmf-dist/tex/latex/glossaries/styles/glossary-tree.sty
-Package: glossary-tree 2025/11/09 v4.9 (NLCT)
-\l__glossaries_tree_max_known_level_int=\count395
-\l__glossaries_tree_offset_dim=\dimen295
-\l__glossaries_tree_namewidth_dim=\dimen296
-\l__glossaries_tree_symbolwidth_dim=\dimen297
-\l__glossaries_tree_prenamesym_width_dim=\dimen298
-\l__glossaries_tree_presubnamesym_width_dim=\dimen299
-\l__glossaries_tree_namewidth_padding_dim=\dimen300
-\l__glossaries_tree_symbolwidth_padding_dim=\dimen301
-\l__glossaries_tree_namesymbolwidth_dim=\dimen302
-\l__glossaries_tree_namesymbolwidth_padding_dim=\dimen303
-\l__glossaries_tree_level_int=\count396
+)) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/styles\glossary-tree.sty
+Package: glossary-tree 2026/04/21 v5.1 (NLCT)
+\l__glossaries_tree_max_known_level_int=\count396
+\l__glossaries_tree_offset_dim=\dimen297
+\l__glossaries_tree_namewidth_dim=\dimen298
+\l__glossaries_tree_symbolwidth_dim=\dimen299
+\l__glossaries_tree_prenamesym_width_dim=\dimen300
+\l__glossaries_tree_presubnamesym_width_dim=\dimen301
+\l__glossaries_tree_namewidth_padding_dim=\dimen302
+\l__glossaries_tree_symbolwidth_padding_dim=\dimen303
+\l__glossaries_tree_namesymbolwidth_dim=\dimen304
+\l__glossaries_tree_namesymbolwidth_padding_dim=\dimen305
+\l__glossaries_tree_level_int=\count397
 \glstreeindent=\skip87
-)) (/usr/local/texlive/2025/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
-Package: tcolorbox 2025/09/09 version 6.8.0 text color boxes
- (/usr/local/texlive/2025/texmf-dist/tex/latex/tools/verbatim.sty
+)) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcolorbox.sty
+Package: tcolorbox 2025/11/28 version 6.9.0 text color boxes
+ (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/tools\verbatim.sty
 Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks52
-\verbatim@line=\toks53
+\every@verbatim=\toks51
+\verbatim@line=\toks52
 \verbatim@in@stream=\read3
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/environ/environ.sty
+) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/environ\environ.sty
 Package: environ 2014/05/04 v0.3 A new way to define environments
- (/usr/local/texlive/2025/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+ (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/trimspaces\trimspaces.sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 ))
 \tcb@titlebox=\box77
 \tcb@upperbox=\box78
 \tcb@lowerbox=\box79
 \tcb@phantombox=\box80
-\c@tcbbreakpart=\count397
-\c@tcblayer=\count398
-\c@tcolorbox@number=\count399
+\c@tcbbreakpart=\count398
+\c@tcblayer=\count399
+\c@tcolorbox@number=\count400
 \l__tcobox_tmpa_box=\box81
-\l__tcobox_tmpa_dim=\dimen304
+\l__tcobox_tmpa_dim=\dimen306
 \tcb@temp=\box82
 \tcb@temp=\box83
 \tcb@temp=\box84
 \tcb@temp=\box85
- (/usr/local/texlive/2025/texmf-dist/tex/latex/tcolorbox/tcblistings.code.tex
-Library (tcolorbox): 'tcblistings.code.tex' version '6.8.0'
-(/usr/local/texlive/2025/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count400
+ (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcblistings.code.tex
+Library (tcolorbox): 'tcblistings.code.tex' version '6.9.0'
+(C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
+\lst@mode=\count401
 \lst@gtempboxa=\box86
-\lst@token=\toks54
-\lst@length=\count401
-\lst@currlwidth=\dimen305
-\lst@column=\count402
-\lst@pos=\count403
-\lst@lostspace=\dimen306
-\lst@width=\dimen307
-\lst@newlines=\count404
-\lst@lineno=\count405
-\lst@maxwidth=\dimen308
- (/usr/local/texlive/2025/texmf-dist/tex/latex/listings/lstpatch.sty
+\lst@token=\toks53
+\lst@length=\count402
+\lst@currlwidth=\dimen307
+\lst@column=\count403
+\lst@pos=\count404
+\lst@lostspace=\dimen308
+\lst@width=\dimen309
+\lst@newlines=\count405
+\lst@lineno=\count406
+\lst@maxwidth=\dimen310
+ (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstpatch.sty
 File: lstpatch.sty 2025/11/14 1.11b (Carsten Heinz)
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/listings/lstmisc.sty
+) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2025/11/14 1.11b (Carsten Heinz)
-\c@lstnumber=\count406
-\lst@skipnumbers=\count407
+\c@lstnumber=\count407
+\lst@skipnumbers=\count408
 \lst@framebox=\box87
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/listings/listings.cfg
+) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
 File: listings.cfg 2025/11/14 1.11b listings configuration
 ))
 Package: listings 2025/11/14 1.11b (Carsten Heinz)
@@ -717,41 +708,41 @@ Package: listings 2025/11/14 1.11b (Carsten Heinz)
     but found:
         2025/11/14 1.11b (Carsten Heinz)
     so I'm assuming it got fixed.
-(/usr/local/texlive/2025/texmf-dist/tex/latex/tcolorbox/tcblistingscore.code.tex
-Library (tcolorbox): 'tcblistingscore.code.tex' version '6.8.0'
-(/usr/local/texlive/2025/texmf-dist/tex/latex/tcolorbox/tcbprocessing.code.tex
-Library (tcolorbox): 'tcbprocessing.code.tex' version '6.8.0'
+(C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcblistingscore.code.tex
+Library (tcolorbox): 'tcblistingscore.code.tex' version '6.9.0'
+(C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbprocessing.code.tex
+Library (tcolorbox): 'tcbprocessing.code.tex' version '6.9.0'
 )
-\c@tcblisting=\count408
-))) (/usr/local/texlive/2025/texmf-dist/tex/latex/tcolorbox/tcbskins.code.tex
-Library (tcolorbox): 'tcbskins.code.tex' version '6.8.0'
-(/usr/local/texlive/2025/texmf-dist/tex/latex/tikzfill/tikzfill.image.sty
-Package: tikzfill.image 2023/08/08 v1.0.1 Image filling library for TikZ
- (/usr/local/texlive/2025/texmf-dist/tex/latex/tikzfill/tikzfill-common.sty
-Package: tikzfill-common 2023/08/08 v1.0.1 Auxiliary code for tikzfill
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/tikzfill/tikzlibraryfill.image.code.tex
-File: tikzlibraryfill.image.code.tex 2023/08/08 v1.0.1 Image filling library
+\c@tcblisting=\count409
+))) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbskins.code.tex
+Library (tcolorbox): 'tcbskins.code.tex' version '6.9.0'
+(C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/tikzfill\tikzfill.image.sty
+Package: tikzfill.image 2026/04/23 v1.2.0 Image filling library for TikZ
+ (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/tikzfill\tikzlibraryfill.image.code.tex
+File: tikzlibraryfill.image.code.tex 2026/04/23 v1.2.0 Image filling library
+\l__tikzfill_tmpa_dim=\dimen311
+\l__tikzfill_tmpb_dim=\dimen312
 \l__tikzfill_img_box=\box88
-)) (/usr/local/texlive/2025/texmf-dist/tex/latex/tcolorbox/tcbskinsjigsaw.code.tex
-Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '6.8.0'
-)) (/usr/local/texlive/2025/texmf-dist/tex/latex/tcolorbox/tcbbreakable.code.tex
-Library (tcolorbox): 'tcbbreakable.code.tex' version '6.8.0'
-(/usr/local/texlive/2025/texmf-dist/tex/latex/pdfcol/pdfcol.sty
+)) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbskinsjigsaw.code.tex
+Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '6.9.0'
+)) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbbreakable.code.tex
+Library (tcolorbox): 'tcbbreakable.code.tex' version '6.9.0'
+(C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/pdfcol\pdfcol.sty
 Package: pdfcol 2022-09-21 v1.7 Handle new color stacks for pdfTeX (HO)
 )
 Package pdfcol Info: New color stack `tcb@breakable' = 1 on input line 23.
 \tcb@testbox=\box89
 \tcb@totalupperbox=\box90
 \tcb@totallowerbox=\box91
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/tcolorbox/tcbtheorems.code.tex
-Library (tcolorbox): 'tcbtheorems.code.tex' version '6.8.0'
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/tools/indentfirst.sty
+) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbtheorems.code.tex
+Library (tcolorbox): 'tcbtheorems.code.tex' version '6.9.0'
+) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/tools\indentfirst.sty
 Package: indentfirst 2023/07/02 v1.03 Indent first paragraph (DPC)
-)) (/usr/local/texlive/2025/texmf-dist/tex/latex/setspace/setspace.sty
+)) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspace.sty
 Package: setspace 2022/12/04 v6.7b set line spacing
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/amssymb.sty
+) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
- (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+ (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
@@ -768,57 +759,57 @@ Package glossaries Info: Writing glossary file MajorProjectReport.glo on input l
 \openout6 = `MajorProjectReport.sym2'.
 
 Package glossaries Info: Writing glossary file MajorProjectReport.sym2 on input line 94.
- (./AuxFiles/Glossaries.tex) (/usr/local/texlive/2025/texmf-dist/tex/latex/biblatex/biblatex.sty
+ (AuxFiles/Glossaries.tex) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.sty
 Package: biblatex 2025/07/10 v3.21 programmable bibliographies (PK/MW)
- (/usr/local/texlive/2025/texmf-dist/tex/latex/logreq/logreq.sty
+ (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count409
- (/usr/local/texlive/2025/texmf-dist/tex/latex/logreq/logreq.def
+\lrq@indent=\count410
+ (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
-\c@tabx@nest=\count410
-\c@listtotal=\count411
-\c@listcount=\count412
-\c@liststart=\count413
-\c@liststop=\count414
-\c@citecount=\count415
-\c@citetotal=\count416
-\c@multicitecount=\count417
-\c@multicitetotal=\count418
-\c@instcount=\count419
-\c@maxnames=\count420
-\c@minnames=\count421
-\c@maxitems=\count422
-\c@minitems=\count423
-\c@citecounter=\count424
-\c@maxcitecounter=\count425
-\c@savedcitecounter=\count426
-\c@uniquelist=\count427
-\c@uniquename=\count428
-\c@refsection=\count429
-\c@refsegment=\count430
-\c@maxextratitle=\count431
-\c@maxextratitleyear=\count432
-\c@maxextraname=\count433
-\c@maxextradate=\count434
-\c@maxextraalpha=\count435
-\c@abbrvpenalty=\count436
-\c@highnamepenalty=\count437
-\c@lownamepenalty=\count438
-\c@maxparens=\count439
-\c@parenlevel=\count440
-\blx@tempcnta=\count441
-\blx@tempcntb=\count442
-\blx@tempcntc=\count443
-\c@blx@maxsection=\count444
-\blx@maxsegment@0=\count445
-\blx@notetype=\count446
-\blx@parenlevel@text=\count447
-\blx@parenlevel@foot=\count448
-\blx@sectionciteorder@0=\count449
-\blx@sectionciteorderinternal@0=\count450
-\blx@entrysetcounter=\count451
-\blx@biblioinstance=\count452
+\c@tabx@nest=\count411
+\c@listtotal=\count412
+\c@listcount=\count413
+\c@liststart=\count414
+\c@liststop=\count415
+\c@citecount=\count416
+\c@citetotal=\count417
+\c@multicitecount=\count418
+\c@multicitetotal=\count419
+\c@instcount=\count420
+\c@maxnames=\count421
+\c@minnames=\count422
+\c@maxitems=\count423
+\c@minitems=\count424
+\c@citecounter=\count425
+\c@maxcitecounter=\count426
+\c@savedcitecounter=\count427
+\c@uniquelist=\count428
+\c@uniquename=\count429
+\c@refsection=\count430
+\c@refsegment=\count431
+\c@maxextratitle=\count432
+\c@maxextratitleyear=\count433
+\c@maxextraname=\count434
+\c@maxextradate=\count435
+\c@maxextraalpha=\count436
+\c@abbrvpenalty=\count437
+\c@highnamepenalty=\count438
+\c@lownamepenalty=\count439
+\c@maxparens=\count440
+\c@parenlevel=\count441
+\blx@tempcnta=\count442
+\blx@tempcntb=\count443
+\blx@tempcntc=\count444
+\c@blx@maxsection=\count445
+\blx@maxsegment@0=\count446
+\blx@notetype=\count447
+\blx@parenlevel@text=\count448
+\blx@parenlevel@foot=\count449
+\blx@sectionciteorder@0=\count450
+\blx@sectionciteorderinternal@0=\count451
+\blx@entrysetcounter=\count452
+\blx@biblioinstance=\count453
 \labelnumberwidth=\skip88
 \labelalphawidth=\skip89
 \biblabelsep=\skip90
@@ -829,87 +820,87 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 \bibhang=\skip95
 \blx@bcfin=\read4
 \blx@bcfout=\write7
-\blx@langwohyphens=\language90
-\c@mincomprange=\count453
-\c@maxcomprange=\count454
-\c@mincompwidth=\count455
+\blx@langwohyphens=\language79
+\c@mincomprange=\count454
+\c@maxcomprange=\count455
+\c@mincompwidth=\count456
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
- (/usr/local/texlive/2025/texmf-dist/tex/latex/biblatex/blx-dm.def
+ (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-dm.def
 File: blx-dm.def 2025/07/10 v3.21 biblatex datamodel (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'ieee.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count456
-\c@savedafterword=\count457
-\c@annotator=\count458
-\c@savedannotator=\count459
-\c@author=\count460
-\c@savedauthor=\count461
-\c@bookauthor=\count462
-\c@savedbookauthor=\count463
-\c@commentator=\count464
-\c@savedcommentator=\count465
-\c@editor=\count466
-\c@savededitor=\count467
-\c@editora=\count468
-\c@savededitora=\count469
-\c@editorb=\count470
-\c@savededitorb=\count471
-\c@editorc=\count472
-\c@savededitorc=\count473
-\c@foreword=\count474
-\c@savedforeword=\count475
-\c@holder=\count476
-\c@savedholder=\count477
-\c@introduction=\count478
-\c@savedintroduction=\count479
-\c@namea=\count480
-\c@savednamea=\count481
-\c@nameb=\count482
-\c@savednameb=\count483
-\c@namec=\count484
-\c@savednamec=\count485
-\c@translator=\count486
-\c@savedtranslator=\count487
-\c@shortauthor=\count488
-\c@savedshortauthor=\count489
-\c@shorteditor=\count490
-\c@savedshorteditor=\count491
-\c@labelname=\count492
-\c@savedlabelname=\count493
-\c@institution=\count494
-\c@savedinstitution=\count495
-\c@lista=\count496
-\c@savedlista=\count497
-\c@listb=\count498
-\c@savedlistb=\count499
-\c@listc=\count500
-\c@savedlistc=\count501
-\c@listd=\count502
-\c@savedlistd=\count503
-\c@liste=\count504
-\c@savedliste=\count505
-\c@listf=\count506
-\c@savedlistf=\count507
-\c@location=\count508
-\c@savedlocation=\count509
-\c@organization=\count510
-\c@savedorganization=\count511
-\c@origlocation=\count512
-\c@savedoriglocation=\count513
-\c@origpublisher=\count514
-\c@savedorigpublisher=\count515
-\c@publisher=\count516
-\c@savedpublisher=\count517
-\c@language=\count518
-\c@savedlanguage=\count519
-\c@origlanguage=\count520
-\c@savedoriglanguage=\count521
-\c@pageref=\count522
-\c@savedpageref=\count523
+\c@afterword=\count457
+\c@savedafterword=\count458
+\c@annotator=\count459
+\c@savedannotator=\count460
+\c@author=\count461
+\c@savedauthor=\count462
+\c@bookauthor=\count463
+\c@savedbookauthor=\count464
+\c@commentator=\count465
+\c@savedcommentator=\count466
+\c@editor=\count467
+\c@savededitor=\count468
+\c@editora=\count469
+\c@savededitora=\count470
+\c@editorb=\count471
+\c@savededitorb=\count472
+\c@editorc=\count473
+\c@savededitorc=\count474
+\c@foreword=\count475
+\c@savedforeword=\count476
+\c@holder=\count477
+\c@savedholder=\count478
+\c@introduction=\count479
+\c@savedintroduction=\count480
+\c@namea=\count481
+\c@savednamea=\count482
+\c@nameb=\count483
+\c@savednameb=\count484
+\c@namec=\count485
+\c@savednamec=\count486
+\c@translator=\count487
+\c@savedtranslator=\count488
+\c@shortauthor=\count489
+\c@savedshortauthor=\count490
+\c@shorteditor=\count491
+\c@savedshorteditor=\count492
+\c@labelname=\count493
+\c@savedlabelname=\count494
+\c@institution=\count495
+\c@savedinstitution=\count496
+\c@lista=\count497
+\c@savedlista=\count498
+\c@listb=\count499
+\c@savedlistb=\count500
+\c@listc=\count501
+\c@savedlistc=\count502
+\c@listd=\count503
+\c@savedlistd=\count504
+\c@liste=\count505
+\c@savedliste=\count506
+\c@listf=\count507
+\c@savedlistf=\count508
+\c@location=\count509
+\c@savedlocation=\count510
+\c@organization=\count511
+\c@savedorganization=\count512
+\c@origlocation=\count513
+\c@savedoriglocation=\count514
+\c@origpublisher=\count515
+\c@savedorigpublisher=\count516
+\c@publisher=\count517
+\c@savedpublisher=\count518
+\c@language=\count519
+\c@savedlanguage=\count520
+\c@origlanguage=\count521
+\c@savedoriglanguage=\count522
+\c@pageref=\count523
+\c@savedpageref=\count524
 \shorthandwidth=\skip96
 \shortjournalwidth=\skip97
 \shortserieswidth=\skip98
@@ -926,53 +917,53 @@ Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \localshorteditorwidth=\skip109
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
- (/usr/local/texlive/2025/texmf-dist/tex/latex/biblatex/blx-compat.def
+ (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-compat.def
 File: blx-compat.def 2025/07/10 v3.21 biblatex compatibility (PK/MW)
 )
 Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
- (/usr/local/texlive/2025/texmf-dist/tex/latex/biblatex/biblatex.def
+ (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.def
 File: biblatex.def 2025/07/10 v3.21 biblatex compatibility (PK/MW)
-\c@textcitecount=\count524
-\c@textcitetotal=\count525
-\c@textcitemaxnames=\count526
-\c@biburlbigbreakpenalty=\count527
-\c@biburlbreakpenalty=\count528
-\c@biburlnumpenalty=\count529
-\c@biburlucpenalty=\count530
-\c@biburllcpenalty=\count531
+\c@textcitecount=\count525
+\c@textcitetotal=\count526
+\c@textcitemaxnames=\count527
+\c@biburlbigbreakpenalty=\count528
+\c@biburlbreakpenalty=\count529
+\c@biburlnumpenalty=\count530
+\c@biburlucpenalty=\count531
+\c@biburllcpenalty=\count532
 \biburlbigskip=\muskip19
 \biburlnumskip=\muskip20
 \biburlucskip=\muskip21
 \biburllcskip=\muskip22
-\c@smartand=\count532
+\c@smartand=\count533
 )
 Package biblatex Info: Trying to load bibliography style 'ieee'...
 Package biblatex Info: ... file 'ieee.bbx' found.
- (/usr/local/texlive/2025/texmf-dist/tex/latex/biblatex-ieee/ieee.bbx
+ (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-ieee\ieee.bbx
 File: ieee.bbx 2025-08-01 v1.4f biblatex bibliography style
 Package biblatex Info: Trying to load bibliography style 'numeric-comp'...
 Package biblatex Info: ... file 'numeric-comp.bbx' found.
- (/usr/local/texlive/2025/texmf-dist/tex/latex/biblatex/bbx/numeric-comp.bbx
+ (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\numeric-comp.bbx
 File: numeric-comp.bbx 2025/07/10 v3.21 biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
- (/usr/local/texlive/2025/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
+ (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\numeric.bbx
 File: numeric.bbx 2025/07/10 v3.21 biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
- (/usr/local/texlive/2025/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
+ (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\standard.bbx
 File: standard.bbx 2025/07/10 v3.21 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count533
-\c@bbx:relatedtotal=\count534
+\c@bbx:relatedcount=\count534
+\c@bbx:relatedtotal=\count535
 ))))
 Package biblatex Info: Trying to load citation style 'ieee'...
 Package biblatex Info: ... file 'ieee.cbx' found.
- (/usr/local/texlive/2025/texmf-dist/tex/latex/biblatex-ieee/ieee.cbx
+ (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-ieee\ieee.cbx
 File: ieee.cbx 2025-08-01 v1.4f biblatex citation style
 Package biblatex Info: Trying to load citation style 'numeric-verb'...
 Package biblatex Info: ... file 'numeric-verb.cbx' found.
- (/usr/local/texlive/2025/texmf-dist/tex/latex/biblatex/cbx/numeric-verb.cbx
+ (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/cbx\numeric-verb.cbx
 File: numeric-verb.cbx 2025/07/10 v3.21 biblatex citation style (PK/MW)
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
@@ -987,48 +978,48 @@ Package biblatex Info: Redefining '\textcites'.
 ))
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
- (/usr/local/texlive/2025/texmf-dist/tex/latex/biblatex/biblatex.cfg
+ (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.cfg
 File: biblatex.cfg 
 )
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Document encoding is UTF8 ....
- (/usr/local/texlive/2025/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2025-11-06 L3 programming layer (loader) 
- (/usr/local/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count535
+ (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2026-04-28 L3 programming layer (loader) 
+ (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2026-02-18 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count536
 ))
 Package biblatex Info: ... and expl3
-(biblatex)             2025-11-06 L3 programming layer (loader) 
+(biblatex)             2026-04-28 L3 programming layer (loader) 
 (biblatex)             is new enough (at least 2020/04/06),
 (biblatex)             setting 'casechanger=expl3'.
- (/usr/local/texlive/2025/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty (/usr/local/texlive/2025/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+ (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-case-expl3.sty (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xparse.sty
 Package: xparse 2025-10-09 L3 Experimental document command parser
 )
 Package: blx-case-expl3 2025/07/10 v3.21 expl3 case changing code for biblatex
-)) (/usr/local/texlive/2025/texmf-dist/tex/latex/tools/tabularx.sty
+)) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.sty
 Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
- (/usr/local/texlive/2025/texmf-dist/tex/latex/tools/array.sty
+ (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
 Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
-\col@sep=\dimen309
+\col@sep=\dimen313
 \ar@mcellbox=\box92
-\extrarowheight=\dimen310
-\NC@list=\toks55
+\extrarowheight=\dimen314
+\NC@list=\toks54
 \extratabsurround=\skip110
 \backup@length=\skip111
 \ar@cellbox=\box93
 )
-\TX@col@width=\dimen311
-\TX@old@table=\dimen312
-\TX@old@col=\dimen313
-\TX@target=\dimen314
-\TX@delta=\dimen315
-\TX@cols=\count536
-\TX@ftn=\toks56
+\TX@col@width=\dimen315
+\TX@old@table=\dimen316
+\TX@old@col=\dimen317
+\TX@target=\dimen318
+\TX@delta=\dimen319
+\TX@cols=\count537
+\TX@ftn=\toks55
 )
-\@quotelevel=\count537
-\@quotereset=\count538
- (./MajorProjectReport.aux <Reading QR code for "https://github.com/ShashankShenoy/Major_Project" at level 4-M from aux file.>
+\@quotelevel=\count538
+\@quotereset=\count539
+ (MajorProjectReport.aux <Reading QR code for "https://github.com/ShashankShenoy/Major_Project" at level 4-M from aux file.>
 )
 \openout1 = `MajorProjectReport.aux'.
 
@@ -1050,24 +1041,24 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 117.
 LaTeX Font Info:    ... okay on input line 117.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 117.
 LaTeX Font Info:    ... okay on input line 117.
- (/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count539
-\scratchdimen=\dimen316
+\scratchcounter=\count540
+\scratchdimen=\dimen320
 \scratchbox=\box94
-\nofMPsegments=\count540
-\nofMParguments=\count541
-\everyMPshowfont=\toks57
-\MPscratchCnt=\count542
-\MPscratchDim=\dimen317
-\MPnumerator=\count543
-\makeMPintoPDFobject=\count544
-\everyMPtoPDFconversion=\toks58
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+\nofMPsegments=\count541
+\nofMParguments=\count542
+\everyMPshowfont=\toks56
+\MPscratchCnt=\count543
+\MPscratchDim=\dimen321
+\MPnumerator=\count544
+\makeMPintoPDFobject=\count545
+\everyMPtoPDFconversion=\toks57
+) (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
- (/usr/local/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+ (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1104,14 +1095,14 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package hyperref Info: Link coloring OFF on input line 117.
-(./MajorProjectReport.out) (./MajorProjectReport.out)
+(MajorProjectReport.out) (MajorProjectReport.out)
 \@outlinefile=\write8
 \openout8 = `MajorProjectReport.out'.
 
-\c@lstlisting=\count545
+\c@lstlisting=\count546
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
- (/usr/local/texlive/2025/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+ (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\english.lbx
 File: english.lbx 2025/07/10 v3.21 biblatex localization (PK/MW)
 )
 Package biblatex Info: Input encoding 'utf8' detected.
@@ -1121,7 +1112,7 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'MajorProjectReport.bbl' found.
- (./MajorProjectReport.bbl)
+ (MajorProjectReport.bbl)
 Package biblatex Info: Reference section=0 on input line 117.
 Package biblatex Info: Reference segment=0 on input line 117.
  
@@ -1129,14 +1120,14 @@ Package biblatex Info: Reference segment=0 on input line 117.
 <QR code requested for "https://github.com/ShashankShenoy/Major_Project" in version 0-M.>
 <Copying the QR code for "https://github.com/ShashankShenoy/Major_Project" in version 4-M as previously calculated.>
 LaTeX Font Info:    Trying to load font information for U+msa on input line 121.
-(/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
+(C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 121.
- (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
+ (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<Figures/RV_logoVec.png, id=430, 505.89pt x 496.85625pt>
+<Figures/RV_logoVec.png, id=447, 505.89pt x 496.85625pt>
 File: Figures/RV_logoVec.png Graphic file (type png)
 <use Figures/RV_logoVec.png>
 Package pdftex.def Info: Figures/RV_logoVec.png  used on input line 121.
@@ -1146,8 +1137,8 @@ Package pdftex.def Info: Figures/RV_logoVec.png  used on input line 121.
 \openout4 = `MajorProjectReport.ist'.
 
 
-{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./Figures/RV_logoVec.png>]
-<Figures/RV_newLogo.png, id=442, 916.1728pt x 161.10187pt>
+{C:/Users/91944/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./Figures/RV_logoVec.png>]
+<Figures/RV_newLogo.png, id=459, 916.1728pt x 161.10187pt>
 File: Figures/RV_newLogo.png Graphic file (type png)
 <use Figures/RV_newLogo.png>
 Package pdftex.def Info: Figures/RV_newLogo.png  used on input line 121.
@@ -1155,7 +1146,7 @@ Package pdftex.def Info: Figures/RV_newLogo.png  used on input line 121.
  [2
 
 
- <./Figures/RV_newLogo.png>] (./CoverPages/Certificate.tex
+ <./Figures/RV_newLogo.png>] (CoverPages/Certificate.tex
 File: Figures/RV_logoVec.png Graphic file (type png)
 <use Figures/RV_logoVec.png>
 Package pdftex.def Info: Figures/RV_logoVec.png  used on input line 13.
@@ -1171,7 +1162,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has b
                    \relax 
 l.128 		\newpage
                 
-<Figures/RVlogoVecW.png, id=448, 505.89pt x 496.85625pt>
+<Figures/RVlogoVecW.png, id=465, 505.89pt x 496.85625pt>
 File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
 Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 128.
@@ -1180,7 +1171,7 @@ File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
 Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 128.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
- [1 <./Figures/RVlogoVecW.png>] (./CoverPages/Declaration.tex
+ [1 <./Figures/RVlogoVecW.png>] (CoverPages/Declaration.tex
 Underfull \hbox (badness 10000) in paragraph at lines 14--14
 
  []
@@ -1204,7 +1195,7 @@ File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
 Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 131.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
- [2] (./CoverPages/Ack.tex
+ [2] (CoverPages/Ack.tex
 Underfull \hbox (badness 10000) in paragraph at lines 12--12
 
  []
@@ -1248,7 +1239,7 @@ File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
 Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 134.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
- [3] (./CoverPages/Abstract.tex)
+ [3] (CoverPages/Abstract.tex)
 File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
 Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 138.
@@ -1259,37 +1250,16 @@ Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 138.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
  [1
 
-] (./CoverPages/Publications.tex
-Underfull \hbox (badness 10000) in paragraph at lines 10--10
-[]|\OT1/cmr/m/n/12 Journal / In-ter-na-
- []
-
-
-Underfull \hbox (badness 4819) in paragraph at lines 10--10
-\OT1/cmr/m/n/12 tional Con-fer-ence /
- []
-
-)
+] (MajorProjectReport.toc
 File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
-Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 144.
+Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 27.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
 File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
-Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 144.
+Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 27.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
  [2
-
-] (./MajorProjectReport.toc
-File: Figures/RVlogoVecW.png Graphic file (type png)
-<use Figures/RVlogoVecW.png>
-Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 28.
-(pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
-File: Figures/RVlogoVecW.png Graphic file (type png)
-<use Figures/RVlogoVecW.png>
-Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 28.
-(pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
- [3
 
 ]
 File: Figures/RVlogoVecW.png Graphic file (type png)
@@ -1300,7 +1270,7 @@ File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
 Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 60.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
- [4]
+ [3]
 File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
 Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 95.
@@ -1309,7 +1279,7 @@ File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
 Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 95.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
- [5])
+ [4])
 \tf@toc=\write9
 \openout9 = `MajorProjectReport.toc'.
 
@@ -1321,7 +1291,7 @@ File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
 Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 149.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
- [6] (./MajorProjectReport.lof
+ [5] (MajorProjectReport.lof
 File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
 Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 30.
@@ -1330,7 +1300,7 @@ File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
 Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 30.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
- [7
+ [6
 
 
 ])
@@ -1345,7 +1315,7 @@ File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
 Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 155.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
- [8] (./MajorProjectReport.lot
+ [7] (MajorProjectReport.lot
 Overfull \hbox (7.2191pt too wide) in paragraph at lines 18--18
  [][] [][]\OT1/cmr/m/n/12 Per-Module Pro-cess-ing La-tency and End-to-End Pipeline Through-put (mea- 
  []
@@ -1354,7 +1324,7 @@ Overfull \hbox (7.2191pt too wide) in paragraph at lines 18--18
 \tf@lot=\write11
 \openout11 = `MajorProjectReport.lot'.
 
- (./MajorProjectReport.gls
+ (MajorProjectReport.gls
 File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
 Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 1.
@@ -1362,6 +1332,18 @@ Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 1.
 File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
 Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 1.
+(pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
+ [8
+
+
+]
+File: Figures/RVlogoVecW.png Graphic file (type png)
+<use Figures/RVlogoVecW.png>
+Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 125.
+(pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
+File: Figures/RVlogoVecW.png Graphic file (type png)
+<use Figures/RVlogoVecW.png>
+Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 125.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
  [9
 
@@ -1369,25 +1351,13 @@ Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 1.
 ]
 File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
-Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 125.
-(pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
-File: Figures/RVlogoVecW.png Graphic file (type png)
-<use Figures/RVlogoVecW.png>
-Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 125.
-(pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
- [10
-
-
-]
-File: Figures/RVlogoVecW.png Graphic file (type png)
-<use Figures/RVlogoVecW.png>
 Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 227.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
 File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
 Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 227.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
- [11]
+ [10]
 File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
 Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 331.
@@ -1396,7 +1366,7 @@ File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
 Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 331.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
- [12]) (./MajorProjectReport.sym1
+ [11]) (MajorProjectReport.sym1
 File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
 Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 1.
@@ -1405,7 +1375,7 @@ File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
 Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 1.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
- [13])
+ [12])
 File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
 Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 168.
@@ -1414,10 +1384,10 @@ File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
 Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 168.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
- [14
+ [13
 
 
-] (./Chapter1/01_introduction.tex
+] (Chapter1/01_introduction.tex
 Chapter 1.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1445,7 +1415,7 @@ Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 1.
 
 
 ]
-<Chapter1/Figures/ais.jpeg, id=876, 320.27655pt x 184.16805pt>
+<Chapter1/Figures/ais.jpeg, id=899, 320.27655pt x 184.16805pt>
 File: Chapter1/Figures/ais.jpeg Graphic file (type jpg)
 <use Chapter1/Figures/ais.jpeg>
 Package pdftex.def Info: Chapter1/Figures/ais.jpeg  used on input line 12.
@@ -1532,7 +1502,7 @@ File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
 Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 49.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
-[5]) (./Chapter2/02_theory.tex
+[5]) (Chapter2/02_theory.tex
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1666,7 +1636,7 @@ File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
 Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 179.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
-[13] (./Chapter3/03_srs.tex
+[13] (Chapter3/03_srs.tex
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1768,7 +1738,7 @@ File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
 Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 60.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
-[19]) (./Chapter4/04_hld.tex
+[19]) (Chapter4/04_hld.tex
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1805,7 +1775,7 @@ Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 1.
 
 
 ]
-<Chapter3/Figures/system_architecture.png, id=1111, 5993.39125pt x 8222.72pt>
+<Chapter3/Figures/system_architecture.png, id=1132, 5993.39125pt x 8222.72pt>
 File: Chapter3/Figures/system_architecture.png Graphic file (type png)
 <use Chapter3/Figures/system_architecture.png>
 Package pdftex.def Info: Chapter3/Figures/system_architecture.png  used on input line 12.
@@ -1877,7 +1847,7 @@ File: Figures/RVlogoVecW.png Graphic file (type png)
 Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 41.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
 [25]
-<Chapter4/Figures/pipeline.jpeg, id=1135, 1211.52625pt x 1307.88625pt>
+<Chapter4/Figures/pipeline.jpeg, id=1155, 1211.52625pt x 1307.88625pt>
 File: Chapter4/Figures/pipeline.jpeg Graphic file (type jpg)
 <use Chapter4/Figures/pipeline.jpeg>
 Package pdftex.def Info: Chapter4/Figures/pipeline.jpeg  used on input line 44.
@@ -1899,7 +1869,7 @@ File: Figures/RVlogoVecW.png Graphic file (type png)
 Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 55.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
 [26 <./Chapter4/Figures/pipeline.jpeg>]
-<Chapter4/Figures/dfd_level0_context.png, id=1143, 860.013pt x 571.1739pt>
+<Chapter4/Figures/dfd_level0_context.png, id=1163, 860.013pt x 571.1739pt>
 File: Chapter4/Figures/dfd_level0_context.png Graphic file (type png)
 <use Chapter4/Figures/dfd_level0_context.png>
 Package pdftex.def Info: Chapter4/Figures/dfd_level0_context.png  used on input line 61.
@@ -1921,12 +1891,12 @@ File: Figures/RVlogoVecW.png Graphic file (type png)
 Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 67.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
 [27 <./Chapter4/Figures/dfd_level0_context.png>]
-<Chapter4/Figures/dfd_level1_context.png, id=1152, 1432.6323pt x 932.0421pt>
+<Chapter4/Figures/dfd_level1_context.png, id=1172, 1432.6323pt x 932.0421pt>
 File: Chapter4/Figures/dfd_level1_context.png Graphic file (type png)
 <use Chapter4/Figures/dfd_level1_context.png>
 Package pdftex.def Info: Chapter4/Figures/dfd_level1_context.png  used on input line 70.
 (pdftex.def)             Requested size: 430.31812pt x 279.9561pt.
-) (./Chapter5/05_detailed_design.tex
+) (Chapter5/05_detailed_design.tex
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1963,7 +1933,7 @@ Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 1.
 
 
 ]
-<Chapter5/Figures/structure_chart.jpg, id=1163, 1541.76pt x 1027.84pt>
+<Chapter5/Figures/structure_chart.jpg, id=1183, 1541.76pt x 1027.84pt>
 File: Chapter5/Figures/structure_chart.jpg Graphic file (type jpg)
 <use Chapter5/Figures/structure_chart.jpg>
 Package pdftex.def Info: Chapter5/Figures/structure_chart.jpg  used on input line 10.
@@ -2003,7 +1973,7 @@ File: Figures/RVlogoVecW.png Graphic file (type png)
 Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 49.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
 [31]
-<Chapter3/Figures/fig3_use_case_diagram.png, id=1191, 385.44pt x 289.08pt>
+<Chapter3/Figures/fig3_use_case_diagram.png, id=1211, 385.44pt x 289.08pt>
 File: Chapter3/Figures/fig3_use_case_diagram.png Graphic file (type png)
 <use Chapter3/Figures/fig3_use_case_diagram.png>
 Package pdftex.def Info: Chapter3/Figures/fig3_use_case_diagram.png  used on input line 55.
@@ -2025,7 +1995,7 @@ File: Figures/RVlogoVecW.png Graphic file (type png)
 Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 64.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
 [32 <./Chapter3/Figures/fig3_use_case_diagram.png (PNG copy)>]
-<Chapter5/Figures/dataset_samples.jpg, id=1208, 1541.76pt x 1027.84pt>
+<Chapter5/Figures/dataset_samples.jpg, id=1228, 1541.76pt x 1027.84pt>
 File: Chapter5/Figures/dataset_samples.jpg Graphic file (type jpg)
 <use Chapter5/Figures/dataset_samples.jpg>
 Package pdftex.def Info: Chapter5/Figures/dataset_samples.jpg  used on input line 71.
@@ -2083,10 +2053,10 @@ File: Figures/RVlogoVecW.png Graphic file (type png)
 Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 140.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
 [35]
-<Chapter5/Figures/algorithm_selection.jpg, id=1257, 1541.76pt x 1027.84pt>
-File: Chapter5/Figures/algorithm_selection.jpg Graphic file (type jpg)
-<use Chapter5/Figures/algorithm_selection.jpg>
-Package pdftex.def Info: Chapter5/Figures/algorithm_selection.jpg  used on input line 147.
+<Chapter5/Figures/algorithm_selection.png, id=1276, 1541.76pt x 1027.84pt>
+File: Chapter5/Figures/algorithm_selection.png Graphic file (type png)
+<use Chapter5/Figures/algorithm_selection.png>
+Package pdftex.def Info: Chapter5/Figures/algorithm_selection.png  used on input line 147.
 (pdftex.def)             Requested size: 430.31812pt x 286.8679pt.
 
 
@@ -2104,12 +2074,12 @@ File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
 Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 153.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
-[36 <./Chapter5/Figures/algorithm_selection.jpg>]
+[36 <./Chapter5/Figures/algorithm_selection.png>]
 Overfull \hbox (4.68985pt too wide) in paragraph at lines 158--159
 []\OT1/cmr/m/n/12 The pro-posed mar-itime surveil-lance frame-work fol-lows a multi-stage pro-cess-ing pipeline
  []
 
-<Chapter3/Figures/process_pipeline.jpeg, id=1266, 1753.55125pt x 903.375pt>
+<Chapter3/Figures/process_pipeline.jpeg, id=1284, 1753.55125pt x 903.375pt>
 File: Chapter3/Figures/process_pipeline.jpeg Graphic file (type jpg)
 <use Chapter3/Figures/process_pipeline.jpeg>
 Package pdftex.def Info: Chapter3/Figures/process_pipeline.jpeg  used on input line 162.
@@ -2130,7 +2100,7 @@ File: Figures/RVlogoVecW.png Graphic file (type png)
 Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 171.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
 [37 <./Chapter3/Figures/process_pipeline.jpeg>]
-<Chapter5/Figures/pipeline_flowchart.png, id=1279, 1076.823pt x 860.2539pt>
+<Chapter5/Figures/pipeline_flowchart.png, id=1298, 1076.823pt x 860.2539pt>
 File: Chapter5/Figures/pipeline_flowchart.png Graphic file (type png)
 <use Chapter5/Figures/pipeline_flowchart.png>
 Package pdftex.def Info: Chapter5/Figures/pipeline_flowchart.png  used on input line 185.
@@ -2152,7 +2122,7 @@ File: Figures/RVlogoVecW.png Graphic file (type png)
 Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 189.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
 [38]
-<Chapter5/Figures/sequence_diagram.png, id=1286, 1293.633pt x 787.743pt>
+<Chapter5/Figures/sequence_diagram.png, id=1305, 1293.633pt x 787.743pt>
 File: Chapter5/Figures/sequence_diagram.png Graphic file (type png)
 <use Chapter5/Figures/sequence_diagram.png>
 Package pdftex.def Info: Chapter5/Figures/sequence_diagram.png  used on input line 198.
@@ -2189,7 +2159,7 @@ File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
 Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 216.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
-[40 <./Chapter5/Figures/sequence_diagram.png>]) (./Chapter6/06_implementation.tex
+[40 <./Chapter5/Figures/sequence_diagram.png>]) (Chapter6/06_implementation.tex
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2226,12 +2196,6 @@ Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 1.
 
 
 ]
-<Chapter4/Figures/deployment_architecture.jpeg, id=1324, 1772.6225pt x 894.34125pt>
-File: Chapter4/Figures/deployment_architecture.jpeg Graphic file (type jpg)
-<use Chapter4/Figures/deployment_architecture.jpeg>
-Package pdftex.def Info: Chapter4/Figures/deployment_architecture.jpeg  used on input line 22.
-(pdftex.def)             Requested size: 430.31812pt x 217.10266pt.
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2241,11 +2205,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
-Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 26.
+Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 18.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
 File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
-Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 26.
+Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 18.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
 [43
 
@@ -2259,16 +2223,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
-Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 38.
+Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 28.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
 File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
-Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 38.
+Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 28.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
-[44 <./Chapter4/Figures/deployment_architecture.jpeg>]
-Overfull \hbox (1.62183pt too wide) in paragraph at lines 39--40
-\OT1/cmr/m/n/12 niques|including hor-i-zon-tal flip-ping, mo-saic aug-men-ta-tion, ran-dom crop-ping, and bright-
- []
+[44]
+<Chapter4/Figures/deployment_architecture.jpeg, id=1351, 1772.6225pt x 894.34125pt>
+File: Chapter4/Figures/deployment_architecture.jpeg Graphic file (type jpg)
+<use Chapter4/Figures/deployment_architecture.jpeg>
+Package pdftex.def Info: Chapter4/Figures/deployment_architecture.jpeg  used on input line 31.
+(pdftex.def)             Requested size: 430.31812pt x 217.10266pt.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2279,17 +2245,49 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
-Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 49.
+Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 41.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
 File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
-Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 49.
+Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 41.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
-[45]
-<Chapter4/Figures/cv_ais_fusion.png, id=1363, 511.9125pt x 335.0919pt>
+[45 <./Chapter4/Figures/deployment_architecture.jpeg>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+File: Figures/RVlogoVecW.png Graphic file (type png)
+<use Figures/RVlogoVecW.png>
+Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 51.
+(pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
+File: Figures/RVlogoVecW.png Graphic file (type png)
+<use Figures/RVlogoVecW.png>
+Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 51.
+(pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
+[46]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+File: Figures/RVlogoVecW.png Graphic file (type png)
+<use Figures/RVlogoVecW.png>
+Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 58.
+(pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
+File: Figures/RVlogoVecW.png Graphic file (type png)
+<use Figures/RVlogoVecW.png>
+Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 58.
+(pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
+[47]
+<Chapter4/Figures/cv_ais_fusion.png, id=1388, 511.9125pt x 335.0919pt>
 File: Chapter4/Figures/cv_ais_fusion.png Graphic file (type png)
 <use Chapter4/Figures/cv_ais_fusion.png>
-Package pdftex.def Info: Chapter4/Figures/cv_ais_fusion.png  used on input line 55.
+Package pdftex.def Info: Chapter4/Figures/cv_ais_fusion.png  used on input line 64.
 (pdftex.def)             Requested size: 430.31812pt x 281.6798pt.
 
 
@@ -2301,17 +2299,33 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
-Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 64.
+Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 68.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
 File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
-Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 64.
+Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 68.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
-[46 <./Chapter4/Figures/cv_ais_fusion.png>]
-<Chapter4/Figures/lstm_architecture.png, id=1378, 511.9125pt x 398.9304pt>
+[48]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+File: Figures/RVlogoVecW.png Graphic file (type png)
+<use Figures/RVlogoVecW.png>
+Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 76.
+(pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
+File: Figures/RVlogoVecW.png Graphic file (type png)
+<use Figures/RVlogoVecW.png>
+Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 76.
+(pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
+[49 <./Chapter4/Figures/cv_ais_fusion.png>]
+<Chapter4/Figures/lstm_architecture.png, id=1404, 511.9125pt x 398.9304pt>
 File: Chapter4/Figures/lstm_architecture.png Graphic file (type png)
 <use Chapter4/Figures/lstm_architecture.png>
-Package pdftex.def Info: Chapter4/Figures/lstm_architecture.png  used on input line 70.
+Package pdftex.def Info: Chapter4/Figures/lstm_architecture.png  used on input line 79.
 (pdftex.def)             Requested size: 407.66833pt x 317.696pt.
 
 
@@ -2323,17 +2337,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
-Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 78.
+Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 87.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
 File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
-Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 78.
+Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 87.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
-[47 <./Chapter4/Figures/lstm_architecture.png>]
-<Chapter4/Figures/dashboard_architecture.jpeg, id=1389, 1567.8575pt x 1010.77625pt>
+[50 <./Chapter4/Figures/lstm_architecture.png>]
+<Chapter4/Figures/dashboard_architecture.jpeg, id=1413, 1567.8575pt x 1010.77625pt>
 File: Chapter4/Figures/dashboard_architecture.jpeg Graphic file (type jpg)
 <use Chapter4/Figures/dashboard_architecture.jpeg>
-Package pdftex.def Info: Chapter4/Figures/dashboard_architecture.jpeg  used on input line 83.
+Package pdftex.def Info: Chapter4/Figures/dashboard_architecture.jpeg  used on input line 92.
 (pdftex.def)             Requested size: 430.31812pt x 277.4168pt.
 
 
@@ -2345,81 +2359,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
-Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 94.
+Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 100.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
 File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
-Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 94.
+Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 100.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
-[48 <./Chapter4/Figures/dashboard_architecture.jpeg>]) (./Chapter7/07_SoftwareTesting.tex
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-File: Figures/RVlogoVecW.png Graphic file (type png)
-<use Figures/RVlogoVecW.png>
-Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 1.
-(pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
-File: Figures/RVlogoVecW.png Graphic file (type png)
-<use Figures/RVlogoVecW.png>
-Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 1.
-(pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
-[49]
-Chapter 7.
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-File: Figures/RVlogoVecW.png Graphic file (type png)
-<use Figures/RVlogoVecW.png>
-Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 1.
-(pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
-File: Figures/RVlogoVecW.png Graphic file (type png)
-<use Figures/RVlogoVecW.png>
-Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 1.
-(pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
-[50
-
-
-]
-Underfull \hbox (badness 1584) in paragraph at lines 20--21
-[]|[][]\OT1/cmr/m/n/12 NVIDIA[] [][]GPU[] with [][]CUDA[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 21--21
-[]|[][]\OT1/cmr/m/n/12 Random Ac-cess Mem-ory
- []
-
-
-Underfull \hbox (badness 3333) in paragraph at lines 52--52
-[]|[][]\OT1/cmr/m/n/12 Closest Point of Ap-proach
- []
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-File: Figures/RVlogoVecW.png Graphic file (type png)
-<use Figures/RVlogoVecW.png>
-Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 58.
-(pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
-File: Figures/RVlogoVecW.png Graphic file (type png)
-<use Figures/RVlogoVecW.png>
-Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 58.
-(pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
-[51
-
-]) (./Chapter8/08_ExpResults.tex
+[51 <./Chapter4/Figures/dashboard_architecture.jpeg>]) (Chapter7/07_SoftwareTesting.tex
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2436,7 +2382,7 @@ File: Figures/RVlogoVecW.png Graphic file (type png)
 Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 1.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
 [52]
-Chapter 8.
+Chapter 7.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2456,7 +2402,106 @@ Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 1.
 
 
 ]
-<Chapter5/Figures/training_loss.png, id=1452, 578.16pt x 361.35pt>
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+File: Figures/RVlogoVecW.png Graphic file (type png)
+<use Figures/RVlogoVecW.png>
+Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 12.
+(pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
+File: Figures/RVlogoVecW.png Graphic file (type png)
+<use Figures/RVlogoVecW.png>
+Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 12.
+(pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
+[54
+
+]
+Underfull \hbox (badness 1584) in paragraph at lines 30--31
+[]|[][]\OT1/cmr/m/n/12 NVIDIA[] [][]GPU[] with [][]CUDA[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
+[]|[][]\OT1/cmr/m/n/12 Random Ac-cess Mem-ory
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+File: Figures/RVlogoVecW.png Graphic file (type png)
+<use Figures/RVlogoVecW.png>
+Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 46.
+(pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
+File: Figures/RVlogoVecW.png Graphic file (type png)
+<use Figures/RVlogoVecW.png>
+Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 46.
+(pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
+[55]
+Underfull \hbox (badness 3333) in paragraph at lines 66--66
+[]|[][]\OT1/cmr/m/n/12 Closest Point of Ap-proach
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+File: Figures/RVlogoVecW.png Graphic file (type png)
+<use Figures/RVlogoVecW.png>
+Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 78.
+(pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
+File: Figures/RVlogoVecW.png Graphic file (type png)
+<use Figures/RVlogoVecW.png>
+Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 78.
+(pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
+[56]) (Chapter8/08_ExpResults.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+File: Figures/RVlogoVecW.png Graphic file (type png)
+<use Figures/RVlogoVecW.png>
+Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 1.
+(pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
+File: Figures/RVlogoVecW.png Graphic file (type png)
+<use Figures/RVlogoVecW.png>
+Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 1.
+(pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
+[57]
+Chapter 8.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+File: Figures/RVlogoVecW.png Graphic file (type png)
+<use Figures/RVlogoVecW.png>
+Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 1.
+(pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
+File: Figures/RVlogoVecW.png Graphic file (type png)
+<use Figures/RVlogoVecW.png>
+Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 1.
+(pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
+[58
+
+
+]
+<Chapter5/Figures/training_loss.png, id=1481, 578.16pt x 361.35pt>
 File: Chapter5/Figures/training_loss.png Graphic file (type png)
 <use Chapter5/Figures/training_loss.png>
 Package pdftex.def Info: Chapter5/Figures/training_loss.png  used on input line 15.
@@ -2471,16 +2516,32 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
-Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 27.
+Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 21.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
 File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
-Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 27.
+Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 21.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
-[54
+[59
 
  <./Chapter5/Figures/training_loss.png>]
-<Chapter5/Figures/detection_output.png, id=1467, 388.45125pt x 285.31593pt>
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+File: Figures/RVlogoVecW.png Graphic file (type png)
+<use Figures/RVlogoVecW.png>
+Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 55.
+(pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
+File: Figures/RVlogoVecW.png Graphic file (type png)
+<use Figures/RVlogoVecW.png>
+Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 55.
+(pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
+[60]
+<Chapter5/Figures/detection_output.png, id=1500, 388.45125pt x 285.31593pt>
 File: Chapter5/Figures/detection_output.png Graphic file (type png)
 <use Chapter5/Figures/detection_output.png>
 Package pdftex.def Info: Chapter5/Figures/detection_output.png  used on input line 60.
@@ -2495,14 +2556,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
-Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 65.
+Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 88.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
 File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
-Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 65.
+Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 88.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
-[55]
-<Chapter5/Figures/tracking_output.png, id=1486, 525.46312pt x 76.03406pt>
+[61 <./Chapter5/Figures/detection_output.png>]
+<Chapter5/Figures/tracking_output.png, id=1523, 525.46312pt x 76.03406pt>
 File: Chapter5/Figures/tracking_output.png Graphic file (type png)
 <use Chapter5/Figures/tracking_output.png>
 Package pdftex.def Info: Chapter5/Figures/tracking_output.png  used on input line 94.
@@ -2517,14 +2578,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
-Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 97.
+Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 125.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
 File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
-Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 97.
+Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 125.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
-[56 <./Chapter5/Figures/detection_output.png>]
-<Chapter5/Figures/prediction_output.png, id=1508, 578.16pt x 433.62pt>
+[62 <./Chapter5/Figures/tracking_output.png>]
+<Chapter5/Figures/prediction_output.png, id=1551, 578.16pt x 433.62pt>
 File: Chapter5/Figures/prediction_output.png Graphic file (type png)
 <use Chapter5/Figures/prediction_output.png>
 Package pdftex.def Info: Chapter5/Figures/prediction_output.png  used on input line 130.
@@ -2545,7 +2606,7 @@ File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
 Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 134.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
-[57 <./Chapter5/Figures/tracking_output.png>]
+[63]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2555,14 +2616,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
-Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 167.
+Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 165.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
 File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
-Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 167.
+Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 165.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
-[58 <./Chapter5/Figures/prediction_output.png>]
-<Chapter5/Figures/collision_alert.png, id=1531, 1443.14156pt x 712.16063pt>
+[64 <./Chapter5/Figures/prediction_output.png>]
+<Chapter5/Figures/collision_alert.png, id=1572, 1443.14156pt x 712.16063pt>
 File: Chapter5/Figures/collision_alert.png Graphic file (type png)
 <use Chapter5/Figures/collision_alert.png>
 Package pdftex.def Info: Chapter5/Figures/collision_alert.png  used on input line 172.
@@ -2577,19 +2638,35 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
-Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 207.
+Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 180.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
 File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
-Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 207.
+Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 180.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
-[59 <./Chapter5/Figures/collision_alert.png>]
-<Chapter5/Figures/dashboard_full.png, id=1550, 1443.14156pt x 712.16063pt>
+[65 <./Chapter5/Figures/collision_alert.png>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+File: Figures/RVlogoVecW.png Graphic file (type png)
+<use Figures/RVlogoVecW.png>
+Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 217.
+(pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
+File: Figures/RVlogoVecW.png Graphic file (type png)
+<use Figures/RVlogoVecW.png>
+Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 217.
+(pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
+[66]
+<Chapter5/Figures/dashboard_full.png, id=1596, 1443.14156pt x 712.16063pt>
 File: Chapter5/Figures/dashboard_full.png Graphic file (type png)
 <use Chapter5/Figures/dashboard_full.png>
 Package pdftex.def Info: Chapter5/Figures/dashboard_full.png  used on input line 220.
 (pdftex.def)             Requested size: 430.31812pt x 212.34583pt.
-<Chapter5/Figures/mmsi_id.png, id=1554, 1166.10657pt x 679.78969pt>
+<Chapter5/Figures/mmsi_id.png, id=1600, 1166.10657pt x 679.78969pt>
 File: Chapter5/Figures/mmsi_id.png Graphic file (type png)
 <use Chapter5/Figures/mmsi_id.png>
 Package pdftex.def Info: Chapter5/Figures/mmsi_id.png  used on input line 231.
@@ -2604,14 +2681,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
-Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 234.
+Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 235.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
 File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
-Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 234.
+Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 235.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
-[60 <./Chapter5/Figures/dashboard_full.png>]
-<Chapter5/Figures/ais_fusion_map.png, id=1568, 1444.64719pt x 729.47531pt>
+[67 <./Chapter5/Figures/dashboard_full.png>]
+<Chapter5/Figures/ais_fusion_map.png, id=1613, 1444.64719pt x 729.47531pt>
 File: Chapter5/Figures/ais_fusion_map.png Graphic file (type png)
 <use Chapter5/Figures/ais_fusion_map.png>
 Package pdftex.def Info: Chapter5/Figures/ais_fusion_map.png  used on input line 240.
@@ -2632,7 +2709,7 @@ File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
 Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 252.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
-[61 <./Chapter5/Figures/mmsi_id.png> <./Chapter5/Figures/ais_fusion_map.png>]
+[68 <./Chapter5/Figures/mmsi_id.png> <./Chapter5/Figures/ais_fusion_map.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2642,13 +2719,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
-Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 314.
+Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 310.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
 File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
-Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 314.
+Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 310.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
-[62]
+[69]
 Underfull \hbox (badness 10000) in paragraph at lines 365--365
 []|\OT1/cmr/m/n/9 Farhadi et al. [[]54[]]
  []
@@ -2663,7 +2740,6 @@ Underfull \hbox (badness 2932) in paragraph at lines 365--365
 []|\OT1/cmr/m/n/9 Abualhaija et al. [[]56[]]
  []
 
-)
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2673,13 +2749,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
-Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 201.
+Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 371.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
 File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
-Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 201.
+Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 371.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
-[63] (./Chapter9/09_Conclusion.tex
+[70]) (Chapter9/09_Conclusion.tex
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2695,7 +2771,7 @@ File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
 Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 1.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
-[64]
+[71]
 Chapter 9.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2712,7 +2788,7 @@ File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
 Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 1.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
-[65
+[72
 
 
 ]
@@ -2725,15 +2801,31 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
-Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 25.
+Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 17.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
 File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
-Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 25.
+Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 17.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
-[66
+[73
 
-]) (./Appendix/ApndxA.tex
+]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+File: Figures/RVlogoVecW.png Graphic file (type png)
+<use Figures/RVlogoVecW.png>
+Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 33.
+(pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
+File: Figures/RVlogoVecW.png Graphic file (type png)
+<use Figures/RVlogoVecW.png>
+Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 33.
+(pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
+[74]) (Appendix/ApndxA.tex
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2749,23 +2841,7 @@ File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
 Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 1.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
-[67]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-File: Figures/RVlogoVecW.png Graphic file (type png)
-<use Figures/RVlogoVecW.png>
-Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 1.
-(pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
-File: Figures/RVlogoVecW.png Graphic file (type png)
-<use Figures/RVlogoVecW.png>
-Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 1.
-(pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
-[68]
+[75]
 Appendix A.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2782,10 +2858,10 @@ File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
 Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 1.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
-[69
+[76
 
 
-]) (./Appendix/ApndxB.tex
+]) (Appendix/ApndxB.tex
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2801,7 +2877,7 @@ File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
 Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 1.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
-[70
+[77
 
 ]
 Appendix B.
@@ -2820,10 +2896,10 @@ File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
 Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 1.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
-[71
+[78
 
 
-]) (./Appendix/ApndxC.tex
+]) (Appendix/ApndxC.tex
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2839,7 +2915,7 @@ File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
 Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 1.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
-[72
+[79
 
 ]
 Appendix C.
@@ -2858,18 +2934,98 @@ File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
 Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 1.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
-[73
+[80
 
 
 ]
+File: Chapter5/Figures/dashboard_full.png Graphic file (type png)
+<use Chapter5/Figures/dashboard_full.png>
+Package pdftex.def Info: Chapter5/Figures/dashboard_full.png  used on input line 15.
+(pdftex.def)             Requested size: 430.31812pt x 212.34583pt.
+File: Chapter5/Figures/detection_output.png Graphic file (type png)
+<use Chapter5/Figures/detection_output.png>
+Package pdftex.def Info: Chapter5/Figures/detection_output.png  used on input line 21.
+(pdftex.def)             Requested size: 430.31812pt x 316.07317pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+File: Figures/RVlogoVecW.png Graphic file (type png)
+<use Figures/RVlogoVecW.png>
+Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 24.
+(pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
+File: Figures/RVlogoVecW.png Graphic file (type png)
+<use Figures/RVlogoVecW.png>
+Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 24.
+(pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
+[81
+
+]
+File: Chapter5/Figures/ais_fusion_map.png Graphic file (type png)
+<use Chapter5/Figures/ais_fusion_map.png>
+Package pdftex.def Info: Chapter5/Figures/ais_fusion_map.png  used on input line 27.
+(pdftex.def)             Requested size: 430.31812pt x 217.28595pt.
 \g__tcobox_out_iow=\write12
 \openout12 = `MajorProjectReport.listing'.
 
- (/usr/local/texlive/2025/texmf-dist/tex/latex/listings/lstlang1.sty
+ (C:\Users\91944\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2025/11/14 1.11b listings language file
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/listings/lstlang2.sty
-File: lstlang2.sty 2025/11/14 1.11b listings language file
-) (./MajorProjectReport.listing))
+) (MajorProjectReport.listing)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+File: Figures/RVlogoVecW.png Graphic file (type png)
+<use Figures/RVlogoVecW.png>
+Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 89.
+(pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
+File: Figures/RVlogoVecW.png Graphic file (type png)
+<use Figures/RVlogoVecW.png>
+Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 89.
+(pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
+[82]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+File: Figures/RVlogoVecW.png Graphic file (type png)
+<use Figures/RVlogoVecW.png>
+Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 89.
+(pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
+File: Figures/RVlogoVecW.png Graphic file (type png)
+<use Figures/RVlogoVecW.png>
+Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 89.
+(pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
+[83]
+\openout12 = `MajorProjectReport.listing'.
+
+ (MajorProjectReport.listing)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+File: Figures/RVlogoVecW.png Graphic file (type png)
+<use Figures/RVlogoVecW.png>
+Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 151.
+(pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
+File: Figures/RVlogoVecW.png Graphic file (type png)
+<use Figures/RVlogoVecW.png>
+Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 151.
+(pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
+[84])
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2885,9 +3041,7 @@ File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
 Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 211.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
-[74
-
-]
+[85]
 File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
 Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 216.
@@ -2896,7 +3050,7 @@ File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
 Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 216.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
- [75
+ [86
 
 
 
@@ -2916,7 +3070,7 @@ File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
 Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 216.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
-[76]
+[87]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2932,7 +3086,7 @@ File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
 Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 216.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
-[77]
+[88]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2948,7 +3102,7 @@ File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
 Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 216.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
-[78]
+[89]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2964,7 +3118,7 @@ File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
 Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 216.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
-[79]
+[90]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2980,7 +3134,7 @@ File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
 Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 216.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
-[80]
+[91]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2996,32 +3150,30 @@ File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
 Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 219.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
-[81] (./MajorProjectReport.aux <Reading QR code for "https://github.com/ShashankShenoy/Major_Project" at level 4-M from aux file.>
+[92] (MajorProjectReport.aux <Reading QR code for "https://github.com/ShashankShenoy/Major_Project" at level 4-M from aux file.>
 )
  ***********
 LaTeX2e <2025-11-01>
-L3 programming layer <2025-11-06>
+L3 programming layer <2026-04-28>
  ***********
 Package rerunfilecheck Info: File `MajorProjectReport.out' has not changed.
-(rerunfilecheck)             Checksum: 23410E29EAA80E347EC745EC9C5E3A9F;18305.
+(rerunfilecheck)             Checksum: 462CB9CB8E474056D253A0E2CA119EA9;19897.
 Package logreq Info: Writing requests to 'MajorProjectReport.run.xml'.
 \openout1 = `MajorProjectReport.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 49088 strings out of 467538
- 982576 string characters out of 5419552
- 1896876 words of memory out of 8000000
- 76881 multiletter control sequences out of 15000+600000
+ 49347 strings out of 467683
+ 995903 string characters out of 5414721
+ 1904130 words of memory out of 5000000
+ 77203 multiletter control sequences out of 15000+600000
  649833 words of font info for 122 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 104i,16n,121p,2546b,2622s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on MajorProjectReport.pdf (100 pages, 8027389 bytes).
+ 104i,16n,121p,2599b,2625s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\91944\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\91944\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx1095.pk><C:/Users/91944/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/91944/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/91944/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx6.pfb><C:/Users/91944/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx7.pfb><C:/Users/91944/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/91944/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/91944/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/91944/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/91944/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/91944/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/91944/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/91944/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/91944/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/91944/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/91944/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/91944/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/91944/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/91944/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/91944/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/91944/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/91944/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/91944/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Users/91944/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on MajorProjectReport.pdf (110 pages, 8290512 bytes).
 PDF statistics:
- 2048 PDF objects out of 2073 (max. 8388607)
- 1817 compressed objects within 19 object streams
- 433 named destinations out of 1000 (max. 500000)
- 988 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2195 PDF objects out of 2487 (max. 8388607)
+ 525 named destinations out of 1000 (max. 500000)
+ 1028 words of extra memory for PDF output out of 10000 (max. 10000000)
 
