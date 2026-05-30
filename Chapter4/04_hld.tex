@@ -1,10 +1,11 @@
 \chapter{High Level Design}
 
 \section{Design Considerations}
-\subsection{General Considerations}
 
+\subsection{General System Considerations}
+Designing a surveillance architecture for maritime environments presents unique engineering challenges that are rarely encountered in standard urban traffic monitoring. The sheer scale of the environment means the system must reliably handle vessels of vastly different sizes, ranging from massive cargo ships occupying the entire frame to small fishing skiffs that appear as mere specks on the horizon. Furthermore, the operational environment dictates strict latency constraints; a warning generated several minutes after a vessel deviates from its path is effectively useless. Therefore, ensuring real-time or near-real-time throughput across the entire processing pipeline was the foremost design priority.
 
-The complete system integrates several discrete operational phases: \gls{ais} acquisition, computer vision-based detection, identity tracking, trajectory forecasting, collision analysis, and real-time visualization. Figure~\ref{fig:architecture} illustrates how these components interact to form a cohesive surveillance network.
+Beyond speed, the system was designed with resilience in mind. Port authorities and coastal guards require continuous oversight, meaning the software architecture must gracefully handle interruptions. If an \gls{ais} data stream drops out---a common occurrence due to signal interference or deliberate transponder deactivation---the visual tracking module must be robust enough to maintain target locks autonomously. Figure~\ref{fig:architecture} illustrates the overarching structural relationship between these discrete operational phases, showing how raw video ingestion, computer vision-based detection, deep appearance tracking, and trajectory forecasting interact to form a unified, cohesive surveillance network.
 
 \begin{figure}[H]
 \centering
@@ -13,20 +14,32 @@ The complete system integrates several discrete operational phases: \gls{ais} ac
 \label{fig:architecture}
 \end{figure}
 
-\subsection{Development Methods}
-Iterative development and modular design principles were employed.
-\section{Architecture Strategies}
-\subsection{Programming Language}
-Python was selected for its extensive machine learning libraries including PyTorch and OpenCV.
-\subsection{Future Plans}
-Future versions aim to integrate radar data and expand to multi-camera spatial hand-offs.
-\section{System Architecture}
-\section{Data Flow Diagrams}
+\subsection{Development Methods and Modularity}
+To manage the complexity of integrating multiple deep learning models, we adopted an iterative development methodology paired with strict modular design principles. Rather than building a monolithic application where the detection logic is inextricably tangled with the prediction logic, each core function was compartmentalized into distinct micro-services or independent modules.
 
-To map the exchange of information across external entities and internal modules, the system architecture was modeled using Data Flow Diagrams (DFDs).
+This modularity serves two critical purposes. First, it allowed for isolated testing during the development phase; we could refine the YOLOv8 detection thresholds without risking breakage in the downstream tracking algorithms. Second, it ensures the system remains future-proof. Because the interfaces between modules are standardized, the underlying models can be swapped out as technology progresses. For example, if a more efficient tracking algorithm surpasses DeepSORT in the future, it can be integrated simply by conforming to the existing bounding-box input and track-ID output formats, leaving the rest of the pipeline untouched.
+
+\section{Architecture Strategies}
+
+\subsection{Technology Stack and Language Selection}
+The primary programming language chosen for the development of this architecture was Python. While compiled languages like C++ offer theoretical advantages in raw execution speed, Python is the undisputed industry standard for deep learning research and deployment, largely due to its vast ecosystem of mature, highly optimized libraries. 
+
+Specifically, PyTorch was selected as the foundational machine learning framework. Its dynamic computation graph and native support for CUDA-accelerated GPU processing were indispensable for achieving real-time inference speeds with both the YOLOv8 and \gls{lstm} networks. For handling the intensive task of raw video decoding and image matrix manipulation, OpenCV was utilized extensively. Its underlying C++ implementation ensures that pre-processing tasks, such as resizing frames and applying contrast enhancements, do not become a computational bottleneck. Finally, to render the complex analytical data intuitively for end-users, we integrated libraries like Folium and PyQt, which allow for the creation of interactive, geographically aware dashboards.
+
+\subsection{Pathways for Future Extensibility}
+While the current architecture delivers a robust proof-of-concept for vision-based predictive monitoring, the design explicitly accounts for future expansion. Current operations are limited to single-camera, optical video feeds. However, the data ingestion layer was structured to eventually accommodate multimodal sensor fusion. Future iterations are planned to ingest inputs from long-wave infrared (LWIR) cameras for nighttime operations, as well as raw radar returns to provide depth estimation across the Z-axis. Additionally, the tracking logic has been conceptually mapped to support multi-camera spatial hand-offs, which would allow the system to pass a tracked vessel's identity seamlessly from one camera's field of view to the next, enabling continuous monitoring across an entire sprawling port complex.
+
+\section{System Architecture Overview}
+The system architecture follows a sequential, feed-forward pipeline. It begins at the data ingestion layer, which continuously pulls frames from the live camera feed and synchronizes them with incoming \gls{ais} telemetry when available. This raw data is then pushed into the inference engine. Here, the YOLOv8 object detector isolates the vessels and generates tight bounding boxes. These localized regions of interest are immediately passed to the DeepSORT tracking module, which uses a pre-trained OSNet re-identification network to extract deep visual features from the vessel's hull, assigning a persistent unique identifier (ID) to each ship.
+
+Once tracked, the system extracts the center coordinates of the bounding boxes frame-by-frame. This sequential coordinate data is transformed mathematically to calculate real-world velocity and heading vectors. This historical movement tensor is then fed into the \gls{bilstm} trajectory forecasting module, which outputs a predicted pathway for the next several minutes. The final layer of the architecture is the presentation module, which overlays the current bounding boxes, IDs, and predicted trajectory arcs directly onto the live video feed, while simultaneously plotting the data onto a live geospatial map.
+
+\section{Data Flow Modeling}
+
+To rigorously define the exchange of information across external entities and internal modules, the system's operational logic was mapped using standardized Data Flow Diagrams (DFDs).
 
 \subsection{Context and Level-1 Diagrams}
-The Level-0 Context Diagram (Figure~\ref{fig:dfd0}) provides a macro-level view of how users, camera feeds, and \gls{ais} streams interact with the central surveillance system.
+The Level-0 Context Diagram, presented in Figure~\ref{fig:dfd0}, establishes the system boundaries. It provides a macro-level view illustrating how external entities interact with our central surveillance platform. On the input side, these entities include the physical coastal cameras providing the video stream and the satellite/VHF receivers supplying the \gls{ais} data. On the output side, the primary entity is the end-user or port operator, who receives the aggregated threat alerts and visual dashboards.
 
 \begin{figure}[!htbp]
 \centering
@@ -35,7 +48,7 @@ The Level-0 Context Diagram (Figure~\ref{fig:dfd0}) provides a macro-level view 
 \label{fig:dfd0}
 \end{figure}
 
-Expanding on this, the Level-1 DFD (Figure~\ref{fig:dfd1}) details the internal routing of this data. It illustrates how raw video frames are passed through detection and tracking, transformed into geographic coordinates, fused with telemetry, and finally routed into the \gls{bilstm} prediction and collision analysis modules before reaching the user dashboard.
+Expanding significantly on this high-level view, the Level-1 DFD (Figure~\ref{fig:dfd1}) unpacks the central system bubble to reveal the internal routing and transformation of data. It traces the exact path a raw video frame takes: entering the preprocessing buffer, moving into the detection node to generate spatial coordinates, and passing into the tracking database to establish temporal continuity. It further illustrates how these localized pixel coordinates are mathematically transformed into real-world geographic coordinates via camera calibration matrices. Crucially, the diagram shows the convergence point where this visual telemetry is fused with incoming \gls{ais} data, creating the comprehensive historical tensor that drives the \gls{bilstm} prediction and collision analysis modules.
 
 \begin{figure}[!htbp]
 \centering
@@ -45,4 +58,4 @@ Expanding on this, the Level-1 DFD (Figure~\ref{fig:dfd1}) details the internal 
 \end{figure}
 
 \section{Summary}
-This chapter presented the High Level Design including system architecture and data flow diagrams.
+This chapter detailed the High Level Design of the proposed maritime surveillance platform. By prioritizing modularity, real-time computational efficiency, and robust data flow, the architectural framework ensures that the complex deep learning models for detection, tracking, and prediction can operate synchronously without bottlenecking. Furthermore, the extensive use of Data Flow Diagrams provides a clear roadmap of how raw sensor inputs are systematically transformed into actionable, predictive intelligence for port operators.

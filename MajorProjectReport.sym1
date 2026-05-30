@@ -1,0 +1,29 @@
+\glossarysection[\glossarytoctitle]{\glossarytitle}\glossarypreamble
+\begin{theglossary}\glossaryheader
+\glsgroupheading{glssymbols}\relax \glsresetentrylist %
+\glossentry{lon}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{ix}}}%
+\glossentry{lat}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{ix}}}%
+\glossentry{tau}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{ix}}}%
+\glossentry{cogsym}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{ix}}}%
+\glossentry{sogsym}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{ix}}}\glsgroupskip
+\glsgroupheading{A}\relax \glsresetentrylist %
+\glossentry{adeeq}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{ix}}}\glsgroupskip
+\glsgroupheading{D}\relax \glsresetentrylist %
+\glossentry{dcpaeq}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{ix}}}\glsgroupskip
+\glsgroupheading{F}\relax \glsresetentrylist %
+\glossentry{fdeeq}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{ix}}}\glsgroupskip
+\glsgroupheading{I}\relax \glsresetentrylist %
+\glossentry{ioueq}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{ix}}}\glsgroupskip
+\glsgroupheading{T}\relax \glsresetentrylist %
+\glossentry{tcpaeq}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{ix}}}%
+\end{theglossary}\glossarypostamble
