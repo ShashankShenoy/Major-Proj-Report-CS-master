@@ -1,0 +1,44 @@
+\chapter{Conclusion}
+
+\section{Summary of Work}
+
+% ─────────────────────────────────────────────────────────────────────────────
+
+Managing traffic in heavily congested waterways like the Singapore Strait requires an intelligent system capable of seeing everything—not just ships that voluntarily broadcast their positions. From the outset, this project aimed to build a pipeline capable of detecting every vessel in a video feed, tracking their unique identities across complex occlusions, projecting their future trajectories, and preemptively alerting operators to collision risks. 
+
+I architected this solution as a modular, six-stage Python pipeline. The system leverages a \gls{yolov8} network for anchor-free vessel detection and couples it with a \gls{deepocsort} tracking algorithm that uses \gls{osnet} visual embeddings to memorize how a ship looks, allowing the tracker to re-identify a vessel even after it passes behind an obstacle. To anchor these pixels to the real world, the pipeline mathematically projects camera coordinates onto a geospatial map and fuses them with live \gls{ais} data using the Haversine formula. Finally, a \gls{bilstm} neural network predicts where the vessels are heading, feeding directly into a \gls{cpa} collision detection module that warns operators of impending disasters.
+
+The empirical results from the \gls{smd} test sequences prove that MARVIS easily fulfills its design objectives. The \gls{yolov8} detector achieved an outstanding mAP\textsubscript{50} of 0.91, proving its ability to adapt to varying boat scales and lighting conditions. In tracking, \gls{deepocsort} maintained a \gls{mota} score of 87.4\% and suffered only 8 identity switches throughout the entire testing phase. 
+
+Predictively, the \gls{lstm} neural network dramatically outperformed traditional kinematic models, achieving an \gls{ade} of 44.90 pixels—a massive 28.0\% improvement that is particularly crucial when vessels execute non-linear turning maneuvers. Leveraging this precision, the \gls{cpa} collision detector hit a 0.92 precision rate for critical-risk events ($<50$\,m), providing operators with highly accurate, actionable warnings. Ultimately, these results confirm that a fully integrated, deep-learning maritime surveillance suite can be successfully built using open-source tools and deployed on commodity hardware.
+
+% ─────────────────────────────────────────────────────────────────────────────
+\section{Limitations}
+While the system is robust, accurate mapping heavily depends on exact camera calibration parameters, and extreme weather degrades YOLOv8 detection accuracy.
+\section{Future Enhancement}
+
+% ─────────────────────────────────────────────────────────────────────────────
+
+While the current MARVIS implementation is highly effective, there is ample room to expand its capabilities for professional deployment.
+
+First, the geospatial mapping currently relies on a linear field-of-view approximation. This works perfectly for a 2\,km surveillance radius but inherently loses accuracy at longer ranges due to Earth's curvature. A natural next step would be to upgrade this math to a full homographic transformation utilizing \gls{gps} ground-control points. If the system were mounted on a drone, it could theoretically pull the necessary calibration data directly from the drone's telemetry metadata, completely eliminating the need for manual setup.
+
+Secondly, the collision detection logic currently assumes ships will maintain their current velocity. A much more advanced approach would be to feed the \gls{lstm}'s 20-step predicted curve directly into the \gls{cpa} mathematics. This would empower the system to anticipate collisions between ships that appear safe now but are actively steering onto a converging course. 
+
+From a machine learning perspective, the \gls{lstm} was trained exclusively on traffic patterns in the Singapore Strait. To deploy MARVIS globally, the model would need transfer learning on datasets from vastly different ports. Furthermore, because human behavior on the water is inherently unpredictable, upgrading the trajectory predictor to a generative model (like a CVAE or GAN) would allow the system to output a probability heat-map of where a ship might go, rather than a single definitive line.
+
+Finally, hardware optimization is critical for the future. Deploying MARVIS directly onto an edge device like an \gls{nvidia} Jetson Nano would require quantizing the \gls{yolov8} weights down to \gls{int8} precision. Moving the computation to the camera itself would drastically reduce latency and allow the system to operate autonomously even if the central server loses its network connection.
+
+% ─────────────────────────────────────────────────────────────────────────────
+\section{Learning Outcomes}
+
+% ─────────────────────────────────────────────────────────────────────────────
+
+Building MARVIS from scratch proved to be an invaluable deep dive into full-stack AI engineering. Rather than isolating a single algorithm, I was forced to design a production-grade software pipeline where computer vision, sequence modeling, and geospatial mathematics all had to execute in parallel without bottlenecking each other. 
+
+I gained a profound hands-on understanding of anchor-free object detection through fine-tuning \gls{yolov8}. I learned how to balance confidence thresholds to suppress false positives caused by sun glare, and I discovered firsthand how critical appearance-based \gls{reid} embeddings are for maintaining persistent tracking in crowded environments. 
+
+Developing the \gls{bilstm} trajectory predictor was a masterclass in sequence modeling. Designing the custom loss function taught me that neural networks need penalties for physical impossibilities—like sudden, erratic acceleration—in order to produce realistic paths. Furthermore, mathematically fusing pixel coordinates with live \gls{ais} data illuminated the massive operational gap between what a camera sees and what a radar reports.
+
+Lastly, tying the entire backend together with FastAPI, WebSockets, and a live Streamlit dashboard bridged the gap between raw data processing and actual user experience. I learned how to handle asynchronous data streams and prevent UI rendering from freezing the vision pipeline. Ultimately, managing this complex codebase through Git version control ensured the project remained stable while evolving rapidly, solidifying my software engineering fundamentals alongside my AI research skills.\vspace{1cm}
+The successful implementation and evaluation of the proposed system demonstrate its practical applicability and effectiveness.

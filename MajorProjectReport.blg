@@ -1,0 +1,101 @@
+This is BibTeX, Version 0.99e
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: MajorProjectReport.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: biblatex.bst
+Reallocating 'name_of_file' (item size: 1) to 23 items.
+Reallocating 'name_of_file' (item size: 1) to 11 items.
+Reallocating 'glb_str_end' (item size: 4) to 20 items.
+Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
+Reallocating 'global_strs' (item size: 1) to 4000000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'field_info' (item size: 4) to 12980 items.
+Database file #1: MajorProjectReport-blx.bib
+Database file #2: references.bib
+Warning--string name "june" is undefined
+--line 453 of file references.bib
+Warning--string name "june" is undefined
+--line 1127 of file references.bib
+Warning--string name "july" is undefined
+--line 1149 of file references.bib
+Warning--string name "sept" is undefined
+--line 1171 of file references.bib
+Warning--string name "sept" is undefined
+--line 1193 of file references.bib
+Warning--string name "june" is undefined
+--line 1215 of file references.bib
+Warning--string name "july" is undefined
+--line 1237 of file references.bib
+Warning--string name "june" is undefined
+--line 1519 of file references.bib
+Warning--string name "sept" is undefined
+--line 1547 of file references.bib
+Warning--I didn't find a database entry for "Li2024"
+Warning--I didn't find a database entry for "Li2025"
+Warning--I didn't find a database entry for "Jian2024"
+Warning--I didn't find a database entry for "Jian2025"
+Warning--I didn't find a database entry for "Yuan2026"
+Warning--I didn't find a database entry for "Hao2025"
+Warning--I didn't find a database entry for "Ma2024"
+Warning--I didn't find a database entry for "Ma2026"
+Warning--I didn't find a database entry for "Zhang2024Survey"
+Warning--I didn't find a database entry for "shao2023"
+Warning--I didn't find a database entry for "farhadi2022"
+Warning--I didn't find a database entry for "jiang2023"
+Warning--I didn't find a database entry for "abualhaija2021"
+Biblatex version: 3.21
+Reallocating 'wiz_functions' (item size: 4) to 9000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+You've used 44 entries,
+            6402 wiz_defined-function locations,
+            1536 strings with 20716 characters,
+and the built_in function-call counts, 484213 in all, are:
+= -- 41505
+> -- 7719
+< -- 2200
++ -- 17407
+- -- 3474
+* -- 32845
+:= -- 57857
+add.period$ -- 0
+call.type$ -- 44
+change.case$ -- 1344
+chr.to.int$ -- 234
+cite$ -- 86
+duplicate$ -- 53331
+empty$ -- 37924
+format.name$ -- 3848
+if$ -- 95178
+int.to.chr$ -- 0
+int.to.str$ -- 133
+missing$ -- 0
+newline$ -- 1993
+num.names$ -- 2775
+pop$ -- 16958
+preamble$ -- 1
+purify$ -- 1751
+quote$ -- 0
+skip$ -- 10773
+stack$ -- 0
+substring$ -- 73954
+swap$ -- 8652
+text.length$ -- 1348
+text.prefix$ -- 2
+top$ -- 1
+type$ -- 1484
+warning$ -- 0
+while$ -- 7442
+width$ -- 0
+write$ -- 1950
+(There were 22 warnings)

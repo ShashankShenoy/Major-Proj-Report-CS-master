@@ -1,0 +1,108 @@
+\chapter{Detailed Design}
+
+\section{Structure Chart}
+
+
+The complete system integrates several discrete operational phases: \gls{ais} acquisition, computer vision-based detection, identity tracking, trajectory forecasting, collision analysis, and real-time visualization. Figure~\ref{fig:architecture} illustrates how these components interact to form a cohesive surveillance network.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\textwidth]{Chapter3/Figures/system_architecture.png}
+\caption{Overall Architecture of Proposed AI-Based Maritime Surveillance System}
+\label{fig:architecture}
+\end{figure}
+
+\subsection{Design Specifications}
+To ensure robust real-time performance, the system is engineered to strict technical parameters. It requires a continuous video feed with a minimum resolution of $1280 \times 720$ pixels, targeting a processing throughput of 30 frames per second. The underlying \gls{yolov8} detection module operates with a confidence threshold of 0.4 and utilizes an \gls{iou} threshold of 0.3 for \gls{nms}, which balances sensitivity against the suppression of false positives. Downstream, the \gls{deepocsort} tracker uses an \gls{osnet} backbone with a cosine similarity metric for appearance-based \gls{reid}. To prevent the proliferation of ghost tracks, the tracker is configured with a maximum track age of 30 frames, a minimum confirmation hit count of 3, and a detection threshold of 0.3.
+
+For the predictive modeling phase, the \gls{lstm} module processes a historical sequence of 50 timesteps to forecast the subsequent 20 positions of each vessel. During geospatial mapping, pixel coordinates are mapped to geographic latitude and longitude via a homographic transformation matrix (computed via \texttt{cv2.findHomography} using ground-control points). When such points are unavailable, an \gls{fov} linear approximation serves as a reliable fallback. The derived \gls{gps} positions are smoothed using a per-vessel constant-velocity Kalman filter to mitigate detection jitter. Finally, to ensure physical validity, all forecasted trajectories are validated against a geographic water-area filter. The entire pipeline is implemented in Python, leveraging \gls{pytorch} for deep learning and \gls{opencv} for frame processing, with full support for \gls{nvidia} \gls{cuda} hardware acceleration.
+
+\subsubsection{Use Case Analysis}
+The operational interaction between end-users and the surveillance framework is mapped out in the use case diagram (Figure~\ref{fig:use_case}). It highlights the primary user flows, spanning from raw video acquisition and tracking through to the visualization of predicted trajectories.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\textwidth]{Chapter3/Figures/fig3_use_case_diagram.png}
+\caption{Use Case Diagram of the Maritime Surveillance System}
+\label{fig:use_case}
+\end{figure}
+
+\subsection{Dataset Analysis and Preprocessing}
+The system relies on two specialized datasets: one for fine-tuning the \gls{yolov8} detector, and another for training the \gls{lstm} predictive model. Both were carefully selected based on their environmental diversity, annotation quality, and relevance to maritime scenarios.
+
+For vessel detection, the \textit{Kaggle Ships in Google Earth} dataset (sourced via Roboflow) was utilized. This dataset provides a vast collection of aerial and satellite imagery annotated with \gls{yolo}-formatted bounding boxes. Its diversity in sea states, illumination, and occlusion scenarios makes it highly representative of real-world surveillance environments. The YOLOv8l variant was fine-tuned on this dataset for 70 epochs at a $640 \times 640$ resolution.
+
+Conversely, the \gls{lstm} trajectory model was trained on the \gls{smd}. Captured via drone over the heavily trafficked Singapore Strait, the \gls{smd} provides ground-truth vessel tracks in \texttt{.mat} format. Trajectory centroids are extracted by determining the midpoint of each active bounding box:
+\begin{equation}
+    x_c = \frac{x_1 + x_2}{2}, \quad y_c = \frac{y_1 + y_2}{2}
+    \label{eq:gps_conversion}
+\end{equation}
+To ensure sufficient historical data for the \gls{lstm} input window, only trajectories spanning a minimum of 50 frames are retained. 
+
+During preprocessing, a sliding window technique (with a stride of 1) divides the raw centroid sequences into a 50-timestep input history and a 20-timestep prediction target. To standardize the inputs, positional coordinates are normalized against the video dimensions:
+\begin{equation}
+    \hat{x} = \frac{x}{1920}, \quad \hat{y} = \frac{y}{1080}
+    \label{eq:lat_offset}
+\end{equation}
+Per-frame velocity components are then computed as the first-order differences of these normalized positions:
+\begin{equation}
+    v_x^{(t)} = \hat{x}^{(t)} - \hat{x}^{(t-1)}, \quad 
+    v_y^{(t)} = \hat{y}^{(t)} - \hat{y}^{(t-1)}
+    \label{eq:haversine}
+\end{equation}
+This yields an input feature vector $\mathbf{f}^{(t)} \in \mathbb{R}^4$ at each timestep. The processed dataset is subsequently split 80:20 into training and validation sets using a fixed random seed.
+
+\subsubsection{Evaluation Protocol}
+The trajectory prediction model is evaluated using two standard metrics. The \textit{Average Displacement Error} (\gls{ade}) computes the mean Euclidean distance between the predicted and actual positions across all forecasted timesteps:
+\begin{equation}
+    \text{ADE} = \frac{1}{K} \sum_{k=1}^{K} \sqrt{(\hat{x}_k - x_k)^2 + (\hat{y}_k - y_k)^2}
+    \label{eq:LSTM1}
+\end{equation}
+Meanwhile, the \textit{Final Displacement Error} (\gls{fde}) assesses accuracy exclusively at the final predicted timestep:
+\begin{equation}
+    \text{FDE} = \sqrt{(\hat{x}_K - x_K)^2 + (\hat{y}_K - y_K)^2}
+    \label{eq:LSTM2}
+\end{equation}
+These metrics are compared against a kinematic linear baseline to quantify the percentage improvement provided by the \gls{lstm}.
+
+\subsection{Algorithmic Selection}
+
+The selection of the core algorithms—\gls{yolov8} for detection, \gls{deepocsort} for tracking, and \gls{lstm} for prediction—was driven by comparative benchmarking against alternative architectures.
+
+\gls{yolov8} outperformed other YOLO variants primarily due to its anchor-free detection head and decoupled classification branches. In maritime environments, the aspect ratios of vessels vary wildly depending on the camera angle; an anchor-free design eliminates the need to predefine these ratios. Furthermore, its optimized feature pyramid network excels at multi-scale aggregation, allowing the system to detect massive cargo ships and tiny distant fishing boats simultaneously.
+
+For tracking, motion-only algorithms like \gls{sort} were rejected because they rely solely on spatial overlap (\gls{iou}). In busy ports where vessels frequently cross paths or become occluded, this leads to severe identity switching. \gls{deepocsort} solves this by incorporating an \gls{osnet} appearance descriptor, meaning the tracker remembers what a ship *looks like* as well as where it was heading. 
+
+Finally, \gls{lstm} networks were chosen over Kalman filters and \glspl{gru} for trajectory prediction. While Kalman filters are computationally lightweight, they assume linear, constant-velocity motion, which fails to capture the non-linear maneuvering of real ships. Although \glspl{gru} offer a lighter neural alternative, the dedicated gating mechanisms of an \gls{lstm}—specifically its separate input, forget, and output gates—proved vastly superior at retaining the long-range temporal dependencies required to predict complex nautical turns. 
+
+\subsection{Data Fusion and Processing Pipeline}
+The end-to-end processing pipeline, detailed in Figure~\ref{fig:pipeline}, systematically transforms raw sensor data into actionable surveillance intelligence. 
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth]{Chapter3/Figures/process_pipeline.jpeg}
+\caption{End-to-End Processing Pipeline of Proposed Maritime Surveillance System}
+\label{fig:pipeline}
+\end{figure}
+
+The core of this pipeline is the sensor fusion strategy, which leverages the complementary strengths of both data sources. Video tracking provides rapid, frame-by-frame updates but suffers from pixel-projection noise. Conversely, \gls{ais} data offers highly precise \gls{gps} coordinates and rich metadata (such as \gls{mmsi} and vessel name) but updates sparsely. To fuse them, the system employs a nearest-neighbor association using the Haversine great-circle distance. 
+
+When a vessel is detected on camera, its pixel position is converted to a geographic coordinate, smoothed via a Kalman filter, and compared against the live \gls{ais} registry. If an \gls{ais} record exists within a 5.5\,km radius, the visual track is enriched with the \gls{ais} metadata. If no match is found, the vessel is flagged as a \textit{dark vessel}—a potentially non-cooperative craft operating without an active transponder.
+
+\section{Module Description}
+
+Rather than treating the system as a monolith, the architecture is divided into specialized, interconnected modules that handle specific operational tasks:
+
+The \textbf{Data Acquisition Modules} manage the ingestion of raw information. The \gls{ais} receiver extracts identifiers and navigational telemetry, while the video processing module handles frame extraction and normalization for downstream computer vision tasks. 
+
+Following ingestion, the \textbf{Vision and Tracking Modules} take over. \gls{yolov8} generates bounding boxes around all visible ships, and \gls{deepocsort} assigns persistent identities to these detections, ensuring continuity even if a vessel briefly passes behind an obstruction.
+
+The data is then contextualized by the \textbf{Transformation and Fusion Modules}. Image-space coordinates are mathematically projected into real-world geographic coordinates. This allows the data fusion engine to pair the visual observations with the corresponding \gls{ais} telemetry, resulting in a highly reliable, metadata-enriched vessel track.
+
+Finally, the \textbf{Analytical Modules} generate actionable intelligence. The trajectory predictor uses a \gls{bilstm} network to forecast future movements based on historical patterns, while the collision detection system analyzes these forecasts to flag potential intersecting paths. All of this information is synthesized by the visualization module, which renders the bounding boxes, predicted paths, and alert notifications onto an intuitive operator dashboard.
+
+\section{Summary}
+
+This chapter detailed the foundational design and methodology of the proposed maritime surveillance system. Operational parameters were established and justified across the entire pipeline, from the confidence thresholds of the \gls{yolov8} detector to the memory buffer configurations of the \gls{deepocsort} tracker. The selection of these specific architectures was defended through comparative analysis against alternatives like \gls{sort} and \glspl{gru}, emphasizing the need for robust performance under challenging, real-world maritime conditions. 
+
+Furthermore, a rigorous mathematical framework was established to govern the pixel-to-coordinate transformations, Haversine fusion metrics, and \gls{lstm} error calculations (Equations~\ref{eq:lat_offset}--\ref{eq:LSTM2}). By routing the data through a carefully structured sequence of functional modules—from raw video ingestion through to collision analysis and dashboard rendering—the system provides a cohesive, scalable solution for intelligent vessel monitoring.

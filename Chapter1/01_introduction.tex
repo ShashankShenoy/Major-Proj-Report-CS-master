@@ -1,0 +1,61 @@
+\chapter{Introduction}
+
+\section{Overview of Project Topic}
+Global waterways are the primary arteries of international trade. With thousands of commercial, naval, and private vessels operating simultaneously, managing this traffic safely requires scalable and precise surveillance. Historically, maritime authorities have relied on radar, the \gls{ais}, and manual visual monitoring to track ship movements. Figure~\ref{fig:universe} illustrates a typical \gls{ais} interface used in current control rooms.
+
+While these traditional tools are reliable in controlled environments, they struggle under modern operational loads. Radar provides location data but lacks visual context for vessel classification. \gls{ais} is highly informative but relies entirely on voluntary transmission, rendering it useless for detecting non-cooperative or illegal vessels. Manual video surveillance, on the other hand, provides visual confirmation but simply cannot scale; operators cannot monitor dozens of camera feeds simultaneously without fatigue. More importantly, these methods are strictly reactive. They alert operators to events as they happen rather than predicting them.
+
+Recent advances in deep learning offer a way to move from reactive observation to proactive modeling. By integrating convolutional neural networks for object detection, advanced appearance-based trackers, and recurrent neural networks for temporal modeling, surveillance systems can now automatically detect, track, and forecast vessel movements. This project, titled \textit{Multi-Object Ship Tracking and Predictive Path Modeling of Maritime Surveillance}, proposes an end-to-end pipeline that achieves exactly this. The resulting system aligns directly with the United Nations \glspl{sdg} 9 (Industry, Innovation and Infrastructure) and \gls{sdg} 14 (Life Below Water) by promoting safer coastal management and better protection of marine environments.
+
+\begin{figure}[htb]
+\centering
+	\includegraphics[scale=1]{Chapter1/Figures/ais.jpeg}	
+	\caption{\glsentryshort{ais} System used in Maritime Surveillance }
+	\label{fig:universe}
+\end{figure}
+
+\section{Specific Details of the Project Topic}
+Coastal security and port management currently operate with tools that are fundamentally mismatched to the scale of modern maritime traffic. The inability to cross-reference visual data with \gls{ais} tracks allows illegal fishing, smuggling, and unauthorized border crossings to persist. The technical challenge of building a better system is significant: it requires not just localizing ships, but preserving their identities through occlusions and predicting their future paths under unpredictable environmental conditions. Beyond the technical engineering challenge, the real-world cost of inadequate surveillance---ranging from maritime accidents to the degradation of marine biodiversity---served as the primary motivation for developing an automated, vision-based forecasting tool.
+
+\section{Literature Review}
+The transition toward automated maritime surveillance has driven substantial research in recent years. While Chapter 2 provides a comprehensive analysis of the field, this section briefly contextualizes the specific gaps this project aims to fill.
+
+Current research largely treats ship detection and tracking as isolated problems. In the detection domain, lightweight architectures like EGM-\gls{yolov8} have successfully reduced computational overhead while maintaining high recall \parencite{Li2024, Li2025}. Similarly, optimizations of \gls{yolov8} on large-scale domain-specific datasets have proven that models can handle complex sea states and varying vessel orientations \parencite{Jian2024, Jian2025}. For adverse weather, specialized networks such as RT-FogNet demonstrate that reliable detection is possible even under severe fog or surface glare \parencite{Yuan2024, Yuan2026}. 
+
+However, detecting a ship in a single frame is only a partial solution. Tracking those vessels across dynamic scenes introduces issues like occlusion and identity switching. Researchers have attempted to solve this by pairing YOLOv7-tiny with StrongSORT \parencite{Hao2025} or by augmenting standard DeepSORT with Optical Character Recognition (OCR) to read hull numbers \parencite{Ma2024, Ma2026}. While \cite{Zhang2024Survey} and \cite{Zhang2025} correctly identify occlusion and scale variance as the primary hurdles in visual tracking, the proposed solutions often have operational limitations. For instance, relying on OCR fails immediately in low-visibility or long-range scenarios. 
+
+The most critical gap in the existing literature is the lack of a cohesive, predictive pipeline. Most systems either detect without tracking, or track without forecasting future movement \parencite{Hao2025, Zhang2025, Li2025, Jian2025, Ma2026, Yuan2026}. The proposed project addresses this directly by integrating robust \gls{yolov8} detection, appearance-based \gls{deepocsort} tracking, and \gls{lstm} trajectory prediction into a single system.
+
+\section{Problem Statement}
+Existing maritime monitoring frameworks depend heavily on cooperative transponder systems like \gls{ais} or unscalable manual video observation. These methods fail to provide persistent, visual, and predictive oversight over large coastal zones. Consequently, authorities are restricted to reactive measures rather than proactive intervention. There is a distinct engineering need for an automated system capable of detecting multiple non-cooperative ships in real-time, maintaining their identities through visual interruptions, and modeling their future trajectories to enable early decision-making in port management and coastal security.
+
+\section{Objectives}
+The objectives of the project are:
+\begin{enumerate}
+\item To engineer an intelligent surveillance pipeline using \gls{yolov8} for robust ship detection and \gls{deepocsort} for persistent multi-object tracking, ensuring reliable performance despite common maritime challenges like occlusion and water surface glare.
+\item To extract analytical trajectory data from the tracked vessels and utilize an \gls{lstm} neural network, coupled with Kalman filtering, to forecast future vessel paths and enable proactive monitoring.
+\item To develop a comprehensive visualization interface that overlays bounding boxes, unique tracking IDs, motion vectors, and predicted trajectories onto the video feed while simultaneously mapping the data geospatially.
+\end{enumerate}
+
+\section{Scope}
+The system is built upon several operational assumptions. The input is expected to be video footage from a static camera, typical of a coastal watchtower or port facility. It is assumed that vessels contrast sufficiently with the water to allow detection and that the underlying \gls{yolov8} model has been trained on a sufficiently diverse dataset. Trajectory predictions assume relatively smooth vessel dynamics, as sudden, erratic maneuvers degrade \gls{lstm} forecasting accuracy. Finally, real-time processing requires the deployment environment to include a dedicated GPU.
+
+The project is also bound by specific constraints. The current architecture accepts only visual video feeds and does not yet fuse external radar or live \gls{ais} data streams. Detection and tracking accuracy will naturally degrade under extreme weather conditions such as heavy rain or zero-visibility fog. The \gls{lstm} prediction module relies heavily on the length and quality of the historical track; shorter tracks yield less accurate forecasts. The system is designed for single-feed analysis and does not currently support spatial hand-offs between multiple overlapping cameras. Furthermore, accurate geospatial mapping relies strictly on correct camera calibration parameters to convert pixel coordinates into geographic locations.
+
+\section{Methodology}
+The proposed system relies on a modular, sequential pipeline designed for real-time inference. The process begins with the ingestion of raw maritime video feeds. Each frame is passed to a \gls{yolov8} model, which identifies and bounds the vessels. These detections are immediately forwarded to the \gls{deepocsort} tracking module. Using appearance-based \gls{reid} features and Kalman filter state estimations, the tracker assigns unique, persistent identities to each ship.
+
+As the vessels move, the system records their centroid coordinates. By analyzing inter-frame displacement, motion parameters like speed and heading are derived analytically. These historical coordinate sequences are then fed into an \gls{lstm} network that predicts the vessel's future trajectory. Finally, all the analytical outputs are overlaid onto the original video feed and mapped geospatially using Folium, providing operators with an intuitive, unified dashboard.
+
+\section{Organization of the Report}
+This report is structured as follows:
+\begin{itemize}
+\item Chapter 2 provides a detailed review of the existing literature surrounding maritime deep learning applications, identifying the specific research gaps this project targets.
+\item Chapter 3 presents the Software Requirements Specification (SRS), detailing the problem statement and objectives.
+\item Chapter 4 outlines the High Level Design (HLD) of the proposed system architecture.
+\item Chapter 5 presents the Detailed Design, including functional modules and logic., breaking down the pipeline from video ingestion and \gls{yolov8} detection through to \gls{lstm} trajectory modeling.
+\item Chapter 6 details the technical implementation, including dataset preparation, model training parameters, and the software frameworks used for development.
+\item Chapter 7 discusses the Software Testing protocols and experimental setup.
+\item Chapter 8 presents the Experimental Results, evaluating detection accuracy, tracking robustness, and predictive performance across various test scenarios.
+\item Chapter 9 concludes the report by summarizing the key contributions, noting current limitations, and suggesting avenues for future research and deployment.
+\end{itemize}

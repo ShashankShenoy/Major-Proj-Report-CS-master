@@ -1,0 +1,2066 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{none/global//global/global/global}
+  \entry{Yuan2024}{inproceedings}{}{}
+    \name{author}{3}{}{%
+      {{hash=YY}{%
+         family={Yuan},
+         familyi={Y\bibinitperiod},
+         given={Yingxiu},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=YX}{%
+         family={Yu},
+         familyi={Y\bibinitperiod},
+         given={Xiaoyan},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=RX}{%
+         family={Rong},
+         familyi={R\bibinitperiod},
+         given={Xianwei},
+         giveni={X\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{YY+1}
+    \strng{fullhash}{YYYXRX1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{2024 IEEE Academic International Symposium on
+  Optoelectronics and Microelectronics Technology (AISOMT)}
+    \verb{doi}
+    \verb 10.1109/aisomt64170.2024.10992221
+    \endverb
+    \field{pages}{364\bibrangedash 368}
+    \field{title}{EN-YOLO: A Ship Enhanced Detection Network Based on YOLOv8}
+    \field{month}{11}
+    \field{year}{2024}
+  \endentry
+
+  \entry{Zhang2025}{article}{}{}
+    \name{author}{6}{}{%
+      {{hash=ZY}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Yang},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=LX}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Xin},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=XC}{%
+         family={Xiao},
+         familyi={X\bibinitperiod},
+         given={Changshi},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=YH}{%
+         family={Yuan},
+         familyi={Y\bibinitperiod},
+         given={Haiwen},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=LD}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Dongxu},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=RS}{%
+         family={Ren},
+         familyi={R\bibinitperiod},
+         given={Shuwei},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{2}{%
+      {Institute of Electrical}%
+      {Electronics Engineers (IEEE)}%
+    }
+    \strng{namehash}{ZY+1}
+    \strng{fullhash}{ZYLXXCYHLDRS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1109/access.2025.3615562
+    \endverb
+    \field{issn}{2169-3536}
+    \field{pages}{179994\bibrangedash 180005}
+    \field{title}{Research on Autonomous Landing Method of Shipborne Uncrewed
+  Aerial Vehicle Based on Visual Recognition}
+    \field{volume}{13}
+    \field{journaltitle}{IEEE Access}
+    \field{year}{2025}
+  \endentry
+
+  \entry{Liu2025}{inproceedings}{}{}
+    \name{author}{4}{}{%
+      {{hash=LS}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Shuting},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=WX}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Xiaomin},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=QJ}{%
+         family={Qu},
+         familyi={Q\bibinitperiod},
+         given={Jidong},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=WL}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Luyao},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{LS+1}
+    \strng{fullhash}{LSWXQJWL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{2025 International Conference on Communication Networks
+  and Smart Systems Engineering (ICCNSE)}
+    \verb{doi}
+    \verb 10.1109/iccnse66404.2025.11144333
+    \endverb
+    \field{pages}{165\bibrangedash 168}
+    \field{title}{Ship Target Detection Based on Improved YOLOv8 Remote Sensing
+  Image}
+    \field{month}{08}
+    \field{year}{2025}
+  \endentry
+
+  \entry{Shi2025}{inproceedings}{}{}
+    \name{author}{4}{}{%
+      {{hash=SJ}{%
+         family={Shi},
+         familyi={S\bibinitperiod},
+         given={Jiahao},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=LJ}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Jian},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=ZL}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Lei},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=SS}{%
+         family={Sun},
+         familyi={S\bibinitperiod},
+         given={Sihang},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{SJ+1}
+    \strng{fullhash}{SJLJZLSS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{2025 7th International Conference on Intelligent Control,
+  Measurement and Signal Processing (ICMSP)}
+    \verb{doi}
+    \verb 10.1109/icmsp68723.2025.11407889
+    \endverb
+    \field{pages}{144\bibrangedash 148}
+    \field{title}{Remote Sensing Ship Target Recognition Algorithm Based on
+  Improved YOLOv8}
+    \field{month}{11}
+    \field{year}{2025}
+  \endentry
+
+  \entry{Jiang2024}{article}{}{}
+    \name{author}{4}{}{%
+      {{hash=JW}{%
+         family={Jiang},
+         familyi={J\bibinitperiod},
+         given={Wenlong},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=HD}{%
+         family={Han},
+         familyi={H\bibinitperiod},
+         given={Dezhi},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=HB}{%
+         family={Han},
+         familyi={H\bibinitperiod},
+         given={Bing},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=WZ}{%
+         family={Wu},
+         familyi={W\bibinitperiod},
+         given={Zhongdai},
+         giveni={Z\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{2}{%
+      {Institute of Electrical}%
+      {Electronics Engineers (IEEE)}%
+    }
+    \strng{namehash}{JW+1}
+    \strng{fullhash}{JWHDHBWZ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1109/access.2024.3448619
+    \endverb
+    \field{issn}{2169-3536}
+    \field{pages}{119223\bibrangedash 119237}
+    \field{title}{YOLOv8-FDF: A Small Target Detection Algorithm in Complex
+  Scenes}
+    \field{volume}{12}
+    \field{journaltitle}{IEEE Access}
+    \field{year}{2024}
+  \endentry
+
+  \entry{Yang2024}{article}{}{}
+    \name{author}{4}{}{%
+      {{hash=YJ}{%
+         family={Yang},
+         familyi={Y\bibinitperiod},
+         given={Jian},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=DM}{%
+         family={Dong},
+         familyi={D\bibinitperiod},
+         given={Mengchen},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=LC}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Chuanxiang},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=NF}{%
+         family={Nie},
+         familyi={N\bibinitperiod},
+         given={Feiping},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{2}{%
+      {Institute of Electrical}%
+      {Electronics Engineers (IEEE)}%
+    }
+    \strng{namehash}{YJ+1}
+    \strng{fullhash}{YJDMLCNF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1109/access.2024.3485499
+    \endverb
+    \field{issn}{2169-3536}
+    \field{pages}{158226\bibrangedash 158238}
+    \field{title}{YOLO-RDFEA: Object Detection in RD Imagery With Improved
+  YOLOv8 Based on Feature Enhancement and Attention Mechanisms}
+    \field{volume}{12}
+    \field{journaltitle}{IEEE Access}
+    \field{year}{2024}
+  \endentry
+
+  \entry{Ning2024}{inproceedings}{}{}
+    \name{author}{4}{}{%
+      {{hash=NF}{%
+         family={Ning},
+         familyi={N\bibinitperiod},
+         given={Feng},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=ZL}{%
+         family={Zhao},
+         familyi={Z\bibinitperiod},
+         given={Liangjun},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=ZY}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Yuanyang},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=WY}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Yinqing},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{NF+1}
+    \strng{fullhash}{NFZLZYWY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{2024 International Conference on Image Processing,
+  Computer Vision and Machine Learning (ICICML)}
+    \verb{doi}
+    \verb 10.1109/icicml63543.2024.10957958
+    \endverb
+    \field{pages}{1206\bibrangedash 1210}
+    \field{title}{Ship Target Detection Algorithm for SAR Images Based on
+  YOLOv8-obb Rotating Bounding Box}
+    \field{month}{11}
+    \field{year}{2024}
+  \endentry
+
+  \entry{Yu2023}{inproceedings}{}{}
+    \name{author}{2}{}{%
+      {{hash=YC}{%
+         family={Yu},
+         familyi={Y\bibinitperiod},
+         given={Chushi},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=SY}{%
+         family={Shin},
+         familyi={S\bibinitperiod},
+         given={Yoan},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{YCSY1}
+    \strng{fullhash}{YCSY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{2023 14th International Conference on Information and
+  Communication Technology Convergence (ICTC)}
+    \verb{doi}
+    \verb 10.1109/ictc58733.2023.10392524
+    \endverb
+    \field{pages}{308\bibrangedash 311}
+    \field{title}{Ship Detection in Synthetic Aperture Radar Images with
+  Improved YOLOv8}
+    \field{month}{10}
+    \field{year}{2023}
+  \endentry
+
+  \entry{Fu2025}{inproceedings}{}{}
+    \name{author}{4}{}{%
+      {{hash=FY}{%
+         family={Fu},
+         familyi={F\bibinitperiod},
+         given={Yingshun},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=BZ}{%
+         family={Bi},
+         familyi={B\bibinitperiod},
+         given={Zhenbo},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=TJ}{%
+         family={Tan},
+         familyi={T\bibinitperiod},
+         given={Junwei},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=WZ}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Zhikang},
+         giveni={Z\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{FY+1}
+    \strng{fullhash}{FYBZTJWZ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{2025 4th International Conference on Artificial
+  Intelligence, Internet of Things and Cloud Computing Technology (AIoTC)}
+    \verb{doi}
+    \verb 10.1109/aiotc66747.2025.11198733
+    \endverb
+    \field{pages}{270\bibrangedash 273}
+    \field{title}{Infrared Ship Target Detection Algorithm Based on Improved
+  YOLOV8}
+    \field{month}{08}
+    \field{year}{2025}
+  \endentry
+
+  \entry{Chen2024}{inproceedings}{}{}
+    \name{author}{2}{}{%
+      {{hash=CJ}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Jiahui},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=LF}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Feng},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{CJLF1}
+    \strng{fullhash}{CJLF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{2024 International Conference on Image Processing,
+  Computer Vision and Machine Learning (ICICML)}
+    \verb{doi}
+    \verb 10.1109/icicml63543.2024.10958156
+    \endverb
+    \field{pages}{1223\bibrangedash 1226}
+    \field{title}{Infrared Small Ship Target Detection Algorithm Based on
+  Improved YOLOv8}
+    \field{month}{11}
+    \field{year}{2024}
+  \endentry
+
+  \entry{Wu2025}{article}{}{}
+    \name{author}{6}{}{%
+      {{hash=WT}{%
+         family={Wu},
+         familyi={W\bibinitperiod},
+         given={Tong},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=LM}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Ming},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=NJ}{%
+         family={Niu},
+         familyi={N\bibinitperiod},
+         given={Jiong},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=ZL}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Ling},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=ZW}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Wandong},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=WQMJ}{%
+         family={Wu},
+         familyi={W\bibinitperiod},
+         given={Qing Ming\bibnamedelima Jonathan},
+         giveni={Q\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim
+  J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{2}{%
+      {Institute of Electrical}%
+      {Electronics Engineers (IEEE)}%
+    }
+    \strng{namehash}{WT+1}
+    \strng{fullhash}{WTLMNJZLZWWQMJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1109/jstars.2025.3556138
+    \endverb
+    \field{issn}{2151-1535}
+    \field{pages}{10442\bibrangedash 10457}
+    \field{title}{Two-Stage Target Detection for Compact HFSWR With
+  Space-to-Depth YOLOv8 and Multiframe ViT}
+    \field{volume}{18}
+    \field{journaltitle}{IEEE Journal of Selected Topics in Applied Earth
+  Observations and Remote Sensing}
+    \field{year}{2025}
+  \endentry
+
+  \entry{Gao2024}{inproceedings}{}{}
+    \name{author}{3}{}{%
+      {{hash=GZ}{%
+         family={Gao},
+         familyi={G\bibinitperiod},
+         given={Zhiguang},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=RX}{%
+         family={Rong},
+         familyi={R\bibinitperiod},
+         given={Xianwei},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=YX}{%
+         family={Yu},
+         familyi={Y\bibinitperiod},
+         given={Xiaoyan},
+         giveni={X\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{GZ+1}
+    \strng{fullhash}{GZRXYX1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{2024 IEEE Academic International Symposium on
+  Optoelectronics and Microelectronics Technology (AISOMT)}
+    \verb{doi}
+    \verb 10.1109/aisomt64170.2024.10992224
+    \endverb
+    \field{pages}{359\bibrangedash 363}
+    \field{title}{SM-LightNet: A Lightweight Ship Detection Algorithm Based on
+  Improved YOLOv8}
+    \field{month}{11}
+    \field{year}{2024}
+  \endentry
+
+  \entry{Liu2025b}{inproceedings}{}{}
+    \name{author}{2}{}{%
+      {{hash=LK}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Kun},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=YW}{%
+         family={Yang},
+         familyi={Y\bibinitperiod},
+         given={Wenlu},
+         giveni={W\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{LKYW1}
+    \strng{fullhash}{LKYW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{2025 International Conference on Mechatronics, Robotics,
+  and Artificial Intelligence (MRAI)}
+    \verb{doi}
+    \verb 10.1109/mrai65197.2025.11135893
+    \endverb
+    \field{pages}{378\bibrangedash 384}
+    \field{title}{Research on Ship Detection Algorithm Based on YOLOv8n}
+    \field{year}{2025}
+  \endentry
+
+  \entry{Xu2025}{article}{}{}
+    \name{author}{6}{}{%
+      {{hash=XY}{%
+         family={Xu},
+         familyi={X\bibinitperiod},
+         given={Yifan},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=XX}{%
+         family={Xue},
+         familyi={X\bibinitperiod},
+         given={Xiaorong},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=LC}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Chuanlu},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=ZS}{%
+         family={Zhao},
+         familyi={Z\bibinitperiod},
+         given={Siyue},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=XX}{%
+         family={Xu},
+         familyi={X\bibinitperiod},
+         given={Xingbiao},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=ZC}{%
+         family={Zeng},
+         familyi={Z\bibinitperiod},
+         given={Caijia},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{2}{%
+      {Institute of Electrical}%
+      {Electronics Engineers (IEEE)}%
+    }
+    \strng{namehash}{XY+1}
+    \strng{fullhash}{XYXXLCZSXXZC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1109/access.2025.3550541
+    \endverb
+    \field{issn}{2169-3536}
+    \field{pages}{46584\bibrangedash 46600}
+    \field{title}{RLE-YOLO: A Lightweight and Multiscale SAR Ship Detection
+  Based on Improved YOLOv8}
+    \field{volume}{13}
+    \field{journaltitle}{IEEE Access}
+    \field{year}{2025}
+  \endentry
+
+  \entry{Chen2023}{inproceedings}{}{}
+    \name{author}{4}{}{%
+      {{hash=CWZ}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Wei-Zhe},
+         giveni={W\bibinithyphendelim Z\bibinitperiod},
+      }}%
+      {{hash=HLY}{%
+         family={Hao},
+         familyi={H\bibinitperiod},
+         given={Li-Ying},
+         giveni={L\bibinithyphendelim Y\bibinitperiod},
+      }}%
+      {{hash=LH}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Huiying},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=ZY}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Yunze},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{CWZ+1}
+    \strng{fullhash}{CWZHLYLHZY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{2023 IEEE 2nd Industrial Electronics Society Annual
+  On-Line Conference (ONCON)}
+    \verb{doi}
+    \verb 10.1109/oncon60463.2023.10430529
+    \endverb
+    \field{pages}{1\bibrangedash 6}
+    \field{title}{Real-Time Ship Detection Algorithm Based on Improved YOLOv8
+  Network}
+    \field{month}{12}
+    \field{year}{2023}
+  \endentry
+
+  \entry{Gong2024}{article}{}{}
+    \name{author}{5}{}{%
+      {{hash=GY}{%
+         family={Gong},
+         familyi={G\bibinitperiod},
+         given={Yanfeng},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=CZ}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Zihao},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=DW}{%
+         family={Deng},
+         familyi={D\bibinitperiod},
+         given={Wen},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=TJ}{%
+         family={Tan},
+         familyi={T\bibinitperiod},
+         given={Jiawan},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=LY}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Yabin},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{2}{%
+      {Institute of Electrical}%
+      {Electronics Engineers (IEEE)}%
+    }
+    \strng{namehash}{GY+1}
+    \strng{fullhash}{GYCZDWTJLY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1109/access.2024.3445154
+    \endverb
+    \field{issn}{2169-3536}
+    \field{pages}{116086\bibrangedash 116104}
+    \field{title}{Real-Time Long-Distance Ship Detection Architecture Based on
+  YOLOv8}
+    \field{volume}{12}
+    \field{journaltitle}{IEEE Access}
+    \field{year}{2024}
+  \endentry
+
+  \entry{Huang2024}{inproceedings}{}{}
+    \name{author}{4}{}{%
+      {{hash=HY}{%
+         family={Huang},
+         familyi={H\bibinitperiod},
+         given={Yuan},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=CM}{%
+         family={Cao},
+         familyi={C\bibinitperiod},
+         given={Minghua},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=ZY}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Yue},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=NC}{%
+         family={Ning},
+         familyi={N\bibinitperiod},
+         given={Cheng},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{HY+1}
+    \strng{fullhash}{HYCMZYNC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{2024 IEEE 12th International Conference on Information,
+  Communication and Networks (ICICN)}
+    \verb{doi}
+    \verb 10.1109/icicn62625.2024.10761703
+    \endverb
+    \field{pages}{445\bibrangedash 449}
+    \field{title}{Enhanced Multi-Scale Ship Detection Through Joint
+  Multi-Source Image Training}
+    \field{month}{08}
+    \field{year}{2024}
+  \endentry
+
+  \entry{Nambiar2022}{inproceedings}{}{}
+    \name{author}{3}{}{%
+      {{hash=NA}{%
+         family={Nambiar},
+         familyi={N\bibinitperiod},
+         given={Athira},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=VA}{%
+         family={Vaigandla},
+         familyi={V\bibinitperiod},
+         given={Ashish},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=RS}{%
+         family={Rajendran},
+         familyi={R\bibinitperiod},
+         given={Suresh},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{NA+1}
+    \strng{fullhash}{NAVARS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{OCEANS 2022, Hampton Roads}
+    \verb{doi}
+    \verb 10.1109/oceans47191.2022.9977152
+    \endverb
+    \field{pages}{1\bibrangedash 10}
+    \field{title}{Efficient Ship Detection in Synthetic Aperture Radar Images
+  and Lateral Images using Deep Learning Techniques}
+    \field{month}{10}
+    \field{year}{2022}
+  \endentry
+
+  \entry{Belmouhcine2021}{inproceedings}{}{}
+    \name{author}{4}{}{%
+      {{hash=BA}{%
+         family={Belmouhcine},
+         familyi={B\bibinitperiod},
+         given={Abdelbadie},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Simon},
+         familyi={S\bibinitperiod},
+         given={Julien},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=CL}{%
+         family={Courtrai},
+         familyi={C\bibinitperiod},
+         given={Luc},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=LS}{%
+         family={Lefevre},
+         familyi={L\bibinitperiod},
+         given={Sebastien},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{BA+1}
+    \strng{fullhash}{BASJCLLS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{2021 12th International Symposium on Image and Signal
+  Processing and Analysis (ISPA)}
+    \verb{doi}
+    \verb 10.1109/ispa52656.2021.9552062
+    \endverb
+    \field{pages}{138\bibrangedash 144}
+    \field{title}{Robust Deep Simple Online Real-Time Tracking}
+    \field{year}{2021}
+  \endentry
+
+  \entry{Belmouhcine2022}{inproceedings}{}{}
+    \name{author}{4}{}{%
+      {{hash=BA}{%
+         family={Belmouhcine},
+         familyi={B\bibinitperiod},
+         given={Abdelbadie},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Simon},
+         familyi={S\bibinitperiod},
+         given={Julien},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=CL}{%
+         family={Courtrai},
+         familyi={C\bibinitperiod},
+         given={Luc},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=LS}{%
+         family={Lefevre},
+         familyi={L\bibinitperiod},
+         given={Sebastien},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{BA+1}
+    \strng{fullhash}{BASJCLLS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{2022 26th International Conference on Pattern Recognition
+  (ICPR)}
+    \verb{doi}
+    \verb 10.1109/icpr56361.2022.9956283
+    \endverb
+    \field{pages}{3522\bibrangedash 3528}
+    \field{title}{Fully Deep Simple Online Real-time Tracking: Efficient
+  Re-Identification by Attention without Explicit Similarity Learning}
+    \field{month}{08}
+    \field{year}{2022}
+  \endentry
+
+  \entry{Zang2024}{inproceedings}{}{}
+    \name{author}{3}{}{%
+      {{hash=ZH}{%
+         family={Zang},
+         familyi={Z\bibinitperiod},
+         given={Hengxu},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=HY}{%
+         family={Hu},
+         familyi={H\bibinitperiod},
+         given={Ying},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=WY}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Yutong},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{ZH+1}
+    \strng{fullhash}{ZHHYWY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{2024 39th Youth Academic Annual Conference of Chinese
+  Association of Automation (YAC)}
+    \verb{doi}
+    \verb 10.1109/yac63405.2024.10598422
+    \endverb
+    \field{pages}{509\bibrangedash 514}
+    \field{title}{Research on Smoke and Fire Target Detection with Tracking
+  Algorithm Based on YOLOv8 and DeepSORT}
+    \field{year}{2024}
+  \endentry
+
+  \entry{Zhu2024}{inproceedings}{}{}
+    \name{author}{2}{}{%
+      {{hash=ZJ}{%
+         family={Zhu},
+         familyi={Z\bibinitperiod},
+         given={Jiaqi},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=ZT}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Tao},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{ZJZT1}
+    \strng{fullhash}{ZJZT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{2024 3rd International Conference on Image Processing and
+  Media Computing (ICIPMC)}
+    \verb{doi}
+    \verb 10.1109/icipmc62364.2024.10586706
+    \endverb
+    \field{pages}{23\bibrangedash 27}
+    \field{title}{Multi-target tracking and detection on sea surface based on
+  YOLOv5}
+    \field{month}{05}
+    \field{year}{2024}
+  \endentry
+
+  \entry{Nithya2023}{inproceedings}{}{}
+    \name{author}{4}{}{%
+      {{hash=NB}{%
+         family={Nithya},
+         familyi={N\bibinitperiod},
+         given={B.},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=SN}{%
+         family={Subash},
+         familyi={S\bibinitperiod},
+         given={Neethu},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=SK}{%
+         family={Sivapriya},
+         familyi={S\bibinitperiod},
+         given={K},
+         giveni={K},
+      }}%
+      {{hash=DR}{%
+         family={Devadharshini},
+         familyi={D\bibinitperiod},
+         given={R},
+         giveni={R},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{NB+1}
+    \strng{fullhash}{NBSNSKDR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{2023 International Conference on Quantum Technologies,
+  Communications, Computing, Hardware and Embedded Systems Security
+  (iQ-CCHESS)}
+    \verb{doi}
+    \verb 10.1109/iq-cchess56596.2023.10391309
+    \endverb
+    \field{pages}{1\bibrangedash 7}
+    \field{title}{Multi Small Object Detection and Prioritized Tracking for
+  Navy Operations using Deep Learning Techniques}
+    \field{year}{2023}
+  \endentry
+
+  \entry{Muslim2025}{inproceedings}{}{}
+    \name{author}{3}{}{%
+      {{hash=MP}{%
+         family={Muslim},
+         familyi={M\bibinitperiod},
+         given={Paula},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=BÅD}{%
+         family={BoÅ¾iÄ‡-Å tuliÄ‡},
+         familyi={B\bibinithyphendelim Å\bibinitperiod},
+         given={Dunja},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=GS}{%
+         family={Gotovac},
+         familyi={G\bibinitperiod},
+         given={Sven},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{MP+1}
+    \strng{fullhash}{MPBÅDGS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{2025 10th International Conference on Smart and
+  Sustainable Technologies (SpliTech)}
+    \verb{doi}
+    \verb 10.23919/splitech65624.2025.11091645
+    \endverb
+    \field{pages}{1\bibrangedash 6}
+    \field{title}{System for Automatic Vessel Detection and Tracking in the
+  Port of Split}
+    \field{year}{2025}
+  \endentry
+
+  \entry{Chen2025}{article}{}{}
+    \name{author}{5}{}{%
+      {{hash=CJ}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Jin},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=LM}{%
+         family={Liang},
+         familyi={L\bibinitperiod},
+         given={Maohan},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=PC}{%
+         family={Peng},
+         familyi={P\bibinitperiod},
+         given={Chang},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=ZJ}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Jixin},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=HS}{%
+         family={Huo},
+         familyi={H\bibinitperiod},
+         given={Shengxu},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{2}{%
+      {Institute of Electrical}%
+      {Electronics Engineers (IEEE)}%
+    }
+    \strng{namehash}{CJ+1}
+    \strng{fullhash}{CJLMPCZJHS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1109/tvt.2025.3539077
+    \endverb
+    \field{issn}{1939-9359}
+    \field{number}{6}
+    \field{pages}{9565\bibrangedash 9576}
+    \field{title}{Improving Maritime Data: A Machine Learning-Based Model for
+  Missing Vessel Trajectories Reconstruction}
+    \field{volume}{74}
+    \field{journaltitle}{IEEE Transactions on Vehicular Technology}
+    \field{year}{2025}
+  \endentry
+
+  \entry{Liu2024}{inproceedings}{}{}
+    \name{author}{6}{}{%
+      {{hash=LY}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Yong},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=GP}{%
+         family={Guo},
+         familyi={G\bibinitperiod},
+         given={Pengyu},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=CL}{%
+         family={Cao},
+         familyi={C\bibinitperiod},
+         given={Lu},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=WX}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Xinhui},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=ML}{%
+         family={Meng},
+         familyi={M\bibinitperiod},
+         given={Ling},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=WK}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Kai},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{LY+1}
+    \strng{fullhash}{LYGPCLWXMLWK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{IGARSS 2024 - 2024 IEEE International Geoscience and
+  Remote Sensing Symposium}
+    \verb{doi}
+    \verb 10.1109/igarss53475.2024.10640898
+    \endverb
+    \field{pages}{7424\bibrangedash 7427}
+    \field{title}{Multiple Ship Tracking Across Multiple LEO Satellites}
+    \field{year}{2024}
+  \endentry
+
+  \entry{Guan2023}{article}{}{}
+    \name{author}{3}{}{%
+      {{hash=GM}{%
+         family={Guan},
+         familyi={G\bibinitperiod},
+         given={Meng},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=CY}{%
+         family={Cao},
+         familyi={C\bibinitperiod},
+         given={Yu},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=CX}{%
+         family={Cheng},
+         familyi={C\bibinitperiod},
+         given={Xu},
+         giveni={X\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{2}{%
+      {Institute of Electrical}%
+      {Electronics Engineers (IEEE)}%
+    }
+    \strng{namehash}{GM+1}
+    \strng{fullhash}{GMCYCX1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1109/access.2023.3317706
+    \endverb
+    \field{issn}{2169-3536}
+    \field{pages}{106580\bibrangedash 106586}
+    \field{title}{Research on the Recognition of Multiple MMSI Codes on a
+  Single Vessel Based on AIS Datas}
+    \field{volume}{11}
+    \field{journaltitle}{IEEE Access}
+    \field{year}{2023}
+  \endentry
+
+  \entry{Wan2025}{inproceedings}{}{}
+    \name{author}{6}{}{%
+      {{hash=WG}{%
+         family={Wan},
+         familyi={W\bibinitperiod},
+         given={Gao},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=WM}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Menghong},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=WT}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Tengfei},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=HM}{%
+         family={Huang},
+         familyi={H\bibinitperiod},
+         given={Ming},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=LL}{%
+         family={Lu},
+         familyi={L\bibinitperiod},
+         given={Linsheng},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=YZ}{%
+         family={Yang},
+         familyi={Y\bibinitperiod},
+         given={Ziyun},
+         giveni={Z\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{WG+1}
+    \strng{fullhash}{WGWMWTHMLLYZ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{2025 8th International Conference on Transportation
+  Information and Safety (ICTIS)}
+    \verb{doi}
+    \verb 10.1109/ictis68762.2025.11214894
+    \endverb
+    \field{pages}{1728\bibrangedash 1735}
+    \field{title}{Methods for Multi-Source Sensing Fusion in Dynamic Maritime
+  Environments}
+    \field{year}{2025}
+  \endentry
+
+  \entry{Wang2025a}{inproceedings}{}{}
+    \name{author}{5}{}{%
+      {{hash=WW}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Weigeng},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=WY}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Yongtao},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=LX}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Xinglong},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=ZX}{%
+         family={Zou},
+         familyi={Z\bibinitperiod},
+         given={Xiangyan},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=ZX}{%
+         family={Zhong},
+         familyi={Z\bibinitperiod},
+         given={Xinglong},
+         giveni={X\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{WW+1}
+    \strng{fullhash}{WWWYLXZXZX1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{2025 IEEE 8th Advanced Information Technology, Electronic
+  and Automation Control Conference (IAEAC)}
+    \verb{doi}
+    \verb 10.1109/iaeac65194.2025.11166335
+    \endverb
+    \field{pages}{946\bibrangedash 949}
+    \field{title}{Efficient Maritime Traffic Flow Analysis Using YOLOv8 and
+  DeepSORT for Vessel Detection and Tracking}
+    \field{month}{08}
+    \field{year}{2025}
+  \endentry
+
+  \entry{Suliva2022}{inproceedings}{}{}
+    \name{author}{3}{}{%
+      {{hash=SRSS}{%
+         family={Suliva},
+         familyi={S\bibinitperiod},
+         given={Rendell Sheen\bibnamedelima S.},
+         giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim
+  S\bibinitperiod},
+      }}%
+      {{hash=VCAA}{%
+         family={Valencia},
+         familyi={V\bibinitperiod},
+         given={Clint Aldrin\bibnamedelima A.},
+         giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim
+  A\bibinitperiod},
+      }}%
+      {{hash=VJF}{%
+         family={Villaverde},
+         familyi={V\bibinitperiod},
+         given={Jocelyn\bibnamedelima F.},
+         giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{SRSS+1}
+    \strng{fullhash}{SRSSVCAAVJF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{2022 6th International Conference on Communication and
+  Information Systems (ICCIS)}
+    \verb{doi}
+    \verb 10.1109/iccis56375.2022.9998129
+    \endverb
+    \field{pages}{153\bibrangedash 158}
+    \field{title}{Classification and Counting of Ships Using YOLOv5 Algorithm}
+    \field{month}{10}
+    \field{year}{2022}
+  \endentry
+
+  \entry{Urakami2018}{inproceedings}{}{}
+    \name{author}{3}{}{%
+      {{hash=UM}{%
+         family={Urakami},
+         familyi={U\bibinitperiod},
+         given={Misako},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=WN}{%
+         family={Wakabayashi},
+         familyi={W\bibinitperiod},
+         given={Nobukazu},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=WT}{%
+         family={Watanabe},
+         familyi={W\bibinitperiod},
+         given={Takayuki},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{UM+1}
+    \strng{fullhash}{UMWNWT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{2018 International Conference on Broadband Communications
+  for Next Generation Networks and Multimedia Applications (CoBCom)}
+    \verb{doi}
+    \verb 10.1109/cobcom.2018.8443969
+    \endverb
+    \field{pages}{1\bibrangedash 6}
+    \field{title}{A Study on Location Information Screening Method for Ship
+  Application Using AIS Recorded Data}
+    \field{month}{07}
+    \field{year}{2018}
+  \endentry
+
+  \entry{Capobianco2021}{article}{}{}
+    \name{author}{5}{}{%
+      {{hash=CS}{%
+         family={Capobianco},
+         familyi={C\bibinitperiod},
+         given={Samuele},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=MLM}{%
+         family={Millefiori},
+         familyi={M\bibinitperiod},
+         given={Leonardo\bibnamedelima M.},
+         giveni={L\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=FN}{%
+         family={Forti},
+         familyi={F\bibinitperiod},
+         given={Nicola},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=BP}{%
+         family={Braca},
+         familyi={B\bibinitperiod},
+         given={Paolo},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=WP}{%
+         family={Willett},
+         familyi={W\bibinitperiod},
+         given={Peter},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{2}{%
+      {Institute of Electrical}%
+      {Electronics Engineers (IEEE)}%
+    }
+    \strng{namehash}{CS+1}
+    \strng{fullhash}{CSMLMFNBPWP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1109/taes.2021.3096873
+    \endverb
+    \field{issn}{2371-9877}
+    \field{number}{6}
+    \field{pages}{4329\bibrangedash 4346}
+    \field{title}{Deep Learning Methods for Vessel Trajectory Prediction Based
+  on Recurrent Neural Networks}
+    \field{volume}{57}
+    \field{journaltitle}{IEEE Transactions on Aerospace and Electronic Systems}
+    \field{month}{12}
+    \field{year}{2021}
+  \endentry
+
+  \entry{Yang2022}{article}{}{}
+    \name{author}{5}{}{%
+      {{hash=YCH}{%
+         family={Yang},
+         familyi={Y\bibinitperiod},
+         given={Cheng-Hong},
+         giveni={C\bibinithyphendelim H\bibinitperiod},
+      }}%
+      {{hash=WCH}{%
+         family={Wu},
+         familyi={W\bibinitperiod},
+         given={Chih-Hsien},
+         giveni={C\bibinithyphendelim H\bibinitperiod},
+      }}%
+      {{hash=SJC}{%
+         family={Shao},
+         familyi={S\bibinitperiod},
+         given={Jen-Chung},
+         giveni={J\bibinithyphendelim C\bibinitperiod},
+      }}%
+      {{hash=WYC}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Yi-Chuan},
+         giveni={Y\bibinithyphendelim C\bibinitperiod},
+      }}%
+      {{hash=HCM}{%
+         family={Hsieh},
+         familyi={H\bibinitperiod},
+         given={Chih-Min},
+         giveni={C\bibinithyphendelim M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{2}{%
+      {Institute of Electrical}%
+      {Electronics Engineers (IEEE)}%
+    }
+    \strng{namehash}{YCH+1}
+    \strng{fullhash}{YCHWCHSJCWYCHCM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1109/access.2022.3154812
+    \endverb
+    \field{issn}{2169-3536}
+    \field{pages}{24302\bibrangedash 24315}
+    \field{title}{AIS-Based Intelligent Vessel Trajectory Prediction Using
+  Bi-LSTM}
+    \field{volume}{10}
+    \field{journaltitle}{IEEE Access}
+    \field{year}{2022}
+  \endentry
+
+  \entry{Chondrodima2023}{article}{}{}
+    \name{author}{4}{}{%
+      {{hash=CE}{%
+         family={Chondrodima},
+         familyi={C\bibinitperiod},
+         given={Eva},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=PN}{%
+         family={Pelekis},
+         familyi={P\bibinitperiod},
+         given={Nikos},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=PA}{%
+         family={Pikrakis},
+         familyi={P\bibinitperiod},
+         given={Aggelos},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=TY}{%
+         family={Theodoridis},
+         familyi={T\bibinitperiod},
+         given={Yannis},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{2}{%
+      {Institute of Electrical}%
+      {Electronics Engineers (IEEE)}%
+    }
+    \strng{namehash}{CE+1}
+    \strng{fullhash}{CEPNPATY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1109/tits.2023.3247993
+    \endverb
+    \field{issn}{1558-0016}
+    \field{number}{5}
+    \field{pages}{4872\bibrangedash 4888}
+    \field{title}{An Efficient LSTM Neural Network-Based Framework for Vessel
+  Location Forecasting}
+    \field{volume}{24}
+    \field{journaltitle}{IEEE Transactions on Intelligent Transportation
+  Systems}
+    \field{month}{05}
+    \field{year}{2023}
+  \endentry
+
+  \entry{Zhao2024}{inproceedings}{}{}
+    \name{author}{6}{}{%
+      {{hash=ZX}{%
+         family={Zhao},
+         familyi={Z\bibinitperiod},
+         given={Xingya},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=MJ}{%
+         family={Mou},
+         familyi={M\bibinitperiod},
+         given={Junmin},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=DZ}{%
+         family={Du},
+         familyi={D\bibinitperiod},
+         given={Zijun},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=ZK}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Ke},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=WB}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Bing},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=LX}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Xiao},
+         giveni={X\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{ZX+2}
+    \strng{fullhash}{ZXMJDZZKWBLX1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{2024 8th Asian Conference on Artificial Intelligence
+  Technology (ACAIT)}
+    \verb{doi}
+    \verb 10.1109/acait63902.2024.11021718
+    \endverb
+    \field{pages}{1686\bibrangedash 1690}
+    \field{title}{Study on Ship-Bridge Collision Prevention of Early Warning
+  Based on Multi-Source Data Fusion}
+    \field{month}{11}
+    \field{year}{2024}
+  \endentry
+
+  \entry{Zhang2024}{article}{}{}
+    \name{author}{7}{}{%
+      {{hash=ZX}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Xiaocai},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=FX}{%
+         family={Fu},
+         familyi={F\bibinitperiod},
+         given={Xiuju},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=XZ}{%
+         family={Xiao},
+         familyi={X\bibinitperiod},
+         given={Zhe},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=XH}{%
+         family={Xu},
+         familyi={X\bibinitperiod},
+         given={Haiyan},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=ZW}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Wanbing},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=KJ}{%
+         family={Koh},
+         familyi={K\bibinitperiod},
+         given={Jimmy},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=QZ}{%
+         family={Qin},
+         familyi={Q\bibinitperiod},
+         given={Zheng},
+         giveni={Z\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{2}{%
+      {Institute of Electrical}%
+      {Electronics Engineers (IEEE)}%
+    }
+    \strng{namehash}{ZX+1}
+    \strng{fullhash}{ZXFXXZXHZWKJQZ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1109/tiv.2024.3395452
+    \endverb
+    \field{issn}{2379-8858}
+    \field{number}{11}
+    \field{pages}{7193\bibrangedash 7207}
+    \field{title}{A Dynamic Context-Aware Approach for Vessel Trajectory
+  Prediction Based on Multi-Stage Deep Learning}
+    \field{volume}{9}
+    \field{journaltitle}{IEEE Transactions on Intelligent Vehicles}
+    \field{month}{11}
+    \field{year}{2024}
+  \endentry
+
+  \entry{Zygouras2024}{article}{}{}
+    \name{author}{3}{}{%
+      {{hash=ZN}{%
+         family={Zygouras},
+         familyi={Z\bibinitperiod},
+         given={Nikolas},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=TKA}{%
+         family={Troupiotis-Kapeliaris},
+         familyi={T\bibinithyphendelim K\bibinitperiod},
+         given={Alexandros},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=ZD}{%
+         family={Zissis},
+         familyi={Z\bibinitperiod},
+         given={Dimitris},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{2}{%
+      {Institute of Electrical}%
+      {Electronics Engineers (IEEE)}%
+    }
+    \strng{namehash}{ZN+1}
+    \strng{fullhash}{ZNTKAZD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1109/access.2023.3349081
+    \endverb
+    \field{issn}{2169-3536}
+    \field{pages}{3860\bibrangedash 3873}
+    \field{title}{EnvClus*: Extracting Common Pathways for Effective Vessel
+  Trajectory Forecasting}
+    \field{volume}{12}
+    \field{journaltitle}{IEEE Access}
+    \field{year}{2024}
+  \endentry
+
+  \entry{Liu2022}{article}{}{}
+    \name{author}{6}{}{%
+      {{hash=LRW}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Ryan\bibnamedelima Wen},
+         giveni={R\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=LM}{%
+         family={Liang},
+         familyi={L\bibinitperiod},
+         given={Maohan},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=NJ}{%
+         family={Nie},
+         familyi={N\bibinitperiod},
+         given={Jiangtian},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=LWYB}{%
+         family={Lim},
+         familyi={L\bibinitperiod},
+         given={Wei Yang\bibnamedelima Bryan},
+         giveni={W\bibinitperiod\bibinitdelim Y\bibinitperiod\bibinitdelim
+  B\bibinitperiod},
+      }}%
+      {{hash=ZY}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Yang},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=GM}{%
+         family={Guizani},
+         familyi={G\bibinitperiod},
+         given={Mohsen},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{2}{%
+      {Institute of Electrical}%
+      {Electronics Engineers (IEEE)}%
+    }
+    \strng{namehash}{LRW+1}
+    \strng{fullhash}{LRWLMNJLWYBZYGM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1109/tnse.2022.3140529
+    \endverb
+    \field{issn}{2334-329X}
+    \field{number}{5}
+    \field{pages}{3080\bibrangedash 3094}
+    \field{title}{Deep Learning-Powered Vessel Trajectory Prediction for
+  Improving Smart Traffic Services in Maritime Internet of Things}
+    \field{volume}{9}
+    \field{journaltitle}{IEEE Transactions on Network Science and Engineering}
+    \field{year}{2022}
+  \endentry
+
+  \entry{Wang2024a}{inproceedings}{}{}
+    \name{author}{2}{}{%
+      {{hash=WH}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Han},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=CQ}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Qilong},
+         giveni={Q\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{WHCQ1}
+    \strng{fullhash}{WHCQ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{2024 4th International Symposium on Computer Technology
+  and Information Science (ISCTIS)}
+    \verb{doi}
+    \verb 10.1109/isctis63324.2024.10699003
+    \endverb
+    \field{pages}{590\bibrangedash 595}
+    \field{title}{Ship AIS Trajectory Outlier Identification Model under
+  High-speed Sampling Conditions}
+    \field{month}{07}
+    \field{year}{2024}
+  \endentry
+
+  \entry{Nguyen2024}{article}{}{}
+    \name{author}{2}{}{%
+      {{hash=ND}{%
+         family={Nguyen},
+         familyi={N\bibinitperiod},
+         given={Duong},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=FR}{%
+         family={Fablet},
+         familyi={F\bibinitperiod},
+         given={Ronan},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{2}{%
+      {Institute of Electrical}%
+      {Electronics Engineers (IEEE)}%
+    }
+    \strng{namehash}{NDFR1}
+    \strng{fullhash}{NDFR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1109/access.2024.3349957
+    \endverb
+    \field{issn}{2169-3536}
+    \field{pages}{21596\bibrangedash 21609}
+    \field{title}{A Transformer Network With Sparse Augmented Data
+  Representation and Cross Entropy Loss for AIS-Based Vessel Trajectory
+  Prediction}
+    \field{volume}{12}
+    \field{journaltitle}{IEEE Access}
+    \field{year}{2024}
+  \endentry
+
+  \entry{Zhang2026a}{article}{}{}
+    \name{author}{6}{}{%
+      {{hash=ZR}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Rui},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=LC}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Chao},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=LK}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Kezhong},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=WC}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Chen},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=ZB}{%
+         family={Zheng},
+         familyi={Z\bibinitperiod},
+         given={Bolong},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=JH}{%
+         family={Jiang},
+         familyi={J\bibinitperiod},
+         given={Hongbo},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{2}{%
+      {Institute of Electrical}%
+      {Electronics Engineers (IEEE)}%
+    }
+    \strng{namehash}{ZR+1}
+    \strng{fullhash}{ZRLCLKWCZBJH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1109/tits.2025.3635392
+    \endverb
+    \field{issn}{1558-0016}
+    \field{number}{1}
+    \field{pages}{258\bibrangedash 269}
+    \field{title}{Unified Multimodal Vessel Trajectory Prediction With
+  Explainable Navigation Intention}
+    \field{volume}{27}
+    \field{journaltitle}{IEEE Transactions on Intelligent Transportation
+  Systems}
+    \field{month}{01}
+    \field{year}{2026}
+  \endentry
+
+  \entry{Aouedi2026}{article}{}{}
+    \name{author}{7}{}{%
+      {{hash=AO}{%
+         family={Aouedi},
+         familyi={A\bibinitperiod},
+         given={Ons},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=OF}{%
+         family={Ortiz},
+         familyi={O\bibinitperiod},
+         given={Flor},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=VTX}{%
+         family={Vu},
+         familyi={V\bibinitperiod},
+         given={Thang\bibnamedelima X.},
+         giveni={T\bibinitperiod\bibinitdelim X\bibinitperiod},
+      }}%
+      {{hash=LA}{%
+         family={Lefourn},
+         familyi={L\bibinitperiod},
+         given={Alexandre},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=GF}{%
+         family={Giese},
+         familyi={G\bibinitperiod},
+         given={Felix},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=GG}{%
+         family={Gutierrez},
+         familyi={G\bibinitperiod},
+         given={Guillermo},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=CS}{%
+         family={Chatzinotas},
+         familyi={C\bibinitperiod},
+         given={Symeon},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{2}{%
+      {Institute of Electrical}%
+      {Electronics Engineers (IEEE)}%
+    }
+    \strng{namehash}{AO+1}
+    \strng{fullhash}{AOOFVTXLAGFGGCS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1109/tmlcn.2025.3644333
+    \endverb
+    \field{issn}{2831-316X}
+    \field{pages}{198\bibrangedash 210}
+    \field{title}{AIS-Based Hybrid Vessel Trajectory Prediction for Enhanced
+  Maritime Navigation}
+    \field{volume}{4}
+    \field{journaltitle}{IEEE Transactions on Machine Learning in
+  Communications and Networking}
+    \field{year}{2026}
+  \endentry
+
+  \entry{Zhang2026}{article}{}{}
+    \name{author}{5}{}{%
+      {{hash=ZY}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Yangyiyao},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=SZ}{%
+         family={Sun},
+         familyi={S\bibinitperiod},
+         given={Zhongzhen},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=CS}{%
+         family={Chang},
+         familyi={C\bibinitperiod},
+         given={Sheng},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=TB}{%
+         family={Tang},
+         familyi={T\bibinitperiod},
+         given={Bin},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=HB}{%
+         family={Hou},
+         familyi={H\bibinitperiod},
+         given={Bingzhi},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{2}{%
+      {Institute of Electrical}%
+      {Electronics Engineers (IEEE)}%
+    }
+    \strng{namehash}{ZY+2}
+    \strng{fullhash}{ZYSZCSTBHB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1109/jstars.2025.3635282
+    \endverb
+    \field{issn}{2151-1535}
+    \field{pages}{2658\bibrangedash 2679}
+    \field{title}{SegS-YOLO: A YOLO-Based Instance Segmentation Approach for
+  Small-Scale Ship Targets in SAR Images}
+    \field{volume}{19}
+    \field{journaltitle}{IEEE Journal of Selected Topics in Applied Earth
+  Observations and Remote Sensing}
+    \field{year}{2026}
+  \endentry
+\enddatalist
+\endinput

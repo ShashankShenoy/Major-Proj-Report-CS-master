@@ -1,0 +1,34 @@
+\chapter{Software Requirement Specification}
+
+\section{Overall Description}
+\subsection{Product Perspective}
+The proposed system relies on a modular, sequential pipeline designed for real-time inference. The process begins with the ingestion of raw maritime video feeds. Each frame is passed to a \gls{yolov8} model, which identifies and bounds the vessels. These detections are immediately forwarded to the \gls{deepocsort} tracking module. Using appearance-based \gls{reid} features and Kalman filter state estimations, the tracker assigns unique, persistent identities to each ship.
+
+As the vessels move, the system records their centroid coordinates. By analyzing inter-frame displacement, motion parameters like speed and heading are derived analytically. These historical coordinate sequences are then fed into an \gls{lstm} network that predicts the vessel's future trajectory. Finally, all the analytical outputs are overlaid onto the original video feed and mapped geospatially using Folium, providing operators with an intuitive, unified dashboard.
+
+\subsection{Product Functions}
+The objectives of the project are:
+\begin{enumerate}
+\item To engineer an intelligent surveillance pipeline using \gls{yolov8} for robust ship detection and \gls{deepocsort} for persistent multi-object tracking, ensuring reliable performance despite common maritime challenges like occlusion and water surface glare.
+\item To extract analytical trajectory data from the tracked vessels and utilize an \gls{lstm} neural network, coupled with Kalman filtering, to forecast future vessel paths and enable proactive monitoring.
+\item To develop a comprehensive visualization interface that overlays bounding boxes, unique tracking IDs, motion vectors, and predicted trajectories onto the video feed while simultaneously mapping the data geospatially.
+\end{enumerate}
+
+\subsection{Constraints}
+The system is built upon several operational assumptions. The input is expected to be video footage from a static camera, typical of a coastal watchtower or port facility. It is assumed that vessels contrast sufficiently with the water to allow detection and that the underlying \gls{yolov8} model has been trained on a sufficiently diverse dataset. Trajectory predictions assume relatively smooth vessel dynamics, as sudden, erratic maneuvers degrade \gls{lstm} forecasting accuracy. Finally, real-time processing requires the deployment environment to include a dedicated GPU.
+
+The project is also bound by specific constraints. The current architecture accepts only visual video feeds and does not yet fuse external radar or live \gls{ais} data streams. Detection and tracking accuracy will naturally degrade under extreme weather conditions such as heavy rain or zero-visibility fog. The \gls{lstm} prediction module relies heavily on the length and quality of the historical track; shorter tracks yield less accurate forecasts. The system is designed for single-feed analysis and does not currently support spatial hand-offs between multiple overlapping cameras. Furthermore, accurate geospatial mapping relies strictly on correct camera calibration parameters to convert pixel coordinates into geographic locations.
+
+\section{Specific Requirements}
+\subsection{Functional Requirements}
+The system shall detect ships using YOLOv8, track them using DeepOCSORT, and predict their trajectories using LSTM.
+\subsection{Performance Requirements}
+The system must operate in real-time or near real-time, matching camera frame rates.
+\subsection{Software Requirements}
+Python, PyTorch, OpenCV, CUDA, Folium.
+\subsection{Hardware Requirements}
+A dedicated NVIDIA GPU is required for real-time inference.
+\subsection{Design Constraints}
+The system relies heavily on visibility; extreme weather conditions may degrade performance.
+\section{Summary}
+This chapter defined the problem scope, product perspective, constraints, and operational requirements necessary for system deployment.
