@@ -14,6 +14,9 @@ Beyond speed, the system was designed with resilience in mind. Port authorities 
 \label{fig:architecture}
 \end{figure}
 
+The architecture shown in Fig.~\ref{fig:architecture} demonstrates the hierarchical organisation of the proposed maritime surveillance framework. Each processing stage performs a dedicated function and passes structured information to subsequent modules. Such a layered design minimizes inter-module dependency and improves maintainability, scalability, and future extensibility of the overall system.
+
+
 \subsection{Development Methods and Modularity}
 To manage the complexity of integrating multiple deep learning models, we adopted an iterative development methodology paired with strict modular design principles. Rather than building a monolithic application where the detection logic is inextricably tangled with the prediction logic, each core function was compartmentalized into distinct micro-services or independent modules.
 
@@ -26,6 +29,8 @@ The primary programming language chosen for the development of this architecture
 
 Specifically, PyTorch was selected as the foundational machine learning framework. Its dynamic computation graph and native support for CUDA-accelerated GPU processing were indispensable for achieving real-time inference speeds with both the YOLOv8 and \gls{lstm} networks. For handling the intensive task of raw video decoding and image matrix manipulation, OpenCV was utilized extensively. Its underlying C++ implementation ensures that pre-processing tasks, such as resizing frames and applying contrast enhancements, do not become a computational bottleneck. Finally, to render the complex analytical data intuitively for end-users, we integrated libraries like Folium and PyQt, which allow for the creation of interactive, geographically aware dashboards.
 
+The selected technology stack was chosen to balance development flexibility, computational efficiency, and scalability. Python provides rapid prototyping capabilities and extensive support for machine learning applications, while PyTorch enables efficient implementation of deep neural networks. OpenCV facilitates real-time video processing, whereas Folium and PyQt provide intuitive visualization interfaces for maritime situational awareness. Together, these technologies form a cohesive software ecosystem capable of supporting real-time surveillance operations.
+
 \subsection{Pathways for Future Extensibility}
 While the current architecture delivers a robust proof-of-concept for vision-based predictive monitoring, the design explicitly accounts for future expansion. Current operations are limited to single-camera, optical video feeds. However, the data ingestion layer was structured to eventually accommodate multimodal sensor fusion. Future iterations are planned to ingest inputs from long-wave infrared (LWIR) cameras for nighttime operations, as well as raw radar returns to provide depth estimation across the Z-axis. Additionally, the tracking logic has been conceptually mapped to support multi-camera spatial hand-offs, which would allow the system to pass a tracked vessel's identity seamlessly from one camera's field of view to the next, enabling continuous monitoring across an entire sprawling port complex.
 
@@ -33,6 +38,16 @@ While the current architecture delivers a robust proof-of-concept for vision-bas
 The system architecture follows a sequential, feed-forward pipeline. It begins at the data ingestion layer, which continuously pulls frames from the live camera feed and synchronizes them with incoming \gls{ais} telemetry when available. This raw data is then pushed into the inference engine. Here, the YOLOv8 object detector isolates the vessels and generates tight bounding boxes. These localized regions of interest are immediately passed to the DeepSORT tracking module, which uses a pre-trained OSNet re-identification network to extract deep visual features from the vessel's hull, assigning a persistent unique identifier (ID) to each ship.
 
 Once tracked, the system extracts the center coordinates of the bounding boxes frame-by-frame. This sequential coordinate data is transformed mathematically to calculate real-world velocity and heading vectors. This historical movement tensor is then fed into the \gls{bilstm} trajectory forecasting module, which outputs a predicted pathway for the next several minutes. The final layer of the architecture is the presentation module, which overlays the current bounding boxes, IDs, and predicted trajectory arcs directly onto the live video feed, while simultaneously plotting the data onto a live geospatial map.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{Chapter4/Figures/pipeline.jpeg}
+\caption{End-to-End Processing Pipeline of Proposed Maritime Surveillance System}
+\label{fig:pipeline_end_to_end}
+\end{figure}
+
+The complete end-to-end processing workflow of the proposed maritime surveillance framework is illustrated in Fig.~\ref{fig:pipeline_end_to_end}.
+
 
 \section{Data Flow Modeling}
 
@@ -43,7 +58,7 @@ The Level-0 Context Diagram, presented in Figure~\ref{fig:dfd0}, establishes the
 
 \begin{figure}[!htbp]
 \centering
-\includegraphics[width=0.95\textwidth]{Chapter3/Figures/dfd_level0_context.png}
+\includegraphics[width=0.95\textwidth]{Chapter4/Figures/dfd_level0_context.png}
 \caption{Level-0 Context Diagram of Proposed Maritime Surveillance System}
 \label{fig:dfd0}
 \end{figure}
@@ -52,7 +67,7 @@ Expanding significantly on this high-level view, the Level-1 DFD (Figure~\ref{fi
 
 \begin{figure}[!htbp]
 \centering
-\includegraphics[width=0.95\textwidth]{Chapter3/Figures/dfd_level1_context.png}
+\includegraphics[width=0.95\textwidth]{Chapter4/Figures/dfd_level1_context.png}
 \caption{Level-1 Data Flow Diagram of Proposed Maritime Surveillance System}
 \label{fig:dfd1}
 \end{figure}
