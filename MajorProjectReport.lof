@@ -32,8 +32,10 @@
 \contentsline {figure}{\numberline {8.8}{\ignorespaces Geospatial map output showing \gls {ais}-matched vessels with \gls {mmsi} identifiers and dark vessels flagged by the \gls {cv}-to-\gls {ais} fusion module}}{68}{figure.8.8}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Plagiarism Report - Page 1}}{77}{figure.A.1}%
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Plagiarism Report - Page 2}}{78}{figure.A.2}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {C.1}{\ignorespaces MARVIS Primary Dashboard Interface showing telemetry, video feed, and real-time mapping.}}{81}{figure.C.1}%
-\contentsline {figure}{\numberline {C.2}{\ignorespaces Real-time Annotated Video Feed with bounding boxes.}}{82}{figure.C.2}%
-\contentsline {figure}{\numberline {C.3}{\ignorespaces Geospatial AIS Sensor Fusion Map indicating cooperative vessels and potential dark traffic.}}{82}{figure.C.3}%
+\contentsline {figure}{\numberline {C.1}{\ignorespaces MARVIS Primary Dashboard Interface showing telemetry, video feed, and real-time mapping.}}{82}{figure.C.1}%
+\contentsline {figure}{\numberline {C.2}{\ignorespaces Real-time Annotated Video Feed with bounding boxes.}}{83}{figure.C.2}%
+\contentsline {figure}{\numberline {C.3}{\ignorespaces Geospatial AIS Sensor Fusion Map indicating cooperative vessels and potential dark traffic.}}{83}{figure.C.3}%

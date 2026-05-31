@@ -107,9 +107,9 @@
 \contentsline {section}{\numberline {9.3}Future Enhancement}{74}{section.9.3}%
 \contentsline {section}{\numberline {9.4}Learning Outcomes}{75}{section.9.4}%
 \contentsline {chapter}{\numberline {A}Plagiarism report}{76}{chapter.A}%
-\contentsline {chapter}{\numberline {B}Publication details}{78}{chapter.B}%
-\contentsline {chapter}{\numberline {C}Code}{80}{chapter.C}%
-\contentsline {section}{\numberline {C.1}System Dashboard Interfaces}{81}{section.C.1}%
-\contentsline {section}{\numberline {C.2}AIS-Matched Vessel Inference Routing}{82}{section.C.2}%
-\contentsline {section}{\numberline {C.3}Dashboard Pipeline Integration Loop}{84}{section.C.3}%
-\contentsline {chapter}{Bibliography}{86}{lstnumber.-2.46}%
+\contentsline {chapter}{\numberline {B}Publication details}{79}{chapter.B}%
+\contentsline {chapter}{\numberline {C}Code}{81}{chapter.C}%
+\contentsline {section}{\numberline {C.1}System Dashboard Interfaces}{82}{section.C.1}%
+\contentsline {section}{\numberline {C.2}AIS-Matched Vessel Inference Routing}{83}{section.C.2}%
+\contentsline {section}{\numberline {C.3}Dashboard Pipeline Integration Loop}{85}{section.C.3}%
+\contentsline {chapter}{Bibliography}{87}{lstnumber.-2.46}%
