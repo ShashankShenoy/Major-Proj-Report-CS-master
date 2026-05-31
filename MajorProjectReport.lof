@@ -22,20 +22,20 @@
 \contentsline {figure}{\numberline {6.4}{\ignorespaces Dashboard Communication and Visualization Architecture}}{51}{figure.6.4}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {8.1}{\ignorespaces Training and Validation Loss Curves of \gls {bilstm} Model}}{59}{figure.8.1}%
-\contentsline {figure}{\numberline {8.2}{\ignorespaces \gls {yolov8} detection output on \gls {smd} test frames showing bounding boxes, class labels, and confidence scores}}{61}{figure.8.2}%
-\contentsline {figure}{\numberline {8.3}{\ignorespaces \gls {deepocsort} Multi-Object Tracking Results on Maritime Video Sequences}}{62}{figure.8.3}%
-\contentsline {figure}{\numberline {8.4}{\ignorespaces Predicted Vessel Trajectories Compared with Ground Truth Paths: the \gls {lstm} (solid) follows the curve, the kinematic baseline (dashed) diverges linearly.}}{64}{figure.8.4}%
-\contentsline {figure}{\numberline {8.5}{\ignorespaces Critical collision risk alert on the MARVIS dashboard showing \gls {cpa} distance, time-to-\gls {cpa}, and risk level for two vessels on a converging course}}{65}{figure.8.5}%
-\contentsline {figure}{\numberline {8.6}{\ignorespaces MARVIS dashboard showing the integrated real-time output: annotated video feed, Folium geospatial map, and per-vessel telemetry panel during \gls {smd} test sequence evaluation}}{67}{figure.8.6}%
-\contentsline {figure}{\numberline {8.7}{\ignorespaces \gls {mmsi} \gls {id} with detailed information about the ship}}{68}{figure.8.7}%
-\contentsline {figure}{\numberline {8.8}{\ignorespaces Geospatial map output showing \gls {ais}-matched vessels with \gls {mmsi} identifiers and dark vessels flagged by the \gls {cv}-to-\gls {ais} fusion module}}{68}{figure.8.8}%
+\contentsline {figure}{\numberline {8.1}{\ignorespaces Training and Validation Loss Curves of \gls {bilstm} Model}}{63}{figure.8.1}%
+\contentsline {figure}{\numberline {8.2}{\ignorespaces \gls {yolov8} detection output on \gls {smd} test frames showing bounding boxes, class labels, and confidence scores}}{65}{figure.8.2}%
+\contentsline {figure}{\numberline {8.3}{\ignorespaces \gls {deepocsort} Multi-Object Tracking Results on Maritime Video Sequences}}{66}{figure.8.3}%
+\contentsline {figure}{\numberline {8.4}{\ignorespaces Predicted Vessel Trajectories Compared with Ground Truth Paths: the \gls {lstm} (solid) follows the curve, the kinematic baseline (dashed) diverges linearly.}}{68}{figure.8.4}%
+\contentsline {figure}{\numberline {8.5}{\ignorespaces Critical collision risk alert on the MARVIS dashboard showing \gls {cpa} distance, time-to-\gls {cpa}, and risk level for two vessels on a converging course}}{69}{figure.8.5}%
+\contentsline {figure}{\numberline {8.6}{\ignorespaces MARVIS dashboard showing the integrated real-time output: annotated video feed, Folium geospatial map, and per-vessel telemetry panel during \gls {smd} test sequence evaluation}}{71}{figure.8.6}%
+\contentsline {figure}{\numberline {8.7}{\ignorespaces \gls {mmsi} \gls {id} with detailed information about the ship}}{72}{figure.8.7}%
+\contentsline {figure}{\numberline {8.8}{\ignorespaces Geospatial map output showing \gls {ais}-matched vessels with \gls {mmsi} identifiers and dark vessels flagged by the \gls {cv}-to-\gls {ais} fusion module}}{72}{figure.8.8}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Plagiarism Report - Page 1}}{77}{figure.A.1}%
-\contentsline {figure}{\numberline {A.2}{\ignorespaces Plagiarism Report - Page 2}}{78}{figure.A.2}%
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Plagiarism Report - Page 1}}{81}{figure.A.1}%
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Plagiarism Report - Page 2}}{82}{figure.A.2}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {C.1}{\ignorespaces MARVIS Primary Dashboard Interface showing telemetry, video feed, and real-time mapping.}}{82}{figure.C.1}%
-\contentsline {figure}{\numberline {C.2}{\ignorespaces Real-time Annotated Video Feed with bounding boxes.}}{83}{figure.C.2}%
-\contentsline {figure}{\numberline {C.3}{\ignorespaces Geospatial AIS Sensor Fusion Map indicating cooperative vessels and potential dark traffic.}}{83}{figure.C.3}%
+\contentsline {figure}{\numberline {C.1}{\ignorespaces MARVIS Primary Dashboard Interface showing telemetry, video feed, and real-time mapping.}}{86}{figure.C.1}%
+\contentsline {figure}{\numberline {C.2}{\ignorespaces Real-time Annotated Video Feed with bounding boxes.}}{87}{figure.C.2}%
+\contentsline {figure}{\numberline {C.3}{\ignorespaces Geospatial AIS Sensor Fusion Map indicating cooperative vessels and potential dark traffic.}}{87}{figure.C.3}%

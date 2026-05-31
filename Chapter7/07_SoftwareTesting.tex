@@ -76,6 +76,185 @@ An essential dimension of the evaluation involved stress testing the software ar
 
 During these high-density trials, particular attention was paid to the execution times of the DeepOCSORT multi-object tracker and the LSTM forecasting modules. As the number of overlapping ship trajectories naturally increased in crowded waterways, the testing framework closely monitored CPU and GPU memory utilization alongside frame inference latency. This rigorous stress testing ultimately validated the necessity of the system's kinematic linear regression fallback mechanism, proving that it successfully prevents the pipeline from stalling while calculating initial trajectory predictions for newly identified targets.
 
+\section{Test Cases}
+
+A series of targeted test cases were executed to evaluate different models, architectures, and features during the system's development. The structured outcomes of these test cases are detailed below.
+
+\begin{table}[H]
+\centering
+\caption{Test Case 1: Evaluation of Pre-trained YOLO Architectures}
+\label{tab:testcase1}
+\begin{tabular}{|p{0.3\textwidth}|p{0.6\textwidth}|}
+\hline
+\textbf{Sl No. of Test Case} & 1 \\
+\hline
+\textbf{Name of Test Case} & Evaluation of Pre-trained YOLO Architectures \\
+\hline
+\textbf{Feature being Tested} & Zero-shot Object Detection Efficacy and Computational Overhead \\
+\hline
+\textbf{Description} & Assess the baseline performance of unmodified YOLO architectures on maritime datasets to determine detection precision and spatial memory requirements. \\
+\hline
+\textbf{Sample Input} & High-definition maritime surveillance video streams \\
+\hline
+\textbf{Expected Output} & High mean Average Precision (mAP) coupled with a minimal memory footprint conducive to edge deployment. \\
+\hline
+\textbf{Actual Output} & Demonstrated adequate baseline detection without fine-tuning; however, accuracy dropped in complex scenes and the parameter count exceeded the hardware constraints of the target embedded system. \\
+\hline
+\textbf{Remarks} & System requirements successfully validated; fine-tuning of lighter variants deemed necessary \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Test Case 2: Feature-based Re-identification via Database Mapping}
+\label{tab:testcase2}
+\begin{tabular}{|p{0.3\textwidth}|p{0.6\textwidth}|}
+\hline
+\textbf{Sl No. of Test Case} & 2 \\
+\hline
+\textbf{Name of Test Case} & Feature-based Re-identification via Database Mapping \\
+\hline
+\textbf{Feature being Tested} & Multi-Target Re-identification and Historical Trajectory Mapping \\
+\hline
+\textbf{Description} & Extract bounding box visual features via a Convolutional Neural Network (CNN) and store high-dimensional embeddings in a relational database for inter-frame vessel matching. \\
+\hline
+\textbf{Sample Input} & Extracted spatial coordinates and normalized visual feature vectors \\
+\hline
+\textbf{Expected Output} & Low-latency query execution yielding highly accurate topological tracking across sequential frames, compatible with constrained processing units. \\
+\hline
+\textbf{Actual Output} & Achieved high re-identification accuracy in isolated tests; however, synchronous database I/O operations induced severe latency bottlenecks when integrated with the primary YOLO inference pipeline. \\
+\hline
+\textbf{Remarks} & Architecture deemed computationally unfeasible for target hardware; Test failed \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Test Case 3: Kinematic Multi-Object Tracking utilizing DeepOCSORT}
+\label{tab:testcase3}
+\begin{tabular}{|p{0.3\textwidth}|p{0.6\textwidth}|}
+\hline
+\textbf{Sl No. of Test Case} & 3 \\
+\hline
+\textbf{Name of Test Case} & Kinematic Multi-Object Tracking utilizing DeepOCSORT \\
+\hline
+\textbf{Feature being Tested} & Inter-frame Identity Consistency and Occlusion Handling \\
+\hline
+\textbf{Description} & Integrate the DeepOCSORT algorithm to maintain continuous trajectory associations and preserve unique tracking IDs utilizing bounding box kinematics and Kalman filtering. \\
+\hline
+\textbf{Sample Input} & Time-series YOLOv8 detection coordinates and associated confidence scores \\
+\hline
+\textbf{Expected Output} & Persistent identity tracking with robust handling of temporary visual occlusions and minimal computational overhead. \\
+\hline
+\textbf{Actual Output} & Facilitated highly efficient trajectory history management on lower-tier hardware. Identity fragmentation during missed detections was subsequently mitigated via sensor fusion with AIS telemetry. \\
+\hline
+\textbf{Remarks} & Systematically successful; Adopted into primary pipeline \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Test Case 4: Offline Geographic Visualization via GeoTIFF Rendering}
+\label{tab:testcase4}
+\begin{tabular}{|p{0.3\textwidth}|p{0.6\textwidth}|}
+\hline
+\textbf{Sl No. of Test Case} & 4 \\
+\hline
+\textbf{Name of Test Case} & Offline Geographic Visualization via GeoTIFF Rendering \\
+\hline
+\textbf{Feature being Tested} & Offline Cartographic Rendering and Spatial Mapping \\
+\hline
+\textbf{Description} & Ingest and render high-resolution GeoTIFF files to provide localized, offline geographic context for maritime surveillance operations. \\
+\hline
+\textbf{Sample Input} & Standardized high-resolution cartographic GeoTIFF tiles \\
+\hline
+\textbf{Expected Output} & Detailed, responsive rendering of geographic contours with minimal storage overhead. \\
+\hline
+\textbf{Actual Output} & Successfully rendered topographical contours offline; however, individual map segments exceeded 500 MB, violating the strict memory constraints of the deployment hardware. \\
+\hline
+\textbf{Remarks} & Implementation rejected due to excessive spatial complexity; Test failed \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Test Case 5: Real-time Telemetry Visualization via AIS and MapLibre}
+\label{tab:testcase5}
+\begin{tabular}{|p{0.3\textwidth}|p{0.6\textwidth}|}
+\hline
+\textbf{Sl No. of Test Case} & 5 \\
+\hline
+\textbf{Name of Test Case} & Real-time Telemetry Visualization via AIS and MapLibre \\
+\hline
+\textbf{Feature being Tested} & Dynamic Web-Cartography and Telemetry Sensor Fusion \\
+\hline
+\textbf{Description} & Establish a WebSocket interface to an open-source Automatic Identification System (AIS) stream and project live vessel telemetry onto a MapLibre vector-tile map. \\
+\hline
+\textbf{Sample Input} & Asynchronous AIS JSON data streams and lightweight map vector tiles \\
+\hline
+\textbf{Expected Output} & Reliable, low-latency rendering of live geospatial data synchronized with the visual tracking pipeline. \\
+\hline
+\textbf{Actual Output} & WebSocket integration proved highly efficient with minimal overhead. The sole limitation observed was incomplete geographic coverage for secondary ports within the free-tier stream. \\
+\hline
+\textbf{Remarks} & Highly successful; Adopted as the primary mapping infrastructure \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Test Case 6: Predictive Trajectory Modeling utilizing Bidirectional LSTM}
+\label{tab:testcase6}
+\begin{tabular}{|p{0.3\textwidth}|p{0.6\textwidth}|}
+\hline
+\textbf{Sl No. of Test Case} & 6 \\
+\hline
+\textbf{Name of Test Case} & Predictive Trajectory Modeling utilizing Bidirectional LSTM \\
+\hline
+\textbf{Feature being Tested} & Non-linear Kinematic Forecasting and Time-Series Analysis \\
+\hline
+\textbf{Description} & Deploy a Bidirectional Long Short-Term Memory (BiLSTM) neural network to analyze historical position vectors and forecast future geospatial coordinates of tracked vessels. \\
+\hline
+\textbf{Sample Input} & Sequential tensors representing the trailing 50 kinematic states of an identified vessel \\
+\hline
+\textbf{Expected Output} & Accurate geospatial predictions capable of anticipating non-linear maneuvers and acute navigational deviations. \\
+\hline
+\textbf{Actual Output} & The BiLSTM architecture significantly minimized both Average Displacement Error (ADE) and Final Displacement Error (FDE) compared to linear regression baselines, correctly anticipating complex maneuvers. \\
+\hline
+\textbf{Remarks} & Systematically successful; Integration approved \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Test Case 7: Automated Collision Risk Categorization (CPA)}
+\label{tab:testcase7}
+\begin{tabular}{|p{0.3\textwidth}|p{0.6\textwidth}|}
+\hline
+\textbf{Sl No. of Test Case} & 7 \\
+\hline
+\textbf{Name of Test Case} & Automated Collision Risk Categorization (CPA) \\
+\hline
+\textbf{Feature being Tested} & Proactive Spatial Risk Assessment and Alert Generation \\
+\hline
+\textbf{Description} & Compute the Closest Point of Approach (CPA) utilizing current kinematic vectors for active vessel pairs to trigger severity-based collision alerts. \\
+\hline
+\textbf{Sample Input} & Real-time geospatial coordinates, heading, and scalar velocity of overlapping vessel trajectories \\
+\hline
+\textbf{Expected Output} & Mathematically precise categorization of trajectory intersections into Critical, High, Medium, and Low risk thresholds with zero false-negative dropouts. \\
+\hline
+\textbf{Actual Output} & The algorithm accurately resolved trigonometric approach distances in real-time and consistently triggered deterministic alerts conforming to the predefined spatial thresholds. \\
+\hline
+\textbf{Remarks} & Highly successful; Crucial safety mechanism validated \\
+\hline
+\end{tabular}
+\end{table}
+
 \section{Summary}
 
 The software testing phase was systematically executed through a structured progression, beginning with the isolated verification of core mathematical utilities and culminating in demanding, full-system integration trials. By rigidly standardizing the underlying hardware architecture and locking down all internal algorithmic parameters, the evaluation framework ensured a high degree of experimental reproducibility. The deployment of rigorous unit, integration, and computational stress tests effectively validated the pipeline's robust capacity to handle dense vessel traffic while reliably fusing visual telemetry with external broadcast streams. Establishing this highly controlled experimental setup provides the essential foundation required to critically evaluate the quantitative performance and predictive accuracy of the final surveillance system.

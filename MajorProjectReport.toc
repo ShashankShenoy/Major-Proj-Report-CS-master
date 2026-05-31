@@ -86,30 +86,31 @@
 \contentsline {subsection}{\numberline {7.3.1}Experimental Setup}{55}{subsection.7.3.1}%
 \contentsline {subsection}{\numberline {7.3.2}Standardization of System Parameters}{55}{subsection.7.3.2}%
 \contentsline {section}{\numberline {7.4}Performance and Stress Testing}{56}{section.7.4}%
-\contentsline {section}{\numberline {7.5}Summary}{57}{section.7.5}%
-\contentsline {chapter}{\numberline {8}Experimental Results}{58}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Results Analysis}{59}{section.8.1}%
-\contentsline {subsection}{\numberline {8.1.1}\gls {lstm} Training Convergence}{59}{subsection.8.1.1}%
-\contentsline {subsection}{\numberline {8.1.2}Vessel Detection}{60}{subsection.8.1.2}%
-\contentsline {subsection}{\numberline {8.1.3}Multi-Object Tracking}{61}{subsection.8.1.3}%
-\contentsline {subsection}{\numberline {8.1.4}Trajectory Prediction}{62}{subsection.8.1.4}%
-\contentsline {subsection}{\numberline {8.1.5}Collision Risk Detection}{64}{subsection.8.1.5}%
-\contentsline {subsection}{\numberline {8.1.6}Robustness Under Adverse Weather Conditions}{66}{subsection.8.1.6}%
-\contentsline {section}{\numberline {8.2}Detailed Analysis}{67}{section.8.2}%
-\contentsline {subsection}{\numberline {8.2.1}Qualitative Output}{67}{subsection.8.2.1}%
-\contentsline {subsection}{\numberline {8.2.2}Performance Analysis}{69}{subsection.8.2.2}%
-\contentsline {subsection}{\numberline {8.2.3}\gls {ais}-Matched Vessel \gls {lstm} Skip Optimization}{69}{subsection.8.2.3}%
-\contentsline {subsection}{\numberline {8.2.4}Comparative Evaluation Metrics}{70}{subsection.8.2.4}%
-\contentsline {section}{\numberline {8.3}Summary}{71}{section.8.3}%
-\contentsline {chapter}{\numberline {9}Conclusion}{72}{chapter.9}%
-\contentsline {section}{\numberline {9.1}Summary of Work}{73}{section.9.1}%
-\contentsline {section}{\numberline {9.2}Limitations}{73}{section.9.2}%
-\contentsline {section}{\numberline {9.3}Future Enhancement}{74}{section.9.3}%
-\contentsline {section}{\numberline {9.4}Learning Outcomes}{75}{section.9.4}%
-\contentsline {chapter}{\numberline {A}Plagiarism report}{76}{chapter.A}%
-\contentsline {chapter}{\numberline {B}Publication details}{79}{chapter.B}%
-\contentsline {chapter}{\numberline {C}Code}{81}{chapter.C}%
-\contentsline {section}{\numberline {C.1}System Dashboard Interfaces}{82}{section.C.1}%
-\contentsline {section}{\numberline {C.2}AIS-Matched Vessel Inference Routing}{83}{section.C.2}%
-\contentsline {section}{\numberline {C.3}Dashboard Pipeline Integration Loop}{85}{section.C.3}%
-\contentsline {chapter}{Bibliography}{87}{lstnumber.-2.46}%
+\contentsline {section}{\numberline {7.5}Test Cases}{57}{section.7.5}%
+\contentsline {section}{\numberline {7.6}Summary}{60}{section.7.6}%
+\contentsline {chapter}{\numberline {8}Experimental Results}{62}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Results Analysis}{63}{section.8.1}%
+\contentsline {subsection}{\numberline {8.1.1}\gls {lstm} Training Convergence}{63}{subsection.8.1.1}%
+\contentsline {subsection}{\numberline {8.1.2}Vessel Detection}{64}{subsection.8.1.2}%
+\contentsline {subsection}{\numberline {8.1.3}Multi-Object Tracking}{65}{subsection.8.1.3}%
+\contentsline {subsection}{\numberline {8.1.4}Trajectory Prediction}{66}{subsection.8.1.4}%
+\contentsline {subsection}{\numberline {8.1.5}Collision Risk Detection}{68}{subsection.8.1.5}%
+\contentsline {subsection}{\numberline {8.1.6}Robustness Under Adverse Weather Conditions}{70}{subsection.8.1.6}%
+\contentsline {section}{\numberline {8.2}Detailed Analysis}{71}{section.8.2}%
+\contentsline {subsection}{\numberline {8.2.1}Qualitative Output}{71}{subsection.8.2.1}%
+\contentsline {subsection}{\numberline {8.2.2}Performance Analysis}{73}{subsection.8.2.2}%
+\contentsline {subsection}{\numberline {8.2.3}\gls {ais}-Matched Vessel \gls {lstm} Skip Optimization}{73}{subsection.8.2.3}%
+\contentsline {subsection}{\numberline {8.2.4}Comparative Evaluation Metrics}{74}{subsection.8.2.4}%
+\contentsline {section}{\numberline {8.3}Summary}{75}{section.8.3}%
+\contentsline {chapter}{\numberline {9}Conclusion}{76}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Summary of Work}{77}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Limitations}{77}{section.9.2}%
+\contentsline {section}{\numberline {9.3}Future Enhancement}{78}{section.9.3}%
+\contentsline {section}{\numberline {9.4}Learning Outcomes}{79}{section.9.4}%
+\contentsline {chapter}{\numberline {A}Plagiarism report}{80}{chapter.A}%
+\contentsline {chapter}{\numberline {B}Publication details}{83}{chapter.B}%
+\contentsline {chapter}{\numberline {C}Code}{85}{chapter.C}%
+\contentsline {section}{\numberline {C.1}System Dashboard Interfaces}{86}{section.C.1}%
+\contentsline {section}{\numberline {C.2}AIS-Matched Vessel Inference Routing}{87}{section.C.2}%
+\contentsline {section}{\numberline {C.3}Dashboard Pipeline Integration Loop}{89}{section.C.3}%
+\contentsline {chapter}{Bibliography}{91}{lstnumber.-2.46}%
