@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.5.27)  31 MAY 2026 15:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.5.27)  31 MAY 2026 16:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -451,7 +451,7 @@ Package hyperref Info: Link coloring OFF on input line 15.
 \@outlinefile=\write3
 \openout3 = `access.out'.
 
-<bullet.png, id=42, 12.045pt x 35.38219pt>
+<bullet.png, id=23, 12.045pt x 35.38219pt>
 File: bullet.png Graphic file (type png)
 <use bullet.png>
 Package pdftex.def Info: bullet.png  used on input line 29.
@@ -505,7 +505,7 @@ Package xcolor Warning: Incompatible color definition on input line 44.
 
 Package xcolor Warning: Incompatible color definition on input line 54.
 
-<Logo.png, id=45, 206.27063pt x 53.44969pt>
+<Logo.png, id=26, 206.27063pt x 53.44969pt>
 File: Logo.png Graphic file (type png)
 <use Logo.png>
 Package pdftex.def Info: Logo.png  used on input line 54.
@@ -536,7 +536,7 @@ LaTeX Warning: Reference `sec:experiments' on page 2 undefined on input line 61.
 
 Package xcolor Warning: Incompatible color definition on input line 63.
 
-<images/system_architecture.jpeg, id=61, 1772.6225pt x 894.34125pt>
+<images/system_architecture.jpeg, id=42, 1772.6225pt x 894.34125pt>
 File: images/system_architecture.jpeg Graphic file (type jpg)
 <use images/system_architecture.jpeg>
 Package pdftex.def Info: images/system_architecture.jpeg  used on input line 84.
@@ -553,7 +553,7 @@ Package xcolor Warning: Incompatible color definition on input line 91.
 
 Package xcolor Warning: Incompatible color definition on input line 121.
 
-<notaglineLogo.png, id=65, 169.38281pt x 42.91031pt>
+<notaglineLogo.png, id=46, 169.38281pt x 42.91031pt>
 File: notaglineLogo.png Graphic file (type png)
 <use notaglineLogo.png>
 Package pdftex.def Info: notaglineLogo.png  used on input line 170.
@@ -601,7 +601,7 @@ Package xcolor Warning: Incompatible color definition on input line 207.
 
 Package xcolor Warning: Incompatible color definition on input line 241.
 
-<images/lstm_architecture.png, id=95, 511.9125pt x 398.9304pt>
+<images/lstm_architecture.png, id=76, 511.9125pt x 398.9304pt>
 File: images/lstm_architecture.png Graphic file (type png)
 <use images/lstm_architecture.png>
 Package pdftex.def Info: images/lstm_architecture.png  used on input line 246.
@@ -671,7 +671,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [4]
-<images/detection_output.png, id=141, 388.45125pt x 285.31593pt>
+<images/detection_output.png, id=122, 388.45125pt x 285.31593pt>
 File: images/detection_output.png Graphic file (type png)
 <use images/detection_output.png>
 Package pdftex.def Info: images/detection_output.png  used on input line 518.
@@ -689,7 +689,7 @@ Package xcolor Warning: Incompatible color definition on input line 525.
 
 Package xcolor Warning: Incompatible color definition on input line 534.
 
-<images/tracking_output.png, id=145, 525.46312pt x 76.03406pt>
+<images/tracking_output.png, id=126, 525.46312pt x 76.03406pt>
 File: images/tracking_output.png Graphic file (type png)
 <use images/tracking_output.png>
 Package pdftex.def Info: images/tracking_output.png  used on input line 566.
@@ -711,7 +711,7 @@ Overfull \hbox (14.82883pt too wide) in paragraph at lines 603--618
  [][] 
  []
 
-<images/terminal_output.png, id=147, 752.8125pt x 724.7075pt>
+<images/terminal_output.png, id=128, 752.8125pt x 724.7075pt>
 File: images/terminal_output.png Graphic file (type png)
 <use images/terminal_output.png>
 Package pdftex.def Info: images/terminal_output.png  used on input line 623.
@@ -737,7 +737,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [5 <./images/detection_output.png> <./images/tracking_output.png> <./images/terminal_output.png (PNG copy)>]
-<images/prediction_output.png, id=165, 578.16pt x 433.62pt>
+<images/prediction_output.png, id=146, 578.16pt x 433.62pt>
 File: images/prediction_output.png Graphic file (type png)
 <use images/prediction_output.png>
 Package pdftex.def Info: images/prediction_output.png  used on input line 643.
@@ -760,7 +760,7 @@ Underfull \hbox (badness 1675) in paragraph at lines 681--689
 \T1/ptm/n/n/10 50m at CPA, as these events cor-re-spond to the most
  []
 
-<images/collision_alert.png, id=168, 1443.14156pt x 712.16063pt>
+<images/collision_alert.png, id=149, 1443.14156pt x 712.16063pt>
 File: images/collision_alert.png Graphic file (type png)
 <use images/collision_alert.png>
 Package pdftex.def Info: images/collision_alert.png  used on input line 692.
@@ -894,86 +894,13 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [8]
-
-Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 1153.
-
-<images/srag.jpeg, id=242, 648.4225pt x 810.02625pt>
-File: images/srag.jpeg Graphic file (type jpg)
-<use images/srag.jpeg>
-Package pdftex.def Info: images/srag.jpeg  used on input line 1153.
-(pdftex.def)             Requested size: 72.26663pt x 90.27736pt.
-File: images/srag.jpeg Graphic file (type jpg)
-<use images/srag.jpeg>
-Package pdftex.def Info: images/srag.jpeg  used on input line 1153.
-(pdftex.def)             Requested size: 72.26663pt x 90.27736pt.
-<images/gayk2.jpeg, id=245, 722.7pt x 1284.8pt>
-File: images/gayk2.jpeg Graphic file (type jpg)
-<use images/gayk2.jpeg>
-Package pdftex.def Info: images/gayk2.jpeg  used on input line 1156.
-(pdftex.def)             Requested size: 50.81471pt x 90.33728pt.
-File: images/gayk2.jpeg Graphic file (type jpg)
-<use images/gayk2.jpeg>
-Package pdftex.def Info: images/gayk2.jpeg  used on input line 1156.
-(pdftex.def)             Requested size: 50.81471pt x 90.33728pt.
-<images/shashe2.jpeg, id=248, 345.29pt x 369.38pt>
-File: images/shashe2.jpeg Graphic file (type jpg)
-<use images/shashe2.jpeg>
-Package pdftex.def Info: images/shashe2.jpeg  used on input line 1159.
-(pdftex.def)             Requested size: 72.2654pt x 77.30717pt.
-File: images/shashe2.jpeg Graphic file (type jpg)
-<use images/shashe2.jpeg>
-Package pdftex.def Info: images/shashe2.jpeg  used on input line 1159.
-(pdftex.def)             Requested size: 72.2654pt x 77.30717pt.
-<images/smrsoo.jpeg, id=251, 345.29pt x 444.66125pt>
-File: images/smrsoo.jpeg Graphic file (type jpg)
-<use images/smrsoo.jpeg>
-Package pdftex.def Info: images/smrsoo.jpeg  used on input line 1164.
-(pdftex.def)             Requested size: 70.14738pt x 90.33516pt.
-File: images/smrsoo.jpeg Graphic file (type jpg)
-<use images/smrsoo.jpeg>
-Package pdftex.def Info: images/smrsoo.jpeg  used on input line 1164.
-(pdftex.def)             Requested size: 70.14738pt x 90.33516pt.
-<images/balpon.jpg, id=254, 99.4917pt x 127.9179pt>
-File: images/balpon.jpg Graphic file (type jpg)
-<use images/balpon.jpg>
-Package pdftex.def Info: images/balpon.jpg  used on input line 1168.
-(pdftex.def)             Requested size: 70.26309pt x 90.33826pt.
-File: images/balpon.jpg Graphic file (type jpg)
-<use images/balpon.jpg>
-Package pdftex.def Info: images/balpon.jpg  used on input line 1168.
-(pdftex.def)             Requested size: 70.26309pt x 90.33826pt.
-File: notaglineLogo.png Graphic file (type png)
-<use notaglineLogo.png>
-Package pdftex.def Info: notaglineLogo.png  used on input line 1171.
-(pdftex.def)             Requested size: 91.32pt x 23.1352pt.
-
-Overfull \hbox (505.12177pt too wide) has occurred while \output is active
-[]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[9 <./images/srag.jpeg> <./images/gayk2.jpeg> <./images/shashe2.jpeg> <./images/smrsoo.jpeg> <./images/balpon.jpg>]
-<images/jyoshe.png, id=269, 190.7125pt x 193.72375pt>
-File: images/jyoshe.png Graphic file (type png)
-<use images/jyoshe.png>
-Package pdftex.def Info: images/jyoshe.png  used on input line 1171.
-(pdftex.def)             Requested size: 72.26779pt x 73.40886pt.
-File: images/jyoshe.png Graphic file (type png)
-<use images/jyoshe.png>
-Package pdftex.def Info: images/jyoshe.png  used on input line 1171.
-(pdftex.def)             Requested size: 72.26779pt x 73.40886pt.
 File: bullet.png Graphic file (type png)
 <use bullet.png>
-Package pdftex.def Info: bullet.png  used on input line 1175.
+Package pdftex.def Info: bullet.png  used on input line 1177.
 (pdftex.def)             Requested size: 5.0pt x 14.6871pt.
 File: notaglineLogo.png Graphic file (type png)
 <use notaglineLogo.png>
-Package pdftex.def Info: notaglineLogo.png  used on input line 1177.
+Package pdftex.def Info: notaglineLogo.png  used on input line 1179.
 (pdftex.def)             Requested size: 91.32pt x 23.1352pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -985,9 +912,9 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[10
+[9
 
- <./images/jyoshe.png (PNG copy)>] (access.aux)
+] (access.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-04-28>
@@ -1000,23 +927,23 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `access.out' has not changed.
-(rerunfilecheck)             Checksum: 14FAD19F0BF6C44AAF0D6EC91EA8F30B;1548.
+(rerunfilecheck)             Checksum: D7E7D49622A163FB4A5CDE6FA432ECB4;733.
  ) 
 Here is how much of TeX's memory you used:
- 12452 strings out of 467683
- 195721 string characters out of 5414721
- 641603 words of memory out of 5000000
- 41198 multiletter control sequences out of 15000+600000
- 733825 words of font info for 177 fonts, out of 8000000 for 9000
+ 12400 strings out of 467683
+ 194552 string characters out of 5414721
+ 641597 words of memory out of 5000000
+ 41149 multiletter control sequences out of 15000+600000
+ 730935 words of font info for 175 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,14n,79p,1684b,629s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 pdfTeX warning (dest): name{section*.22} has been referenced but does not exist, replaced by a fixed one
 
 <C:/Users/91944/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/91944/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/91944/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/91944/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/91944/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/91944/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/91944/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/91944/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/91944/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/91944/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/91944/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/91944/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/91944/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/91944/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvbo8a.pfb><C:/Users/91944/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/91944/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/91944/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/91944/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on access.pdf (10 pages, 2303825 bytes).
+Output written on access.pdf (9 pages, 1855773 bytes).
 PDF statistics:
- 378 PDF objects out of 1000 (max. 8388607)
- 111 named destinations out of 1000 (max. 500000)
- 241 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 331 PDF objects out of 1000 (max. 8388607)
+ 109 named destinations out of 1000 (max. 500000)
+ 91 words of extra memory for PDF output out of 10000 (max. 10000000)
 
