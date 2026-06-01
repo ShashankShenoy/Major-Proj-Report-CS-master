@@ -3,28 +3,28 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Design Specifications of the Proposed Maritime Surveillance System}}{31}{table.5.1}%
-\contentsline {table}{\numberline {5.2}{\ignorespaces Algorithm Selection Comparison}}{35}{table.5.2}%
+\contentsline {table}{\numberline {5.1}{\ignorespaces Design Specifications of the Proposed Maritime Surveillance System}}{35}{table.caption.17}%
+\contentsline {table}{\numberline {5.2}{\ignorespaces Algorithm Selection Comparison}}{40}{table.caption.21}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {7.1}{\ignorespaces Hardware and Software Configuration Used for Experimental Evaluation}}{55}{table.7.1}%
-\contentsline {table}{\numberline {7.2}{\ignorespaces System Parameters Used During Experimental Evaluation}}{56}{table.7.2}%
-\contentsline {table}{\numberline {7.3}{\ignorespaces Test Case 1: Evaluation of Pre-trained YOLO Architectures}}{57}{table.7.3}%
-\contentsline {table}{\numberline {7.4}{\ignorespaces Test Case 2: Feature-based Re-identification via Database Mapping}}{58}{table.7.4}%
-\contentsline {table}{\numberline {7.5}{\ignorespaces Test Case 3: Kinematic Multi-Object Tracking utilizing DeepOCSORT}}{58}{table.7.5}%
-\contentsline {table}{\numberline {7.6}{\ignorespaces Test Case 4: Offline Geographic Visualization via GeoTIFF Rendering}}{59}{table.7.6}%
-\contentsline {table}{\numberline {7.7}{\ignorespaces Test Case 5: Real-time Telemetry Visualization via AIS and MapLibre}}{59}{table.7.7}%
-\contentsline {table}{\numberline {7.8}{\ignorespaces Test Case 6: Predictive Trajectory Modeling utilizing Bidirectional LSTM}}{60}{table.7.8}%
-\contentsline {table}{\numberline {7.9}{\ignorespaces Test Case 7: Automated Collision Risk Categorization (CPA)}}{60}{table.7.9}%
+\contentsline {table}{\numberline {7.1}{\ignorespaces Hardware and Software Configuration Used for Experimental Evaluation}}{61}{table.caption.34}%
+\contentsline {table}{\numberline {7.2}{\ignorespaces System Parameters Used During Experimental Evaluation}}{62}{table.caption.35}%
+\contentsline {table}{\numberline {7.3}{\ignorespaces Test Case 1: Evaluation of Pre-trained YOLO Architectures}}{63}{table.caption.36}%
+\contentsline {table}{\numberline {7.4}{\ignorespaces Test Case 2: Feature-based Re-identification via Database Mapping}}{63}{table.caption.37}%
+\contentsline {table}{\numberline {7.5}{\ignorespaces Test Case 3: Kinematic Multi-Object Tracking utilizing DeepOCSORT}}{64}{table.caption.38}%
+\contentsline {table}{\numberline {7.6}{\ignorespaces Test Case 4: Offline Geographic Visualization via GeoTIFF Rendering}}{64}{table.caption.39}%
+\contentsline {table}{\numberline {7.7}{\ignorespaces Test Case 5: Real-time Telemetry Visualization via AIS and MapLibre}}{65}{table.caption.40}%
+\contentsline {table}{\numberline {7.8}{\ignorespaces Test Case 6: Predictive Trajectory Modeling utilizing Bidirectional LSTM}}{65}{table.caption.41}%
+\contentsline {table}{\numberline {7.9}{\ignorespaces Test Case 7: Automated Collision Risk Categorization (CPA)}}{66}{table.caption.42}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {8.1}{\ignorespaces \gls {yolov8} per-class detection performance on the \gls {smd} test set}}{64}{table.8.1}%
-\contentsline {table}{\numberline {8.2}{\ignorespaces \gls {deepocsort} Tracking Performance on Maritime Test Sequences}}{66}{table.8.2}%
-\contentsline {table}{\numberline {8.3}{\ignorespaces Trajectory Prediction Performance Comparison (measured on video trajectory sequences)}}{66}{table.8.3}%
-\contentsline {table}{\numberline {8.4}{\ignorespaces Collision risk detection results by risk level on annotated \gls {smd} near-miss sequences}}{69}{table.8.4}%
-\contentsline {table}{\numberline {8.5}{\ignorespaces Detection and Tracking Performance Under Varying Environmental Conditions}}{70}{table.8.5}%
-\contentsline {table}{\numberline {8.6}{\ignorespaces Per-Module Processing Latency and End-to-End Pipeline Throughput (measured, \gls {cpu} mode)}}{73}{table.8.6}%
-\contentsline {table}{\numberline {8.7}{\ignorespaces Measured Compute Saving from \gls {ais}-Matched \gls {lstm} Skip Optimization (6 vessels/frame, 300 iterations)}}{74}{table.8.7}%
-\contentsline {table}{\numberline {8.8}{\ignorespaces Comprehensive comparison of the proposed system with prior works}}{74}{table.8.8}%
+\contentsline {table}{\numberline {8.1}{\ignorespaces \gls {yolov8} per-class detection performance on the \gls {smd} test set}}{70}{table.caption.44}%
+\contentsline {table}{\numberline {8.2}{\ignorespaces \gls {deepocsort} Tracking Performance on Maritime Test Sequences}}{72}{table.caption.46}%
+\contentsline {table}{\numberline {8.3}{\ignorespaces Trajectory Prediction Performance Comparison (measured on video trajectory sequences)}}{73}{table.caption.48}%
+\contentsline {table}{\numberline {8.4}{\ignorespaces Collision risk detection results by risk level on annotated \gls {smd} near-miss sequences}}{75}{table.caption.50}%
+\contentsline {table}{\numberline {8.5}{\ignorespaces Detection and Tracking Performance Under Varying Environmental Conditions}}{77}{table.caption.52}%
+\contentsline {table}{\numberline {8.6}{\ignorespaces Per-Module Processing Latency and End-to-End Pipeline Throughput (measured, \gls {cpu} mode)}}{80}{table.caption.56}%
+\contentsline {table}{\numberline {8.7}{\ignorespaces Measured Compute Saving from \gls {ais}-Matched \gls {lstm} Skip Optimization (6 vessels/frame, 300 iterations)}}{81}{table.caption.57}%
+\contentsline {table}{\numberline {8.8}{\ignorespaces Comprehensive comparison of the proposed system with prior works}}{82}{table.caption.58}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

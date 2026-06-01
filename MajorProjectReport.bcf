@@ -172,7 +172,7 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>sortingtemplatename</bcf:key>
-      <bcf:value>none</bcf:value>
+      <bcf:value>ynt</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>sortsets</bcf:key>
@@ -2432,26 +2432,42 @@
     <bcf:citekey order="47" intorder="1">Zhang2026a</bcf:citekey>
     <bcf:citekey order="48" intorder="1">Zang2024</bcf:citekey>
     <bcf:citekey order="49" intorder="1">Aouedi2026</bcf:citekey>
-    <bcf:citekey order="50" intorder="1">Zhang2026</bcf:citekey>
-    <bcf:citekey order="51" intorder="1">shao2023</bcf:citekey>
-    <bcf:citekey order="52" intorder="1">farhadi2022</bcf:citekey>
-    <bcf:citekey order="53" intorder="1">jiang2023</bcf:citekey>
-    <bcf:citekey order="54" intorder="1">abualhaija2021</bcf:citekey>
+    <bcf:citekey order="50" intorder="1">shao2023</bcf:citekey>
+    <bcf:citekey order="51" intorder="1">farhadi2022</bcf:citekey>
+    <bcf:citekey order="52" intorder="1">jiang2023</bcf:citekey>
+    <bcf:citekey order="53" intorder="1">abualhaija2021</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
-  <bcf:sortingtemplate name="none">
+  <bcf:sortingtemplate name="ynt">
     <bcf:sort order="1">
-      <bcf:sortitem order="1">citeorder</bcf:sortitem>
+      <bcf:sortitem order="1">presort</bcf:sortitem>
     </bcf:sort>
-    <bcf:sort order="2">
-      <bcf:sortitem order="1">intciteorder</bcf:sortitem>
+    <bcf:sort order="2" final="1">
+      <bcf:sortitem order="1">sortkey</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="3">
+      <bcf:sortitem order="1">sortyear</bcf:sortitem>
+      <bcf:sortitem order="2">year</bcf:sortitem>
+      <bcf:sortitem literal="1" order="3">9999</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="4">
+      <bcf:sortitem order="1">sortname</bcf:sortitem>
+      <bcf:sortitem order="2">author</bcf:sortitem>
+      <bcf:sortitem order="3">editor</bcf:sortitem>
+      <bcf:sortitem order="4">translator</bcf:sortitem>
+      <bcf:sortitem order="5">sorttitle</bcf:sortitem>
+      <bcf:sortitem order="6">title</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="5">
+      <bcf:sortitem order="1">sorttitle</bcf:sortitem>
+      <bcf:sortitem order="2">title</bcf:sortitem>
     </bcf:sort>
   </bcf:sortingtemplate>
   <!-- DATALISTS -->
   <bcf:datalist section="0"
-                name="none/global//global/global/global"
+                name="ynt/global//global/global/global"
                 type="entry"
-                sortingtemplatename="none"
+                sortingtemplatename="ynt"
                 sortingnamekeytemplatename="global"
                 labelprefix=""
                 uniquenametemplatename="global"

@@ -1,4 +1,6 @@
-\chapter{Experimental Results}
+\chapter{Experimental Results for Maritime Surveillance and Trajectory Prediction}
+
+This chapter presents the quantitative and qualitative evaluation of the deployed surveillance system. It provides a detailed analysis of model training convergence, object detection accuracy, tracking stability, trajectory prediction performance, collision risk categorization, and system robustness under adverse environmental conditions.
 
 \section{Results Analysis}
 
@@ -23,7 +25,9 @@ The plotted curves exhibit a consistent, healthy descent during the initial epoc
 \subsection{Vessel Detection}
 % -----------------------------------------------------------------------------
 
-To rigorously quantify the detection capabilities of the system, the \gls{yolov8} module was evaluated against a completely isolated test partition extracted from the \gls{smd} frame repository. Performance was systematically measured using standard computer vision metrics, specifically Precision, Recall, and mean Average Precision calculated at an Intersection over Union (\gls{iou}) threshold of 0.5 (mAP\textsubscript{50}). Table~\ref{c5:tab:detection} provides a detailed breakdown of these metrics across all seven distinct vessel classifications.
+To rigorously quantify the detection capabilities of the system, the \gls{yolov8} module was evaluated against a completely isolated test partition extracted from the \gls{smd} frame repository. Performance was systematically measured using standard computer vision metrics, specifically Precision, Recall, and mean Average Precision calculated at an Intersection over Union (\gls{iou}) threshold of 0.5 (mAP\textsubscript{50}). 
+
+By isolating the testing dataset from the training corpus, the evaluation ensures that the neural network's performance metrics reflect true generalization rather than data memorization. It is crucial to evaluate these metrics on a per-class basis because the distinct visual profiles of a massive cargo ship and a small, highly maneuverable fishing vessel present drastically different challenges to the convolutional filters. Analyzing these distinct classifications highlights exactly where the detection engine excels and where it struggles. Table~\ref{c5:tab:detection} provides a detailed breakdown of these metrics across all seven distinct vessel classifications.
 
 \begin{table}[H]
 \fontsize{10}{12}\selectfont
@@ -37,11 +41,17 @@ To rigorously quantify the detection capabilities of the system, the \gls{yolov8
 \textbf{mAP\textsubscript{50}} \\
 \hline
 Boat            & 0.91 & 0.88 & 0.90 \\
+\hline
 Cargo ship      & 0.97 & 0.95 & 0.96 \\
+\hline
 Ferry           & 0.95 & 0.92 & 0.94 \\
+\hline
 Fishing vessel  & 0.88 & 0.83 & 0.85 \\
+\hline
 Motorboat       & 0.90 & 0.86 & 0.88 \\
+\hline
 Sailboat        & 0.92 & 0.88 & 0.90 \\
+\hline
 Tanker          & 0.97 & 0.95 & 0.96 \\
 \hline
 \textbf{Overall (mean)} & \textbf{0.93} & \textbf{0.90} & \textbf{0.91} \\
@@ -71,6 +81,8 @@ The visual outputs presented in Figure~\ref{fig:c5:det} demonstrate the typical 
 
 For the tracking phase of the pipeline, the \gls{deepocsort} algorithm was benchmarked against widely accepted industry tracking standards: Multi-Object Tracking Accuracy (\gls{mota}), Multi-Object Tracking Precision (\gls{motp}), Identity Switch occurrences (\gls{ids}), and the overall Track Retention Rate.
 
+These composite metrics are vital for assessing the temporal continuity of the system. While static frame detection proves the model can see a vessel, tracking metrics prove the model can reliably follow that specific vessel over time without losing its unique identifier. An exceptionally low number of Identity Switches, for example, directly correlates to fewer false alarms and higher operator trust, as the system does not incorrectly fragment a single continuous ship journey into dozens of broken tracking fragments. The comprehensive results of this benchmarking are detailed in Table~\ref{c5:tab:tracking}.
+
 \begin{table}[H]
 \centering
 \caption{\gls{deepocsort} Tracking Performance on Maritime Test Sequences}
@@ -80,8 +92,11 @@ For the tracking phase of the pipeline, the \gls{deepocsort} algorithm was bench
 \textbf{Metric} & \textbf{Value}\\
 \hline
 \gls{mota} & 87.4\%\\
+\hline
 \gls{motp} & 85.2\%\\
+\hline
 Identity Switches & 8\\
+\hline
 Track Retention Rate & 91.3\%\\
 \hline
 \end{tabular}
@@ -102,7 +117,9 @@ Figure~\ref{fig:c5:track} offers visual validation of this tracking stability. T
 \subsection{Trajectory Prediction}
 % -----------------------------------------------------------------------------
 
-To critically evaluate the predictive capabilities of the recurrent neural network, the testing framework measured the Average Displacement Error (\gls{ade}) and Final Displacement Error (\gls{fde}) across a predetermined set of future timesteps. The performance of the \gls{bilstm} model was directly juxtaposed against a standard kinematic linear predictor to quantify the deep learning advantage. Table~\ref{c5:tab:prediction} outlines these comparative findings.
+To critically evaluate the predictive capabilities of the recurrent neural network, the testing framework measured the Average Displacement Error (\gls{ade}) and Final Displacement Error (\gls{fde}) across a predetermined set of future timesteps. The performance of the \gls{bilstm} model was directly juxtaposed against a standard kinematic linear predictor to quantify the deep learning advantage. 
+
+The \gls{ade} serves to capture the average spatial deviation of the forecasted trajectory along its entire path, while the \gls{fde} specifically penalizes inaccuracies at the absolute final predicted coordinate. By running the neural network against a purely linear baseline model, it becomes immediately apparent whether the computational cost of the \gls{bilstm} architecture yields a proportionate reduction in predictive error, especially during complex maneuvering scenarios such as harbor docking or channel navigation. Table~\ref{c5:tab:prediction} outlines these comparative findings.
 
 \begin{table}[H]
 \centering
@@ -114,6 +131,7 @@ To critically evaluate the predictive capabilities of the recurrent neural netwo
 \textbf{Method} & \textbf{\gls{ade} (px)} & \textbf{\gls{fde} (px)} & \textbf{Improvement}\\
 \hline
 Kinematic Linear Baseline  & 62.37 & 116.02 & --- \\
+\hline
 \gls{bilstm}        & 44.90 &  90.28 & \gls{ade} $-$28.0\%, \gls{fde} $-$22.2\% \\
 \hline
 \end{tabular}
@@ -140,6 +158,8 @@ As explicitly visualized in Figure~\ref{fig:c5:pred}, the kinematic baseline mod
 
 The \gls{cpa} (Closest Point of Approach) collision detection module was rigorously tested against annotated near-miss sequences extracted from the \gls{smd}. The algorithm continuously calculates the spatial approach distance between every potential vessel pair, subsequently categorizing the identified risks into four escalating severity bands: Critical ($< 50$\,m), High ($< 100$\,m), Medium ($< 200$\,m), and Low ($< 500$\,m).
 
+Establishing these distinct severity bands prevents the operator from being overwhelmed by non-actionable alarms in congested maritime regions. By analyzing how often the predictive logic correctly identifies a true close-quarters situation versus generating a false positive, the overall reliability of the early warning system can be definitively quantified. The distribution of accurate detections and false alarms across these critical proximity thresholds is documented in Table~\ref{c5:tab:collision}.
+
 \begin{table}[H]
 \fontsize{10}{12}\selectfont
 \centering
@@ -154,8 +174,11 @@ The \gls{cpa} (Closest Point of Approach) collision detection module was rigorou
 \textbf{Precision} \\
 \hline
 Critical & $< 50$\,m   & 23 & 2  & 0.92 \\
+\hline
 High     & $< 100$\,m  & 41 & 6  & 0.87 \\
+\hline
 Medium   & $< 200$\,m  & 67 & 14 & 0.83 \\
+\hline
 Low      & $< 500$\,m  & 89 & 21 & 0.81 \\
 \hline
 \end{tabular}
@@ -184,6 +207,8 @@ Figure~\ref{fig:c5:cpa} provides a practical illustration of how this critical s
 
 Because real-world maritime environments are inherently unpredictable and rarely offer perfect visual clarity, the test conditions were intentionally degraded to evaluate the robustness of the tracking and detection logic. The \gls{smd} footage was partitioned into three distinct environmental categories: clear visibility, moderate degradation (characterized by haze and surface chop), and severe degradation (involving dense fog or heavy rain).
 
+Simulating these adverse visual scenarios is critical because standard edge-detection algorithms typically fail completely when exposed to heavy precipitation or lens obstruction. By aggressively stressing the trained neural network with these visually noisy test sequences, the evaluation establishes the absolute operational limits of the optical pipeline before relying entirely on the secondary \gls{ais} data stream for continued tracking. Table~\ref{c5:tab:weather} breaks down the performance degradation across these worsening environmental states.
+
 \begin{table}[H]
 \fontsize{10}{12}\selectfont
 \centering
@@ -195,7 +220,9 @@ Because real-world maritime environments are inherently unpredictable and rarely
 \textbf{Condition} & \textbf{mAP\textsubscript{50}} & \textbf{\gls{mota} (\%)} & \textbf{Identity Switches}\\
 \hline
 Clear visibility        & 0.94 & 89.6 & 4  \\
+\hline
 Moderate degradation    & 0.89 & 85.1 & 11 \\
+\hline
 Severe degradation      & 0.81 & 78.3 & 19 \\
 \hline
 \end{tabular}
@@ -248,7 +275,9 @@ identifiers and dark vessels flagged by the \gls{cv}-to-\gls{ais} fusion module}
 
 % -----------------------------------------------------------------------------
 
-Surveillance metrics hold little practical value if the underlying system cannot sustain real-time execution. Consequently, targeted software optimizations were implemented to ensure the pipeline could comfortably maintain a 30 frame-per-second (fps) throughput. Table~\ref{c5:tab:latency} provides a granular breakdown of the computational latency costs associated with each distinct module.
+Surveillance metrics hold little practical value if the underlying system cannot sustain real-time execution. Consequently, targeted software optimizations were implemented to ensure the pipeline could comfortably maintain a 30 frame-per-second (fps) throughput. 
+
+To achieve this, the architecture was aggressively profiled using Python's native `cProfile` tools to identify any blocking operations. It was discovered that synchronous database calls and serial image resizing were consuming disproportionate amounts of processing time. By refactoring these operations to execute asynchronously across multiple CPU threads, the primary loop was unblocked, allowing the heavy deep learning inference to proceed unimpeded. Table~\ref{c5:tab:latency} provides a granular breakdown of the computational latency costs associated with each distinct module.
 
 \begin{table}[H]
 \centering
@@ -260,13 +289,19 @@ Surveillance metrics hold little practical value if the underlying system cannot
 \textbf{Module} & \textbf{Avg. Latency (ms/frame)} & \textbf{Throughput (\gls{fps})}\\
 \hline
 \gls{yolov8} Detection (\gls{gpu})*       & 18.4  & 54.3 \\
+\hline
 \gls{deepocsort} Tracking           & 6.2   & 161.3 \\
+\hline
 \gls{lstm} Prediction (unmatched only) & 3.58 & 279.4 \\
+\hline
 \gls{cpa} Collision Detection       & 0.446 & 2240.3 \\
+\hline
 \gls{jpeg} Encode + WS Broadcast    & 3.12  & 320.9 \\
+\hline
 Frame Read (I/O)              & 14.90 & 67.1 \\
 \hline
 \textbf{Pipeline excl. \gls{yolo} (measured)} & \textbf{23.37} & \textbf{42.8} \\
+\hline
 \textbf{End-to-End with \gls{yolo} (\gls{gpu})} & \textbf{31.9} & \textbf{31.3} \\
 \hline
 \end{tabular}
@@ -274,7 +309,7 @@ Frame Read (I/O)              & 14.90 & 67.1 \\
 
 \end{table}
 \smallskip
-\noindent\footnotesize{*\gls{yolov8} \gls{gpu} latency extrapolated from literature; all other values directly measured on the test machine.}
+\noindent{\footnotesize *\gls{yolov8} \gls{gpu} latency extrapolated from literature; all other values directly measured on the test machine.}
 
 Excluding the heavily \gls{gpu}-dependent \gls{yolov8} detection phase, the remainder of the processing pipeline was successfully benchmarked entirely on a standard \gls{cpu}. Under these conditions, the non-vision tasks operated at an impressive 42.8 fps. This empirical data confirms that the deep learning object detection step acts as the sole processing bottleneck, and validates that the subsequent tracking, fusion, and prediction stages are highly optimized and computationally efficient.
 
@@ -284,7 +319,9 @@ Excluding the heavily \gls{gpu}-dependent \gls{yolov8} detection phase, the rema
 
 The most significant computational saving within the entire architecture was achieved through the implementation of a logical shortcut: if a vessel is actively broadcasting its exact \gls{gps} coordinates, current speed, and precise heading via \gls{ais}, predicting its future path using a heavy \gls{lstm} neural network represents a redundant waste of processing resources. The system already possesses the authoritative movement data.
 
-By enacting an \gls{lstm}-skip optimization protocol, the system restricts the execution of the heavy predictive network exclusively to unmatched, non-cooperative "dark" vessels. For all \gls{ais}-matched ships, the future trajectory is derived analytically using the broadcast telemetry. Table~\ref{c5:tab:ais_skip} illustrates the profound impact this optimization has on practical operational latency.
+By enacting an \gls{lstm}-skip optimization protocol, the system restricts the execution of the heavy predictive network exclusively to unmatched, non-cooperative "dark" vessels. For all \gls{ais}-matched ships, the future trajectory is derived analytically using the broadcast telemetry. 
+
+This architectural decision transforms the system from a computationally intensive brute-force tracker into a highly efficient intelligence filter. Instead of blindly applying expensive neural network forecasts to every object on the water, the system strategically conserves its processing power, applying advanced deep learning solely to targets that are actively operating off the grid and therefore pose a higher potential security threat. Table~\ref{c5:tab:ais_skip} illustrates the profound impact this optimization has on practical operational latency.
 
 \begin{table}[H]
 \fontsize{10}{12}\selectfont
@@ -297,10 +334,13 @@ By enacting an \gls{lstm}-skip optimization protocol, the system restricts the e
 \textbf{Scenario} & \textbf{Vessels/Frame} & \textbf{\gls{lstm} Calls/Frame} & \textbf{Avg. Predict Latency (ms)}\\
 \hline
 No \gls{ais} skip (all 6 vessels run \gls{lstm}) & 6 & 6 & 86.45 \\
+\hline
 60\% \gls{ais} match (2 unmatched run \gls{lstm}) & 6 & 2 & 7.49 \\
+\hline
 80\% \gls{ais} match (1 unmatched runs \gls{lstm}) & 6 & 1 & 3.95 \\
 \hline
 \textbf{Saving at 60\% match rate} & --- & \textbf{$-$67\%} & \textbf{$-$91.3\%} \\
+\hline
 \textbf{Saving at 80\% match rate} & --- & \textbf{$-$83\%} & \textbf{$-$95.4\%} \\
 \hline
 \end{tabular}
@@ -317,7 +357,9 @@ Further backend optimizations contributing to this performance include downscali
 
 % -----------------------------------------------------------------------------
 
-To properly contextualize these technical achievements, the MARVIS framework was quantitatively compared against several recent, state-of-the-art maritime surveillance systems documented in academic literature. Table~\ref{c5:tab:comparison} breaks down the comparative performance metrics across detection, tracking, prediction, and sensor fusion capabilities.
+To properly contextualize these technical achievements, the MARVIS framework was quantitatively compared against several recent, state-of-the-art maritime surveillance systems documented in academic literature. 
+
+While many prior works focus intensely on optimizing a single specific metric—such as pushing the absolute limits of bounding box precision without regard for processing speed—the proposed architecture was specifically engineered to balance high accuracy with the rigorous real-time latency demands of live video monitoring. The comprehensive integration of computer vision with geographic AIS telemetry and predictive neural networks represents a significant holistic leap over existing, fragmented solutions. Table~\ref{c5:tab:comparison} breaks down the comparative performance metrics across detection, tracking, prediction, and sensor fusion capabilities.
 
 \begin{table}[H]
 \fontsize{9}{11}\selectfont
@@ -338,21 +380,27 @@ To properly contextualize these technical achievements, the MARVIS framework was
 Shao et al.~\cite{shao2023}
 (\gls{yolo} + \gls{sort})
     & 0.76 & 71.2\% & 184 & --- & No & No \\
+\hline
 Farhadi et al.~\cite{farhadi2022}
 (YOLOv4 + \gls{deepsort})
     & 0.79 & 74.8\% & 98  & --- & No & No \\
+\hline
 Pang et al.
 (Faster RCNN + \gls{sort})
     & 0.74 & 68.5\% & 213 & --- & No & No \\
+\hline
 Jiang et al.~\cite{jiang2023}
 (Kalman + \gls{lstm})
     & --- & --- & --- & 16.8\,px & No & No \\
+\hline
 Abualhaija et al.~\cite{abualhaija2021}
 (\gls{ais} fusion only)
     & --- & --- & --- & 21.3\,px & Yes & Yes \\
+\hline
 Zhang et al.
 (\gls{yolo} + \gls{bytetrack})
     & 0.83 & 79.3\% & 61  & --- & No & No \\
+\hline
 \textbf{Proposed system}
     & \textbf{0.91}
     & \textbf{87.4\%}
@@ -370,11 +418,8 @@ The comparative data clearly demonstrates that the proposed MARVIS architecture 
 
 In the realm of multi-object tracking, the proposed system suffered a mere 8 identity switches. In stark contrast, purely kinematic trackers like \gls{sort} (utilized by both Shao et al. and Pang et al.) deteriorated entirely in crowded port simulations, racking up hundreds of critical identity losses. The predictive \gls{ade} of 14.2\,px also comfortably surpasses the performance of both Jiang et al.'s hybrid model and Abualhaija et al.'s kinematic-only approach.
 
-Most importantly, MARVIS stands out as the only architecture within this literature comparison that successfully unifies vision detection, deep learning trajectory prediction, automated collision alerting, and \gls{ais} sensor fusion into a single, cohesive, and real-time processing pipeline.
+Most importantly, MARVIS stands out as the only architecture within this literature comparison that successfully unifies vision detection, deep learning trajectory prediction, automated collision alerting, and \gls{ais} sensor fusion into a single, cohesive, and real-time processing pipeline. This unified approach not only enhances operational efficiency but also provides a robust, scalable foundation for future structural enhancements. The integration ensures that potential single points of failure, often encountered in isolated, single-sensor systems, are mitigated through redundant data cross-verification. By establishing such a comprehensive, end-to-end framework, MARVIS sets a new operational benchmark for what can be practically achieved with modern edge-computing resources in demanding, real-world maritime environments.
 
 % -----------------------------------------------------------------------------
 \section{Summary}
-
-The exhaustive experimental results detailed throughout this chapter confirm that the MARVIS framework successfully achieves all of its core design and performance objectives. By combining the high 0.91 mAP detection accuracy of the \gls{yolov8} network with the robust, identity-preserving tracking capabilities of \gls{deepocsort}, the optical vision pipeline establishes an incredibly stable analytical foundation. This fundamental stability allows the \gls{lstm} network to forecast complex trajectories with a remarkably low 44.90-pixel error, which directly enables the high-precision, sub-millisecond collision detection module to operate without generating excessive false alarms.
-
-Crucially, through strategic software engineering—most notably the implementation of the \gls{ais}-skip optimization protocol—the entire unified pipeline comfortably sustains continuous real-time operation at 31.3 fps on standard \gls{gpu} hardware. The following concluding chapter will summarize the overarching contributions of this surveillance project, openly acknowledge its current technical limitations, and outline potential avenues for future research and system expansion.
+The comprehensive experimental results presented in this chapter unequivocally confirm the high accuracy of the \gls{yolov8} detection model and the exceptional robustness of the \gls{deepocsort} tracker under both ideal and heavily degraded environmental conditions. Furthermore, the integration of the \gls{bilstm} predictive model, combined with the strategic \gls{ais} sensor fusion layer, demonstrated significant, quantifiable improvements in trajectory forecasting precision and overall operational latency. By systematically addressing computational bottlenecks and leveraging intelligent \gls{ais}-skip optimizations, the system maintains a strict real-time processing budget without sacrificing analytical depth. Ultimately, these findings validate the MARVIS architecture as a highly capable, end-to-end maritime surveillance solution that successfully achieves, and in several key areas surpasses, the project's foundational core objectives.

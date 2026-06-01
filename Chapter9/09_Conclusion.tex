@@ -1,6 +1,6 @@
-\chapter{Conclusion}
+\chapter{Conclusion of Maritime Surveillance and Trajectory Prediction}
 
-\section{Summary of Work}
+This final chapter summarizes the primary contributions and findings of the maritime surveillance project. It acknowledges the current operational limitations of the deployed system, proposes avenues for future technical enhancement, and reflects on the broader learning outcomes gained during the development process.
 
 % ─────────────────────────────────────────────────────────────────────────────
 
@@ -40,4 +40,4 @@ Through the targeted fine-tuning of the \gls{yolov8} network, a deep structural 
 
 The architecture and training of the \gls{bilstm} trajectory predictor offered advanced experience in applied sequence modeling. Engineering the custom loss function revealed that mathematical models require strict penalties for physical impossibilities, such as erratic and abrupt acceleration, to consistently generate realistic maritime paths. Furthermore, the challenge of mathematically aligning pixel-space observations with real-world \gls{ais} telemetry highlighted the substantial operational disparity that exists between optical camera feeds and standardized radar data.
 
-Finally, networking the entire backend logic through asynchronous protocols, WebSockets, and a live interactive dashboard effectively bridged the technical gap between raw numerical data processing and the final user experience. Implementing these technologies fostered a deep understanding of how to manage asynchronous data streams while ensuring that heavy graphical rendering tasks did not stall the underlying visual inference pipeline. The systematic management of this extensive codebase through strict version control protocols ensured that the underlying logic remained perfectly stable throughout rapid evolutionary cycles. Ultimately, the successful end-to-end integration and rigorous evaluation of the proposed surveillance framework powerfully demonstrates its practical applicability and long-term effectiveness in the field of maritime security.
+Finally, networking the backend logic through asynchronous protocols, WebSockets, and an interactive dashboard bridged the gap between numerical data processing and user experience. Implementing these technologies fostered a deep understanding of managing asynchronous streams without stalling the visual inference pipeline. Systematic codebase management via strict version control ensured stability throughout rapid evolutionary cycles. Ultimately, the successful integration and evaluation of this framework demonstrates its practical applicability and effectiveness in maritime security.

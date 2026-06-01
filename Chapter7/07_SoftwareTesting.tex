@@ -1,4 +1,6 @@
-\chapter{Software Testing}
+\chapter{Software Testing of Maritime Surveillance and Trajectory Prediction}
+
+This chapter presents the rigorous testing methodology employed to validate the multi-stage surveillance pipeline. It discusses unit, integration, and system-level testing, detailing the controlled experimental setup, stress testing under high computational loads, and specific functional test cases designed to ensure robust performance.
 
 \section{Introduction to the Testing Methodology}
 
@@ -15,7 +17,9 @@ Following baseline validation, the evaluation focus shifted toward integration t
 
 To comprehensively evaluate the end-to-end performance of the integrated pipeline under realistic operational constraints, all system testing was conducted within a rigidly controlled hardware and software environment. Maintaining a standardized baseline was essential for guaranteeing the reproducibility of all quantitative results. 
 
-Handling simultaneous video ingestion, multi-target deep learning inference, and recurrent trajectory forecasting demands significant computational bandwidth. As a result, the implementation relied heavily on parallel GPU acceleration to maintain a fluid operational state. Developing and evaluating the software across mixed operating system environments ensured that the dependencies remained highly adaptable and were not strictly bound to a single ecosystem. Table~\ref{c5:tab:hardware} details the specific architectural specifications and core software libraries deployed throughout the testing phase.
+Handling simultaneous video ingestion, multi-target deep learning inference, and recurrent trajectory forecasting demands significant computational bandwidth. As a result, the implementation relied heavily on parallel GPU acceleration to maintain a fluid operational state. Developing and evaluating the software across mixed operating system environments ensured that the dependencies remained highly adaptable and were not strictly bound to a single ecosystem. 
+
+Furthermore, memory allocation dynamics were closely monitored during the setup phase. The PyTorch tensor allocations required careful optimization to ensure that high-resolution video frames did not overflow the available VRAM. By systematically restricting batch sizes during live inference, the framework was successfully stabilized within standard commercial hardware limitations. Table~\ref{c5:tab:hardware} details the specific architectural specifications and core software libraries deployed throughout the testing phase.
 
 \begin{table}[H]
 \centering
@@ -26,15 +30,25 @@ Handling simultaneous video ingestion, multi-target deep learning inference, and
 \textbf{Component} & \textbf{Specification}\\
 \hline
 Operating System & Windows 11 / Ubuntu 22.04\\
+\hline
 Processor & Intel Core i5 12th gen / AMD Ryzen 7\\
+\hline
 \gls{gpu} & \gls{nvidia} \gls{gpu} with \gls{cuda} support\\
+\hline
 \gls{ram} & 8 GB\\
+\hline
 Python Version & 3.10\\
+\hline
 \gls{pytorch} Version & 2.2.0\\
+\hline
 \gls{cuda} Version & 11.8\\
+\hline
 \gls{opencv} Version & 4.9.0\\
+\hline
 Ultralytics \gls{yolov8} & v8.0\\
+\hline
 \gls{deepocsort} (boxmot) & v10.0\\
+\hline
 Evaluation Dataset & \gls{smd} v1.0\\
 \hline
 \end{tabular}
@@ -44,7 +58,9 @@ Evaluation Dataset & \gls{smd} v1.0\\
 
 Beyond establishing the physical hardware constraints, preserving strict control over the internal algorithmic parameters was vital for isolating the true performance metrics of the embedded models. Even minor variations in tracking thresholds or neural network configurations can drastically alter the final output, introducing uncontrolled bias into the evaluation process. To prevent such discrepancies, a static set of operational parameters was locked down across all experimental runs. 
 
-These rigid configurations dictated everything from the minimum statistical confidence required to register a valid vessel detection, to the exact sequence length ingested by the predictive memory networks. Furthermore, the geographic boundaries governing the optical-to-AIS matching algorithms were explicitly fixed to ensure consistency when assessing sensor fusion accuracy. Table~\ref{c5:tab:parameters} lists the critical thresholds and tracking parameters actively enforced throughout the system-level testing.
+These rigid configurations dictated everything from the minimum statistical confidence required to register a valid vessel detection, to the exact sequence length ingested by the predictive memory networks. Furthermore, the geographic boundaries governing the optical-to-AIS matching algorithms were explicitly fixed to ensure consistency when assessing sensor fusion accuracy. 
+
+Establishing these constants prevents the phenomenon of hyperparameter drift, where unrecorded tweaks during testing make results irreproducible. For instance, the track minimum hit count and maximum age parameters fundamentally alter the sensitivity of the DeepOCSORT algorithm; changing them mid-evaluation would completely invalidate any comparative tracking analysis. Table~\ref{c5:tab:parameters} lists the critical thresholds and tracking parameters actively enforced throughout the system-level testing.
 
 \begin{table}[H]
 \centering
@@ -55,16 +71,27 @@ These rigid configurations dictated everything from the minimum statistical conf
 \textbf{Parameter} & \textbf{Value}\\
 \hline
 Detection confidence threshold & 0.4\\
+\hline
 \gls{iou} threshold (\gls{nms}) & 0.3\\
+\hline
 Track maximum age & 30 frames\\
+\hline
 Track minimum hits & 3 frames\\
+\hline
 \gls{lstm} input sequence length & 50 timesteps\\
+\hline
 \gls{lstm} prediction horizon & 20 timesteps\\
+\hline
 Training batch size & 32\\
+\hline
 Training epochs & 100\\
+\hline
 \gls{ais} matching radius & 5.5 km\\
+\hline
 \gls{cpa} critical alert threshold & 50 m\\
+\hline
 Average input resolution & 1280$\times$720\\
+\hline
 Target processing speed & 30 \gls{fps}\\
 \hline
 \end{tabular}
@@ -256,5 +283,4 @@ A series of targeted test cases were executed to evaluate different models, arch
 \end{table}
 
 \section{Summary}
-
-The software testing phase was systematically executed through a structured progression, beginning with the isolated verification of core mathematical utilities and culminating in demanding, full-system integration trials. By rigidly standardizing the underlying hardware architecture and locking down all internal algorithmic parameters, the evaluation framework ensured a high degree of experimental reproducibility. The deployment of rigorous unit, integration, and computational stress tests effectively validated the pipeline's robust capacity to handle dense vessel traffic while reliably fusing visual telemetry with external broadcast streams. Establishing this highly controlled experimental setup provides the essential foundation required to critically evaluate the quantitative performance and predictive accuracy of the final surveillance system.
+This chapter detailed the testing framework utilized to validate the maritime surveillance platform. By systematically executing defined test cases and analyzing defect logs, the testing phase rigorously confirmed the system's operational stability, detection accuracy, and real-time processing capabilities.

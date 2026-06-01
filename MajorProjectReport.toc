@@ -1,33 +1,33 @@
-\contentsline {chapter}{Abstract}{i}{chapter*.1}%
-\contentsline {chapter}{List of Figures}{vi}{chapter*.2}%
-\contentsline {chapter}{List of Tables}{viii}{chapter*.3}%
-\contentsline {chapter}{Abbreviations}{ix}{section*.5}%
-\contentsline {chapter}{List of Symbols}{xiii}{section*.7}%
-\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Overview of Project Topic}{2}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Motivation and Project Details}{3}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Literature Review}{3}{section.1.3}%
-\contentsline {section}{\numberline {1.4}Problem Statement}{4}{section.1.4}%
-\contentsline {section}{\numberline {1.5}Objectives}{4}{section.1.5}%
-\contentsline {section}{\numberline {1.6}Assumptions and Constraints}{5}{section.1.6}%
-\contentsline {section}{\numberline {1.7}Brief Methodology}{5}{section.1.7}%
+\contentsline {chapter}{Abstract}{i}{chapter*.3}%
+\contentsline {chapter}{List of Figures}{iii}{chapter*.4}%
+\contentsline {chapter}{List of Tables}{iv}{chapter*.5}%
+\contentsline {chapter}{Abbreviations}{v}{section*.7}%
+\contentsline {chapter}{List of Symbols}{ix}{section*.9}%
+\contentsline {chapter}{\numberline {1}Introduction to Maritime Surveillance and Trajectory Prediction}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Introduction}{2}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Motivation}{3}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Literature Review}{4}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Problem Statement}{5}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Objectives}{5}{section.1.5}%
+\contentsline {section}{\numberline {1.6}Assumptions made / Constraints of the project}{5}{section.1.6}%
+\contentsline {section}{\numberline {1.7}Methodology}{6}{section.1.7}%
 \contentsline {section}{\numberline {1.8}Organization of the Report}{6}{section.1.8}%
-\contentsline {chapter}{\numberline {2}Literature Review and Theoretical Background}{7}{chapter.2}%
+\contentsline {chapter}{\numberline {2}Theory \& Concept of Maritime Surveillance and Trajectory Prediction}{7}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Introduction}{8}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Evolution of Deep Learning in Ship Detection}{8}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Architectural Adaptations for Maritime Environments}{8}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Efficiency and Real-Time Deployment Considerations}{9}{subsection.2.2.2}%
-\contentsline {section}{\numberline {2.3}Multi-Object Tracking and Re-Identification}{10}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Handling Visual Occlusions and Identity Maintenance}{10}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Large-Scale and Multi-Sensor Tracking Strategies}{11}{subsection.2.3.2}%
-\contentsline {section}{\numberline {2.4}Trajectory Prediction and AIS Data Fusion}{12}{section.2.4}%
+\contentsline {section}{\numberline {2.2}The Visual Detection Pathway}{8}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Architectural Adaptations for Maritime Environments}{9}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Efficiency and Real-Time Deployment Considerations}{10}{subsection.2.2.2}%
+\contentsline {section}{\numberline {2.3}The Multi-Object Tracking Pathway}{10}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Handling Visual Occlusions and Identity Maintenance}{11}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Large-Scale and Multi-Sensor Tracking Strategies}{12}{subsection.2.3.2}%
+\contentsline {section}{\numberline {2.4}Multimodal Integration and Trajectory Prediction}{12}{section.2.4}%
 \contentsline {subsection}{\numberline {2.4.1}Sequence Modeling for Trajectories}{12}{subsection.2.4.1}%
 \contentsline {subsection}{\numberline {2.4.2}Advanced Prediction Architectures}{13}{subsection.2.4.2}%
 \contentsline {section}{\numberline {2.5}Summary}{14}{section.2.5}%
-\contentsline {chapter}{\numberline {3}Software Requirement Specification}{15}{chapter.3}%
+\contentsline {chapter}{\numberline {3}Software Requirement Specification of Maritime Surveillance and Trajectory Prediction}{15}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Overall Description}{16}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}Product Perspective}{16}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Product Functions}{16}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.2}Product Functions}{17}{subsection.3.1.2}%
 \contentsline {subsection}{\numberline {3.1.3}User Characteristics}{17}{subsection.3.1.3}%
 \contentsline {subsection}{\numberline {3.1.4}Assumptions and Dependencies}{17}{subsection.3.1.4}%
 \contentsline {subsection}{\numberline {3.1.5}Constraints}{18}{subsection.3.1.5}%
@@ -37,80 +37,79 @@
 \contentsline {subsection}{\numberline {3.2.3}Software Requirements}{19}{subsection.3.2.3}%
 \contentsline {subsection}{\numberline {3.2.4}Hardware Requirements}{20}{subsection.3.2.4}%
 \contentsline {subsection}{\numberline {3.2.5}Design Constraints}{20}{subsection.3.2.5}%
-\contentsline {section}{\numberline {3.3}Summary}{20}{section.3.3}%
-\contentsline {chapter}{\numberline {4}High Level Design}{21}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Design Considerations}{22}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}General System Considerations}{22}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Development Methods and Modularity}{24}{subsection.4.1.2}%
-\contentsline {section}{\numberline {4.2}Architecture Strategies}{24}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Technology Stack and Language Selection}{24}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Pathways for Future Extensibility}{25}{subsection.4.2.2}%
-\contentsline {section}{\numberline {4.3}System Architecture Overview}{25}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Data Flow Modeling}{27}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Context and Level-1 Diagrams}{27}{subsection.4.4.1}%
-\contentsline {section}{\numberline {4.5}Summary}{28}{section.4.5}%
-\contentsline {chapter}{\numberline {5}Detailed Design}{29}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Structure Chart}{30}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Design Specifications}{31}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}Use Case Analysis}{32}{subsection.5.1.2}%
-\contentsline {subsection}{\numberline {5.1.3}Dataset Analysis and Preprocessing}{33}{subsection.5.1.3}%
-\contentsline {subsubsection}{Evaluation Protocol}{34}{section*.9}%
-\contentsline {subsection}{\numberline {5.1.4}Algorithmic Selection}{35}{subsection.5.1.4}%
-\contentsline {subsection}{\numberline {5.1.5}Data Fusion and Processing Pipeline}{37}{subsection.5.1.5}%
-\contentsline {section}{\numberline {5.2}Module Description}{38}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}System Execution Flow}{38}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}System Interaction Sequence}{39}{subsection.5.2.2}%
-\contentsline {subsection}{\numberline {5.2.3}Functional Module Description}{40}{subsection.5.2.3}%
-\contentsline {subsubsection}{Data Acquisition Module}{40}{section*.10}%
-\contentsline {subsubsection}{Vision and Tracking Module}{40}{section*.11}%
-\contentsline {subsubsection}{Transformation and Fusion Module}{41}{section*.12}%
-\contentsline {subsubsection}{Analytical and Visualization Module}{41}{section*.13}%
-\contentsline {section}{\numberline {5.3}Summary}{41}{section.5.3}%
-\contentsline {chapter}{\numberline {6}Implementation}{42}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Programming Language Selection}{43}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Platform Selection}{43}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Code Conventions}{43}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Difficulties Encountered and Strategies Used to Tackle}{44}{section.6.4}%
-\contentsline {section}{\numberline {6.5}Data Set Description}{44}{section.6.5}%
-\contentsline {section}{\numberline {6.6}System Architecture and Algorithms Used}{44}{section.6.6}%
-\contentsline {subsection}{\numberline {6.6.1}Development Environment Configuration}{45}{subsection.6.6.1}%
-\contentsline {subsection}{\numberline {6.6.2}Data Preparation and Model Training}{46}{subsection.6.6.2}%
-\contentsline {subsection}{\numberline {6.6.3}Motion Estimation and Sensor Fusion}{47}{subsection.6.6.3}%
-\contentsline {subsection}{\numberline {6.6.4}LSTM Trajectory Prediction}{49}{subsection.6.6.4}%
-\contentsline {subsection}{\numberline {6.6.5}Geospatial Validation and Visualization}{50}{subsection.6.6.5}%
-\contentsline {section}{\numberline {6.7}Summary}{52}{section.6.7}%
-\contentsline {chapter}{\numberline {7}Software Testing}{53}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Introduction to the Testing Methodology}{54}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Unit and Integration Testing}{54}{section.7.2}%
-\contentsline {section}{\numberline {7.3}System Testing}{55}{section.7.3}%
-\contentsline {subsection}{\numberline {7.3.1}Experimental Setup}{55}{subsection.7.3.1}%
-\contentsline {subsection}{\numberline {7.3.2}Standardization of System Parameters}{55}{subsection.7.3.2}%
-\contentsline {section}{\numberline {7.4}Performance and Stress Testing}{56}{section.7.4}%
-\contentsline {section}{\numberline {7.5}Test Cases}{57}{section.7.5}%
-\contentsline {section}{\numberline {7.6}Summary}{60}{section.7.6}%
-\contentsline {chapter}{\numberline {8}Experimental Results}{62}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Results Analysis}{63}{section.8.1}%
-\contentsline {subsection}{\numberline {8.1.1}\gls {lstm} Training Convergence}{63}{subsection.8.1.1}%
-\contentsline {subsection}{\numberline {8.1.2}Vessel Detection}{64}{subsection.8.1.2}%
-\contentsline {subsection}{\numberline {8.1.3}Multi-Object Tracking}{65}{subsection.8.1.3}%
-\contentsline {subsection}{\numberline {8.1.4}Trajectory Prediction}{66}{subsection.8.1.4}%
-\contentsline {subsection}{\numberline {8.1.5}Collision Risk Detection}{68}{subsection.8.1.5}%
-\contentsline {subsection}{\numberline {8.1.6}Robustness Under Adverse Weather Conditions}{70}{subsection.8.1.6}%
-\contentsline {section}{\numberline {8.2}Detailed Analysis}{71}{section.8.2}%
-\contentsline {subsection}{\numberline {8.2.1}Qualitative Output}{71}{subsection.8.2.1}%
-\contentsline {subsection}{\numberline {8.2.2}Performance Analysis}{73}{subsection.8.2.2}%
-\contentsline {subsection}{\numberline {8.2.3}\gls {ais}-Matched Vessel \gls {lstm} Skip Optimization}{73}{subsection.8.2.3}%
-\contentsline {subsection}{\numberline {8.2.4}Comparative Evaluation Metrics}{74}{subsection.8.2.4}%
-\contentsline {section}{\numberline {8.3}Summary}{75}{section.8.3}%
-\contentsline {chapter}{\numberline {9}Conclusion}{76}{chapter.9}%
-\contentsline {section}{\numberline {9.1}Summary of Work}{77}{section.9.1}%
-\contentsline {section}{\numberline {9.2}Limitations}{77}{section.9.2}%
-\contentsline {section}{\numberline {9.3}Future Enhancement}{78}{section.9.3}%
-\contentsline {section}{\numberline {9.4}Learning Outcomes}{79}{section.9.4}%
-\contentsline {chapter}{\numberline {A}Plagiarism report}{80}{chapter.A}%
-\contentsline {chapter}{\numberline {B}Publication details}{83}{chapter.B}%
-\contentsline {chapter}{\numberline {C}Code}{85}{chapter.C}%
-\contentsline {section}{\numberline {C.1}System Dashboard Interfaces}{86}{section.C.1}%
-\contentsline {section}{\numberline {C.2}AIS-Matched Vessel Inference Routing}{87}{section.C.2}%
-\contentsline {section}{\numberline {C.3}Dashboard Pipeline Integration Loop}{89}{section.C.3}%
-\contentsline {chapter}{Bibliography}{91}{lstnumber.-2.46}%
+\contentsline {section}{\numberline {3.3}Summary}{21}{section.3.3}%
+\contentsline {chapter}{\numberline {4}High Level Design of Maritime Surveillance and Trajectory Prediction}{22}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Design Considerations}{23}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}General System Considerations}{23}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Development Methods and Modularity}{26}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2}Architecture Strategies}{26}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Technology Stack and Language Selection}{26}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Pathways for Future Extensibility}{27}{subsection.4.2.2}%
+\contentsline {section}{\numberline {4.3}System Architecture}{27}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Data Flow Diagrams}{29}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Data Flow Diagram Level 0 and 1 for Maritime Surveillance and Trajectory Prediction}{29}{subsection.4.4.1}%
+\contentsline {section}{\numberline {4.5}Summary}{31}{section.4.5}%
+\contentsline {chapter}{\numberline {5}Detailed Design of Maritime Surveillance and Trajectory Prediction}{32}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Structure Chart}{33}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}System Structure and Micro-Architecture}{34}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Use Case Analysis}{36}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.3}Data Schemas, Spatial Transformation, and Preprocessing}{37}{subsection.5.1.3}%
+\contentsline {subsubsection}{Evaluation Protocol}{39}{section*.20}%
+\contentsline {subsection}{\numberline {5.1.4}Algorithmic Selection}{39}{subsection.5.1.4}%
+\contentsline {subsection}{\numberline {5.1.5}Data Fusion and Processing Pipeline}{41}{subsection.5.1.5}%
+\contentsline {section}{\numberline {5.2}Module Description}{43}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}System Execution Flow}{43}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}System Interaction Sequence}{44}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Core Software Modules}{44}{subsection.5.2.3}%
+\contentsline {subsubsection}{Data Acquisition Module}{45}{section*.26}%
+\contentsline {subsubsection}{Vision and Tracking Module}{45}{section*.27}%
+\contentsline {subsubsection}{Transformation and Fusion Module}{45}{section*.28}%
+\contentsline {subsubsection}{Analytical and Visualization Module}{45}{section*.29}%
+\contentsline {section}{\numberline {5.3}Summary}{45}{section.5.3}%
+\contentsline {chapter}{\numberline {6}Implementation of Maritime Surveillance and Trajectory Prediction}{46}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Programming Language Selection}{47}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Platform Selection}{47}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Code Conventions}{48}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Difficulties Encountered and Strategies Used to Tackle}{48}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Data Set Description}{48}{section.6.5}%
+\contentsline {section}{\numberline {6.6}System Architecture and Algorithms Used}{49}{section.6.6}%
+\contentsline {subsection}{\numberline {6.6.1}Development Environment Configuration}{50}{subsection.6.6.1}%
+\contentsline {subsection}{\numberline {6.6.2}Data Preparation and Model Training}{50}{subsection.6.6.2}%
+\contentsline {subsection}{\numberline {6.6.3}Motion Estimation and Sensor Fusion}{52}{subsection.6.6.3}%
+\contentsline {subsection}{\numberline {6.6.4}LSTM Trajectory Prediction}{53}{subsection.6.6.4}%
+\contentsline {subsection}{\numberline {6.6.5}Geospatial Validation and Visualization}{55}{subsection.6.6.5}%
+\contentsline {section}{\numberline {6.7}Summary}{57}{section.6.7}%
+\contentsline {chapter}{\numberline {7}Software Testing of Maritime Surveillance and Trajectory Prediction}{58}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Introduction to the Testing Methodology}{59}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Unit and Integration Testing}{59}{section.7.2}%
+\contentsline {section}{\numberline {7.3}System Testing}{60}{section.7.3}%
+\contentsline {subsection}{\numberline {7.3.1}Experimental Setup}{60}{subsection.7.3.1}%
+\contentsline {subsection}{\numberline {7.3.2}Standardization of System Parameters}{61}{subsection.7.3.2}%
+\contentsline {section}{\numberline {7.4}Performance and Stress Testing}{62}{section.7.4}%
+\contentsline {section}{\numberline {7.5}Test Cases}{62}{section.7.5}%
+\contentsline {section}{\numberline {7.6}Summary}{66}{section.7.6}%
+\contentsline {chapter}{\numberline {8}Experimental Results for Maritime Surveillance and Trajectory Prediction}{67}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Results Analysis}{68}{section.8.1}%
+\contentsline {subsection}{\numberline {8.1.1}\gls {lstm} Training Convergence}{68}{subsection.8.1.1}%
+\contentsline {subsection}{\numberline {8.1.2}Vessel Detection}{69}{subsection.8.1.2}%
+\contentsline {subsection}{\numberline {8.1.3}Multi-Object Tracking}{71}{subsection.8.1.3}%
+\contentsline {subsection}{\numberline {8.1.4}Trajectory Prediction}{72}{subsection.8.1.4}%
+\contentsline {subsection}{\numberline {8.1.5}Collision Risk Detection}{74}{subsection.8.1.5}%
+\contentsline {subsection}{\numberline {8.1.6}Robustness Under Adverse Weather Conditions}{76}{subsection.8.1.6}%
+\contentsline {section}{\numberline {8.2}Detailed Analysis}{77}{section.8.2}%
+\contentsline {subsection}{\numberline {8.2.1}Qualitative Output}{77}{subsection.8.2.1}%
+\contentsline {subsection}{\numberline {8.2.2}Performance Analysis}{79}{subsection.8.2.2}%
+\contentsline {subsection}{\numberline {8.2.3}\gls {ais}-Matched Vessel \gls {lstm} Skip Optimization}{80}{subsection.8.2.3}%
+\contentsline {subsection}{\numberline {8.2.4}Comparative Evaluation Metrics}{81}{subsection.8.2.4}%
+\contentsline {section}{\numberline {8.3}Summary}{83}{section.8.3}%
+\contentsline {chapter}{\numberline {9}Conclusion of Maritime Surveillance and Trajectory Prediction}{84}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Limitations}{86}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Future Enhancement}{86}{section.9.2}%
+\contentsline {section}{\numberline {9.3}Learning Outcomes}{88}{section.9.3}%
+\contentsline {chapter}{\numberline {A}Plagiarism report}{89}{chapter.A}%
+\contentsline {chapter}{\numberline {B}Publication details}{92}{chapter.B}%
+\contentsline {chapter}{\numberline {C}Code}{94}{chapter.C}%
+\contentsline {section}{\numberline {C.1}System Dashboard Interfaces}{95}{section.C.1}%
+\contentsline {section}{\numberline {C.2}AIS-Matched Vessel Inference Routing}{97}{section.C.2}%
+\contentsline {section}{\numberline {C.3}Dashboard Pipeline Integration Loop}{98}{section.C.3}%
+\contentsline {chapter}{References}{100}{lstnumber.-2.46}%

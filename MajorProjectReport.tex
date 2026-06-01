@@ -35,8 +35,8 @@
 %% Guide Related commands
 %% Internal Guide %%
 % Have to give both short form and long of Department Name
-\guideNameA{Dr. Manomani S}
-\guideDesignationA{Assistant Professor}
+\guideNameA{Dr. Manonmani S}
+\guideDesignationA{Associate Professor}
 \guideDeptA[CSE]{Computer Science and Engineering}
 \guideOrgA{RV College of Engineering}
 
@@ -54,8 +54,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Esteem members related commands
 %% Pannel Members %%
-\panelMemberNameA{Dr. Minal Moharir}
-\panelMemberDesigA{Professor}
+\panelMemberNameA{Prof. Apoorva Uday Kumar Chate}
+\panelMemberDesigA{Assistant Professor}
 \panelMemberDeptA[CSE]{Computer Science and Engineering}
 %\panelMemberNameB{Prof. P N Jayanthi}
 %\panelMemberDesigB{Assistant Professor}
@@ -98,7 +98,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%% Bibliography %%%%%%%%%%%%%%%%%%%%%
-\usepackage[backend=biber,style=ieee]{biblatex}
+\usepackage[backend=biber,style=ieee,sorting=ynt]{biblatex}
 % If backend is set to bibtex, then configure texmaker Bi(La)Tex with "bibtex %"
 \addbibresource{./AuxFiles/ProjectBib.bib}%Add bib file with extention
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -212,8 +212,8 @@
 		\ifDrf
 		\else
 		\clearpage
-		\addcontentsline{toc}{chapter}{Bibliography}
-		\printbibliography%
+		\addcontentsline{toc}{chapter}{References}
+		\printbibliography[title={References}]
 		\fi
 	\end{spacing}
 \end{document}
