@@ -12,7 +12,7 @@
 \contentsline {section}{\numberline {1.6}Assumptions made / Constraints of the project}{5}{section.1.6}%
 \contentsline {section}{\numberline {1.7}Methodology}{6}{section.1.7}%
 \contentsline {section}{\numberline {1.8}Organization of the Report}{6}{section.1.8}%
-\contentsline {chapter}{\numberline {2}Theory \& Concept of Maritime Surveillance and Trajectory Prediction}{7}{chapter.2}%
+\contentsline {chapter}{\numberline {2}Literature Review and Theoretical Background of Maritime Surveillance and Trajectory Prediction}{7}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Introduction}{8}{section.2.1}%
 \contentsline {section}{\numberline {2.2}The Visual Detection Pathway}{8}{section.2.2}%
 \contentsline {subsection}{\numberline {2.2.1}Architectural Adaptations for Maritime Environments}{9}{subsection.2.2.1}%

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.5.27)  2 JUN 2026 02:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.5.27)  2 JUN 2026 02:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1340,11 +1340,11 @@ Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 27.
 ]
 File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
-Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 58.
+Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 56.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
 File: Figures/RVlogoVecW.png Graphic file (type png)
 <use Figures/RVlogoVecW.png>
-Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 58.
+Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 56.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
  [3]
 File: Figures/RVlogoVecW.png Graphic file (type png)
@@ -1515,7 +1515,7 @@ Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 11.
  [2
 
 ]
-<Chapter1/Figures/ais.jpeg, id=922, 320.27655pt x 184.16805pt>
+<Chapter1/Figures/ais.jpeg, id=923, 320.27655pt x 184.16805pt>
 File: Chapter1/Figures/ais.jpeg Graphic file (type jpg)
 <use Chapter1/Figures/ais.jpeg>
 Package pdftex.def Info: Chapter1/Figures/ais.jpeg  used on input line 14.
@@ -1929,7 +1929,7 @@ File: Figures/RVlogoVecW.png Graphic file (type png)
 Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 46.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
 [26]
-<Chapter4/Figures/pipeline.png, id=1185, 872.058pt x 941.4372pt>
+<Chapter4/Figures/pipeline.png, id=1186, 872.058pt x 941.4372pt>
 File: Chapter4/Figures/pipeline.png Graphic file (type png)
 <use Chapter4/Figures/pipeline.png>
 Package pdftex.def Info: Chapter4/Figures/pipeline.png  used on input line 51.
@@ -1958,7 +1958,7 @@ Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 63.
 [27
 
  <./Chapter4/Figures/pipeline.png (PNG copy)>]
-<Chapter4/Figures/dfd_level0_context.png, id=1194, 740.0448pt x 493.3632pt>
+<Chapter4/Figures/dfd_level0_context.png, id=1195, 740.0448pt x 493.3632pt>
 File: Chapter4/Figures/dfd_level0_context.png Graphic file (type png)
 <use Chapter4/Figures/dfd_level0_context.png>
 Package pdftex.def Info: Chapter4/Figures/dfd_level0_context.png  used on input line 67.
@@ -1985,7 +1985,7 @@ File: Figures/RVlogoVecW.png Graphic file (type png)
 Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 70.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
 [28 <./Chapter4/Figures/dfd_level0_context.png (PNG copy)>]
-<Chapter4/Figures/dfd_level1_context.png, id=1204, 740.0448pt x 493.3632pt>
+<Chapter4/Figures/dfd_level1_context.png, id=1205, 740.0448pt x 493.3632pt>
 File: Chapter4/Figures/dfd_level1_context.png Graphic file (type png)
 <use Chapter4/Figures/dfd_level1_context.png>
 Package pdftex.def Info: Chapter4/Figures/dfd_level1_context.png  used on input line 73.
@@ -2012,7 +2012,7 @@ File: Figures/RVlogoVecW.png Graphic file (type png)
 Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 77.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
 [29 <./Chapter4/Figures/dfd_level1_context.png (PNG copy)>]
-<Chapter4/Figures/dfd_level2_context.png, id=1212, 740.0448pt x 493.3632pt>
+<Chapter4/Figures/dfd_level2_context.png, id=1213, 740.0448pt x 493.3632pt>
 File: Chapter4/Figures/dfd_level2_context.png Graphic file (type png)
 <use Chapter4/Figures/dfd_level2_context.png>
 Package pdftex.def Info: Chapter4/Figures/dfd_level2_context.png  used on input line 83.
@@ -2093,7 +2093,7 @@ Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 14.
 [33
 
 ]
-<Chapter5/Figures/structural_diagram.png, id=1237, 1678.27pt x 944.52875pt>
+<Chapter5/Figures/structural_diagram.png, id=1238, 1678.27pt x 944.52875pt>
 File: Chapter5/Figures/structural_diagram.png Graphic file (type png)
 <use Chapter5/Figures/structural_diagram.png>
 Package pdftex.def Info: Chapter5/Figures/structural_diagram.png  used on input line 18.
@@ -2168,7 +2168,7 @@ File: Figures/RVlogoVecW.png Graphic file (type png)
 Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 81.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
 [37]
-<Chapter3/Figures/fig3_use_case_diagram.png, id=1285, 986.2446pt x 781.4796pt>
+<Chapter3/Figures/fig3_use_case_diagram.png, id=1286, 986.2446pt x 781.4796pt>
 File: Chapter3/Figures/fig3_use_case_diagram.png Graphic file (type png)
 <use Chapter3/Figures/fig3_use_case_diagram.png>
 Package pdftex.def Info: Chapter3/Figures/fig3_use_case_diagram.png  used on input line 85.
@@ -2211,7 +2211,7 @@ File: Figures/RVlogoVecW.png Graphic file (type png)
 Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 97.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
 [39]
-<Chapter5/Figures/dataset_samples.png, id=1299, 1110.0672pt x 678.3744pt>
+<Chapter5/Figures/dataset_samples.png, id=1300, 1110.0672pt x 678.3744pt>
 File: Chapter5/Figures/dataset_samples.png Graphic file (type png)
 <use Chapter5/Figures/dataset_samples.png>
 Package pdftex.def Info: Chapter5/Figures/dataset_samples.png  used on input line 101.
@@ -2270,7 +2270,7 @@ File: Figures/RVlogoVecW.png Graphic file (type png)
 Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 169.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
 [42]
-<Chapter5/Figures/algorithm_selection.png, id=1347, 1110.0672pt x 689.4558pt>
+<Chapter5/Figures/algorithm_selection.png, id=1348, 1110.0672pt x 689.4558pt>
 File: Chapter5/Figures/algorithm_selection.png Graphic file (type png)
 <use Chapter5/Figures/algorithm_selection.png>
 Package pdftex.def Info: Chapter5/Figures/algorithm_selection.png  used on input line 173.
@@ -2333,7 +2333,7 @@ File: Figures/RVlogoVecW.png Graphic file (type png)
 Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 208.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
 [45]
-<Chapter5/Figures/sequence_diagram.png, id=1375, 1156.32pt x 687.0468pt>
+<Chapter5/Figures/sequence_diagram.png, id=1376, 1156.32pt x 687.0468pt>
 File: Chapter5/Figures/sequence_diagram.png Graphic file (type png)
 <use Chapter5/Figures/sequence_diagram.png>
 Package pdftex.def Info: Chapter5/Figures/sequence_diagram.png  used on input line 210.
@@ -2446,7 +2446,7 @@ File: Figures/RVlogoVecW.png Graphic file (type png)
 Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 28.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
 [51]
-<Chapter3/Figures/deployment_architecture.png, id=1417, 1156.32pt x 582.978pt>
+<Chapter3/Figures/deployment_architecture.png, id=1418, 1156.32pt x 582.978pt>
 File: Chapter3/Figures/deployment_architecture.png Graphic file (type png)
 <use Chapter3/Figures/deployment_architecture.png>
 Package pdftex.def Info: Chapter3/Figures/deployment_architecture.png  used on input line 33.
@@ -2521,7 +2521,7 @@ File: Figures/RVlogoVecW.png Graphic file (type png)
 Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 62.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
 [55]
-<Chapter4/Figures/cv_ais_fusion.png, id=1468, 1156.32pt x 761.244pt>
+<Chapter4/Figures/cv_ais_fusion.png, id=1469, 1156.32pt x 761.244pt>
 File: Chapter4/Figures/cv_ais_fusion.png Graphic file (type png)
 <use Chapter4/Figures/cv_ais_fusion.png>
 Package pdftex.def Info: Chapter4/Figures/cv_ais_fusion.png  used on input line 64.
@@ -2564,7 +2564,7 @@ File: Figures/RVlogoVecW.png Graphic file (type png)
 Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 77.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
 [57]
-<Chapter4/Figures/lstm_architecture.png, id=1488, 1156.32pt x 855.6768pt>
+<Chapter4/Figures/lstm_architecture.png, id=1489, 1156.32pt x 855.6768pt>
 File: Chapter4/Figures/lstm_architecture.png Graphic file (type png)
 <use Chapter4/Figures/lstm_architecture.png>
 Package pdftex.def Info: Chapter4/Figures/lstm_architecture.png  used on input line 79.
@@ -2607,7 +2607,7 @@ File: Figures/RVlogoVecW.png Graphic file (type png)
 Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 96.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
 [59]
-<Chapter4/Figures/dashboard_architecture.png, id=1503, 1128.8574pt x 727.518pt>
+<Chapter4/Figures/dashboard_architecture.png, id=1504, 1128.8574pt x 727.518pt>
 File: Chapter4/Figures/dashboard_architecture.png Graphic file (type png)
 <use Chapter4/Figures/dashboard_architecture.png>
 Package pdftex.def Info: Chapter4/Figures/dashboard_architecture.png  used on input line 98.
@@ -2890,7 +2890,7 @@ Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 16.
 [73
 
 ]
-<Chapter5/Figures/training_loss.png, id=1595, 1156.32pt x 703.428pt>
+<Chapter5/Figures/training_loss.png, id=1596, 1156.32pt x 703.428pt>
 File: Chapter5/Figures/training_loss.png Graphic file (type png)
 <use Chapter5/Figures/training_loss.png>
 Package pdftex.def Info: Chapter5/Figures/training_loss.png  used on input line 19.
@@ -2933,7 +2933,7 @@ File: Figures/RVlogoVecW.png Graphic file (type png)
 Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 64.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
 [75]
-<Chapter5/Figures/detection_output.png, id=1616, 372.9132pt x 273.6624pt>
+<Chapter5/Figures/detection_output.png, id=1617, 372.9132pt x 273.6624pt>
 File: Chapter5/Figures/detection_output.png Graphic file (type png)
 <use Chapter5/Figures/detection_output.png>
 Package pdftex.def Info: Chapter5/Figures/detection_output.png  used on input line 67.
@@ -2976,7 +2976,7 @@ File: Figures/RVlogoVecW.png Graphic file (type png)
 Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 103.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
 [77]
-<Chapter5/Figures/tracking_output.png, id=1653, 504.4446pt x 72.7518pt>
+<Chapter5/Figures/tracking_output.png, id=1654, 504.4446pt x 72.7518pt>
 File: Chapter5/Figures/tracking_output.png Graphic file (type png)
 <use Chapter5/Figures/tracking_output.png>
 Package pdftex.def Info: Chapter5/Figures/tracking_output.png  used on input line 105.
@@ -3035,7 +3035,7 @@ File: Figures/RVlogoVecW.png Graphic file (type png)
 Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 152.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
 [80]
-<Chapter5/Figures/prediction_output.png, id=1693, 1156.32pt x 911.0838pt>
+<Chapter5/Figures/prediction_output.png, id=1694, 1156.32pt x 911.0838pt>
 File: Chapter5/Figures/prediction_output.png Graphic file (type png)
 <use Chapter5/Figures/prediction_output.png>
 Package pdftex.def Info: Chapter5/Figures/prediction_output.png  used on input line 154.
@@ -3078,7 +3078,7 @@ File: Figures/RVlogoVecW.png Graphic file (type png)
 Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 195.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
 [82]
-<Chapter5/Figures/collision_alert.png, id=1717, 1156.32pt x 570.4512pt>
+<Chapter5/Figures/collision_alert.png, id=1718, 1156.32pt x 570.4512pt>
 File: Chapter5/Figures/collision_alert.png Graphic file (type png)
 <use Chapter5/Figures/collision_alert.png>
 Package pdftex.def Info: Chapter5/Figures/collision_alert.png  used on input line 199.
@@ -3121,15 +3121,12 @@ File: Figures/RVlogoVecW.png Graphic file (type png)
 Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 243.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
 [84]
-Overfull \hbox (7.57751pt too wide) in paragraph at lines 244--245
-\OT1/cmr/m/n/12 the pre-dic-tive tra-jec-tory ten-sors, the [][]CPA[] col-li-sion warn-ings, and the ver-i-fied [][]AIS[] transpon-
- []
-
-<Chapter5/Figures/dashboard_full.png, id=1744, 1156.32pt x 570.4512pt>
+<Chapter5/Figures/dashboard_full.png, id=1745, 1156.32pt x 570.4512pt>
 File: Chapter5/Figures/dashboard_full.png Graphic file (type png)
 <use Chapter5/Figures/dashboard_full.png>
 Package pdftex.def Info: Chapter5/Figures/dashboard_full.png  used on input line 251.
 (pdftex.def)             Requested size: 1156.31718pt x 570.4498pt.
+
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 251.
@@ -3151,7 +3148,7 @@ File: Figures/RVlogoVecW.png Graphic file (type png)
 Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 254.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
 [85 <./Chapter5/Figures/dashboard_full.png (PNG copy)>]
-<Chapter5/Figures/mmsi_id.png, id=1755, 1119.2214pt x 652.3572pt>
+<Chapter5/Figures/mmsi_id.png, id=1756, 1119.2214pt x 652.3572pt>
 File: Chapter5/Figures/mmsi_id.png Graphic file (type png)
 <use Chapter5/Figures/mmsi_id.png>
 Package pdftex.def Info: Chapter5/Figures/mmsi_id.png  used on input line 260.
@@ -3178,7 +3175,7 @@ File: Figures/RVlogoVecW.png Graphic file (type png)
 Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 265.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
 [86 <./Chapter5/Figures/mmsi_id.png (PNG copy)>]
-<Chapter5/Figures/ais_fusion_map.png, id=1769, 1156.32pt x 583.4598pt>
+<Chapter5/Figures/ais_fusion_map.png, id=1770, 1156.32pt x 583.4598pt>
 File: Chapter5/Figures/ais_fusion_map.png Graphic file (type png)
 <use Chapter5/Figures/ais_fusion_map.png>
 Package pdftex.def Info: Chapter5/Figures/ais_fusion_map.png  used on input line 270.
@@ -3384,12 +3381,12 @@ Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 1.
 
 
 ]
-<Figures/plagiarism_report_page1.png, id=1926, 742.775pt x 890.32625pt>
+<Figures/plagiarism_report_page1.png, id=1927, 742.775pt x 890.32625pt>
 File: Figures/plagiarism_report_page1.png Graphic file (type png)
 <use Figures/plagiarism_report_page1.png>
 Package pdftex.def Info: Figures/plagiarism_report_page1.png  used on input line 6.
 (pdftex.def)             Requested size: 452.9679pt x 542.96237pt.
-<Figures/plagiarism_report_page2.png, id=1927, 744.7825pt x 894.34125pt>
+<Figures/plagiarism_report_page2.png, id=1928, 744.7825pt x 894.34125pt>
 File: Figures/plagiarism_report_page2.png Graphic file (type png)
 <use Figures/plagiarism_report_page2.png>
 Package pdftex.def Info: Figures/plagiarism_report_page2.png  used on input line 13.
@@ -3429,7 +3426,7 @@ File: Figures/RVlogoVecW.png Graphic file (type png)
 Package pdftex.def Info: Figures/RVlogoVecW.png  used on input line 18.
 (pdftex.def)             Requested size: 271.7835pt x 266.93372pt.
 [99 <./Figures/plagiarism_report_page2.png>]
-<Figures/ai_detection_report.png, id=1938, 509.65407pt x 662.475pt>
+<Figures/ai_detection_report.png, id=1939, 509.65407pt x 662.475pt>
 File: Figures/ai_detection_report.png Graphic file (type png)
 <use Figures/ai_detection_report.png>
 Package pdftex.def Info: Figures/ai_detection_report.png  used on input line 25.
@@ -3730,7 +3727,7 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2026-04-28>
  ***********
 Package rerunfilecheck Info: File `MajorProjectReport.out' has not changed.
-(rerunfilecheck)             Checksum: 64851DEA66BF827E15C211E8B3791768;22495.
+(rerunfilecheck)             Checksum: 73795BC3F664E5A1FA579F6539D2A8B4;22638.
 Package logreq Info: Writing requests to 'MajorProjectReport.run.xml'.
 \openout1 = `MajorProjectReport.run.xml'.
 
@@ -3738,15 +3735,15 @@ Package logreq Info: Writing requests to 'MajorProjectReport.run.xml'.
 Here is how much of TeX's memory you used:
  51859 strings out of 467683
  1045332 string characters out of 5414721
- 1955120 words of memory out of 5000000
+ 1955186 words of memory out of 5000000
  79635 multiletter control sequences out of 15000+600000
  649412 words of font info for 120 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  104i,16n,121p,2599b,2663s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\91944\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\91944\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx1095.pk><C:/Users/91944/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/91944/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/91944/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx6.pfb><C:/Users/91944/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx7.pfb><C:/Users/91944/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/91944/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/91944/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/91944/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/91944/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/91944/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/91944/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/91944/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/91944/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/91944/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/91944/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/91944/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/91944/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/91944/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/91944/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/91944/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/91944/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/91944/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Users/91944/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on MajorProjectReport.pdf (133 pages, 25448019 bytes).
+Output written on MajorProjectReport.pdf (133 pages, 25448159 bytes).
 PDF statistics:
- 2380 PDF objects out of 2487 (max. 8388607)
+ 2381 PDF objects out of 2487 (max. 8388607)
  561 named destinations out of 1000 (max. 500000)
  1033 words of extra memory for PDF output out of 10000 (max. 10000000)
 

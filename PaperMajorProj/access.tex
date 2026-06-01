@@ -49,7 +49,7 @@ Maritime surveillance, vessel detection, multi-object tracking, trajectory predi
 
 To counter this, many researchers have started using standard shore cameras and computer vision (CNNs) to visually confirm ship locations. The problem is that running these deep learning models requires a lot of computing power, especially on the local edge devices typically installed at ports. While modern models can detect and track ships fairly quickly, predicting where they will go next using Long Short-Term Memory (LSTM) networks is much slower. If a camera sees twenty ships at once, running an LSTM for every single one creates a major processing delay. This lag makes it difficult to issue reliable, timely collision warnings based on the Closest Point of Approach (CPA).
 
-In this paper, we present a system called MARVIS. Our main goal was not just to combine camera feeds with AIS data, but to use that combination to speed up the software. The central idea is the \textit{AIS-Skip Optimization}. Instead of blindly running the heavy LSTM calculations for every ship on screen, the system first checks if a ship is already broadcasting a reliable AIS signal. If it is, MARVIS skips the LSTM entirely and uses the AIS data to project the ship's path, which takes almost zero compute time. The intensive neural network is then only used for the remaining ships that don't have an AIS signal—the dark vessels.
+In this paper, we present a system called MARVIS. Our main goal was not just to combine camera feeds with AIS data, but to use that combination to speed up the software. The central idea is the \textit{AIS-Skip Optimization}. Instead of blindly running the heavy LSTM calculations for every ship on screen, the system first checks if a ship is already broadcasting a reliable AIS signal. If it is, MARVIS skips the LSTM entirely and uses the AIS data to project the ship's path, which takes almost zero compute time. The intensive neural network is then only used for the remaining ships that don't have an AIS signal, the dark vessels.
 
 The main contributions of this work are:
 \begin{enumerate}
@@ -452,8 +452,8 @@ AIS matching radius             & 5.5\,km \\
 \end{table}
 
 % ─────────────────────────────────────────────────────────────────────────────
-% SECTION III — RESULTS AND DISCUSSION
-% IEEE Access format — subsections lettered A, B, C ...
+% SECTION III - RESULTS AND DISCUSSION
+% IEEE Access format - subsections lettered A, B, C ...
 % ─────────────────────────────────────────────────────────────────────────────
 
 \section{Results and Discussion}
@@ -768,7 +768,7 @@ Looking at the comparison data, the MARVIS setup generally performed better than
 
 When it came to tracking multiple ships, the system only lost track of 8 identities. On the other hand, older kinematic trackers like SORT (which were used by Shao et al. and Pang et al.) really struggled in crowded port conditions, frequently losing track of ships and mixing up IDs. For predicting where the ships were going, MARVIS logged an error of 14.2\,px, which was a noticeable improvement over both Jiang et al.'s hybrid setup and the purely kinematic method tested by Abualhaija et al.
 
-Perhaps the biggest takeaway is that among these tested methods, MARVIS is the only one that actually manages to tie everything—vision detection, deep learning predictions, collision alerts, and AIS fusion—into one pipeline that runs fast enough to be used live.
+Perhaps the biggest takeaway is that among these tested methods, MARVIS is the only one that actually manages to tie everything, vision detection, deep learning predictions, collision alerts, and AIS fusion, into one pipeline that runs fast enough to be used live.
 
 % ─────────────────────────────────────────────────────────────────────────────
 \subsection*{G. System Limitations}
@@ -792,7 +792,7 @@ deployment geometry changes.
 
 
 % ─────────────────────────────────────────────────────────────────────────────
-% SECTION IV — CONCLUSION AND FUTURE SCOPE
+% SECTION IV - CONCLUSION AND FUTURE SCOPE
 % ─────────────────────────────────────────────────────────────────────────────
 
 \section{Conclusion and Future Scope}
@@ -917,7 +917,7 @@ Engineering for their guidance and technical support throughout
 this project.
 
 % ─────────────────────────────────────────────────────────────────────────────
-% FULL BIBLIOGRAPHY — 31 references, b1–b31
+% FULL BIBLIOGRAPHY - 31 references, b1–b31
 % All from ProjectBib.bib, all 2022–2026
 % ─────────────────────────────────────────────────────────────────────────────
 \section*{References and Footnotes}
