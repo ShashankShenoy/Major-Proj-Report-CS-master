@@ -1,0 +1,47 @@
+% Non-floating figures for Chapters 4--8
+% Rule: every figure has body text above AND below; never a float at a page top
+\usepackage{adjustbox}
+\usepackage{needspace}
+
+\newcommand{\reportdiagram}[1]{%
+  \adjustbox{max width=\textwidth, max height=0.40\textheight,center}{%
+    \includegraphics{#1}}%
+}
+
+\newcommand{\reportscreenshot}[1]{%
+  \adjustbox{max width=0.92\textwidth, max height=0.40\textheight,center}{%
+    \includegraphics{#1}}%
+}
+
+% Entire block (intro paragraph + figure + discussion) must fit on the page,
+% or LaTeX starts a new page and places the intro text first, then the figure.
+\newenvironment{reportfigblock}{%
+  \par\medskip
+  \Needspace{0.62\textheight}%
+  \begin{samepage}%
+}{%
+  \end{samepage}%
+  \par\medskip
+}
+
+\newcommand{\reportinlinediagram}[3]{%
+  \par\vspace{0.35\baselineskip}%
+  \begin{center}%
+  \reportdiagram{#1}%
+  \captionof{figure}{#2}%
+  \label{#3}%
+  \end{center}%
+  \vspace{0.35\baselineskip}%
+  \nopagebreak[4]%
+}
+
+\newcommand{\reportinlinescreenshot}[3]{%
+  \par\vspace{0.35\baselineskip}%
+  \begin{center}%
+  \reportscreenshot{#1}%
+  \captionof{figure}{#2}%
+  \label{#3}%
+  \end{center}%
+  \vspace{0.35\baselineskip}%
+  \nopagebreak[4]%
+}

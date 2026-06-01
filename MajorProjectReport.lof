@@ -3,39 +3,38 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Overall Architecture of Proposed AI-Based Maritime Surveillance System}}{25}{figure.caption.12}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces End-to-End Processing Pipeline of Proposed Maritime Surveillance System}}{28}{figure.caption.13}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Level-0 Context Diagram of Proposed Maritime Surveillance System}}{29}{figure.caption.14}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Level-1 Data Flow Diagram of Proposed Maritime Surveillance System}}{30}{figure.caption.15}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces End-to-End Processing Pipeline of Proposed Maritime Surveillance System}}{27}{figure.4.1}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Level-0 Context Diagram of Proposed Maritime Surveillance System}}{28}{figure.4.2}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Level-1 Data Flow Diagram of Proposed Maritime Surveillance System}}{29}{figure.4.3}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Level-2 Data Flow Diagram of Proposed Maritime Surveillance System}}{30}{figure.4.4}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Structure Chart of Proposed Maritime Surveillance System}}{34}{figure.caption.16}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Use Case Diagram of the Maritime Surveillance System}}{36}{figure.caption.18}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Representative Samples from the Datasets Used for Training and Evaluation}}{38}{figure.caption.19}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Selection of Core Algorithms Used in the Proposed System}}{41}{figure.caption.22}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces End-to-End Processing Pipeline of Proposed Maritime Surveillance System}}{42}{figure.caption.23}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces System Execution Flowchart of the Proposed Maritime Surveillance Framework}}{43}{figure.caption.24}%
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Sequence Diagram of the Proposed Maritime Surveillance System}}{44}{figure.caption.25}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Structure Chart of Proposed Maritime Surveillance System}}{34}{figure.5.1}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Use Case Diagram of the Maritime Surveillance System}}{38}{figure.5.2}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Representative Samples from the Datasets Used for Training and Evaluation}}{40}{figure.5.3}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Selection of Core Algorithms Used in the Proposed System}}{43}{figure.5.4}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Sequence Diagram of the Proposed Maritime Surveillance System}}{46}{figure.5.5}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Deployment and Backend Communication Architecture of Proposed Maritime Surveillance System}}{49}{figure.caption.30}%
-\contentsline {figure}{\numberline {6.2}{\ignorespaces \gls {ais}--Computer Vision Data Fusion Process}}{53}{figure.caption.31}%
-\contentsline {figure}{\numberline {6.3}{\ignorespaces \gls {bilstm} Architecture for Vessel Trajectory Prediction}}{55}{figure.caption.32}%
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Dashboard Communication and Visualization Architecture}}{56}{figure.caption.33}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Deployment and Backend Communication Architecture of Proposed Maritime Surveillance System}}{52}{figure.6.1}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces \gls {ais}--Computer Vision Data Fusion Process}}{56}{figure.6.2}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces \gls {bilstm} Architecture for Vessel Trajectory Prediction}}{58}{figure.6.3}%
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Dashboard Communication and Visualization Architecture}}{60}{figure.6.4}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {8.1}{\ignorespaces Training and Validation Loss Curves of \gls {bilstm} Model}}{69}{figure.caption.43}%
-\contentsline {figure}{\numberline {8.2}{\ignorespaces \gls {yolov8} detection output on \gls {smd} test frames showing bounding boxes, class labels, and confidence scores}}{71}{figure.caption.45}%
-\contentsline {figure}{\numberline {8.3}{\ignorespaces \gls {deepocsort} Multi-Object Tracking Results on Maritime Video Sequences}}{72}{figure.caption.47}%
-\contentsline {figure}{\numberline {8.4}{\ignorespaces Predicted Vessel Trajectories Compared with Ground Truth Paths: the \gls {lstm} (solid) follows the curve, the kinematic baseline (dashed) diverges linearly.}}{74}{figure.caption.49}%
-\contentsline {figure}{\numberline {8.5}{\ignorespaces Critical collision risk alert on the MARVIS dashboard showing \gls {cpa} distance, time-to-\gls {cpa}, and risk level for two vessels on a converging course}}{76}{figure.caption.51}%
-\contentsline {figure}{\numberline {8.6}{\ignorespaces MARVIS dashboard showing the integrated real-time output: annotated video feed, Folium geospatial map, and per-vessel telemetry panel during \gls {smd} test sequence evaluation}}{78}{figure.caption.53}%
-\contentsline {figure}{\numberline {8.7}{\ignorespaces \gls {mmsi} \gls {id} with detailed information about the ship}}{78}{figure.caption.54}%
-\contentsline {figure}{\numberline {8.8}{\ignorespaces Geospatial map output showing \gls {ais}-matched vessels with \gls {mmsi} identifiers and dark vessels flagged by the \gls {cv}-to-\gls {ais} fusion module}}{79}{figure.caption.55}%
+\contentsline {figure}{\numberline {8.1}{\ignorespaces Training and Validation Loss Curves of \gls {bilstm} Model}}{74}{figure.8.1}%
+\contentsline {figure}{\numberline {8.2}{\ignorespaces \gls {yolov8} detection output on \gls {smd} test frames showing bounding boxes, class labels, and confidence scores}}{76}{figure.8.2}%
+\contentsline {figure}{\numberline {8.3}{\ignorespaces \gls {deepocsort} Multi-Object Tracking Results on Maritime Video Sequences}}{78}{figure.8.3}%
+\contentsline {figure}{\numberline {8.4}{\ignorespaces Predicted Vessel Trajectories Compared with Ground Truth Paths: the \gls {lstm} (solid) follows the curve, the kinematic baseline (dashed) diverges linearly.}}{81}{figure.8.4}%
+\contentsline {figure}{\numberline {8.5}{\ignorespaces Critical collision risk alert on the MARVIS dashboard showing \gls {cpa} distance, time-to-\gls {cpa}, and risk level for two vessels on a converging course}}{83}{figure.8.5}%
+\contentsline {figure}{\numberline {8.6}{\ignorespaces MARVIS dashboard showing the integrated real-time output: annotated video feed, Folium geospatial map, and per-vessel telemetry panel during \gls {smd} test sequence evaluation}}{85}{figure.8.6}%
+\contentsline {figure}{\numberline {8.7}{\ignorespaces \gls {mmsi} \gls {id} with detailed information about the ship}}{86}{figure.8.7}%
+\contentsline {figure}{\numberline {8.8}{\ignorespaces Geospatial map output showing \gls {ais}-matched vessels with \gls {mmsi} identifiers and dark vessels flagged by the \gls {cv}-to-\gls {ais} fusion module}}{87}{figure.8.8}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Plagiarism Report - Page 1}}{90}{figure.caption.59}%
-\contentsline {figure}{\numberline {A.2}{\ignorespaces Plagiarism Report - Page 2}}{91}{figure.caption.60}%
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Plagiarism Report - Page 1}}{98}{figure.caption.39}%
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Plagiarism Report - Page 2}}{99}{figure.caption.40}%
+\contentsline {figure}{\numberline {A.3}{\ignorespaces AI Detection Report}}{100}{figure.caption.42}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {C.1}{\ignorespaces MARVIS Primary Dashboard Interface showing telemetry, video feed, and real-time mapping.}}{95}{figure.caption.62}%
-\contentsline {figure}{\numberline {C.2}{\ignorespaces Real-time Annotated Video Feed with bounding boxes.}}{96}{figure.caption.63}%
-\contentsline {figure}{\numberline {C.3}{\ignorespaces Geospatial AIS Sensor Fusion Map indicating cooperative vessels and potential dark traffic.}}{96}{figure.caption.64}%
+\contentsline {figure}{\numberline {C.1}{\ignorespaces MARVIS Primary Dashboard Interface showing telemetry, video feed, and real-time mapping.}}{104}{figure.caption.44}%
+\contentsline {figure}{\numberline {C.2}{\ignorespaces Real-time Annotated Video Feed with bounding boxes.}}{105}{figure.caption.45}%
+\contentsline {figure}{\numberline {C.3}{\ignorespaces Geospatial AIS Sensor Fusion Map indicating cooperative vessels and potential dark traffic.}}{105}{figure.caption.46}%

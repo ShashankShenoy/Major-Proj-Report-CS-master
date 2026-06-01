@@ -9,17 +9,9 @@ Designing a surveillance architecture for maritime environments presents unique 
 
 Beyond speed, the system was designed with resilience in mind. Port authorities and coastal guards require continuous oversight, meaning the software architecture must gracefully handle interruptions. If an \gls{ais} data stream drops out, a common occurrence due to signal interference or deliberate transponder deactivation, the visual tracking module must be robust enough to maintain target locks autonomously. 
 
-The visual tracking components also mitigate common atmospheric disturbances inherent to maritime regions, such as heavy fog, extreme glare from the water surface, and low-light conditions at dusk. By decoupling the initial bounding-box generation from the long-term track state estimation, the architecture prevents temporary visual degradation from completely collapsing the tracking history. Furthermore, handling high-density maritime traffic—where multiple vessels routinely obscure one another from the camera's perspective—requires an intelligent re-identification subsystem capable of matching visual embeddings even after severe overlapping events. Figure~\ref{fig:architecture} illustrates the overarching structural relationship between these discrete operational phases, showing how raw video ingestion, computer vision-based detection, deep appearance tracking, and trajectory forecasting interact to form a unified, cohesive surveillance network.
+The visual tracking components also mitigate common atmospheric disturbances inherent to maritime regions, such as heavy fog, extreme glare from the water surface, and low-light conditions at dusk. By decoupling the initial bounding-box generation from the long-term track state estimation, the architecture prevents temporary visual degradation from completely collapsing the tracking history. Furthermore, handling high-density maritime traffic—where multiple vessels routinely obscure one another from the camera's perspective—requires an intelligent re-identification subsystem capable of matching visual embeddings even after severe overlapping events.
 
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.95\textwidth]{Chapter3/Figures/system_architecture.png}
-\caption{Overall Architecture of Proposed AI-Based Maritime Surveillance System}
-\label{fig:architecture}
-\end{figure}
-
-The architecture shown in Fig.~\ref{fig:architecture} demonstrates the hierarchical organisation of the proposed maritime surveillance framework. Each processing stage performs a dedicated function and passes structured information to subsequent modules. Such a layered design minimizes inter-module dependency and improves maintainability, scalability, and future extensibility of the overall system.
-
+The proposed maritime surveillance framework demonstrates a hierarchical organisation. Each processing stage performs a dedicated function and passes structured information to subsequent modules. Such a layered design minimizes inter-module dependency and improves maintainability, scalability, and future extensibility of the overall system.
 
 \subsection{Development Methods and Modularity}
 To manage the complexity of integrating multiple deep learning models, an iterative development methodology paired with strict modular design principles was adopted. Rather than building a monolithic application where the detection logic is inextricably tangled with the prediction logic, each core function was compartmentalized into distinct micro-services or independent modules.
@@ -43,14 +35,26 @@ The system architecture follows a sequential, feed-forward pipeline. It begins a
 
 Once tracked, the system extracts the center coordinates of the bounding boxes frame-by-frame. This sequential coordinate data is transformed mathematically to calculate real-world velocity and heading vectors. This historical movement tensor is then fed into the \gls{bilstm} trajectory forecasting module, which outputs a predicted pathway for the next several minutes. The final layer of the architecture is the presentation module, which overlays the current bounding boxes, IDs, and predicted trajectory arcs directly onto the live video feed, while simultaneously plotting the data onto a live geospatial map.
 
-\begin{figure}[H]
-\centering
-\includegraphics[width=\textwidth]{Chapter4/Figures/pipeline.jpeg}
-\caption{End-to-End Processing Pipeline of Proposed Maritime Surveillance System}
-\label{fig:pipeline_end_to_end}
-\end{figure}
+To ensure the seamless operation of this pipeline, several architectural mechanisms operate in the background. First, the data ingestion layer must handle the asynchronous nature of the inputs. While the camera feed provides high-frequency visual data (typically 30 frames per second), \gls{ais} telemetry is transmitted at much lower, variable intervals depending on a vessel's speed and class. The system employs a spatio-temporal alignment buffer that interpolates missing \gls{ais} data points to match the video frame rate, ensuring that the downstream fusion engine receives synchronized multi-modal tensors.
 
-The complete end-to-end processing workflow of the proposed maritime surveillance framework is illustrated in Fig.~\ref{fig:pipeline_end_to_end}.
+Furthermore, the inference engine is designed to maintain target locks even under severe maritime conditions. When vessels pass behind obstacles or occlude one another, the DeepSORT module relies heavily on the OSNet feature embeddings. Rather than depending solely on spatial overlap metrics, the system compares the visual fingerprint of a vessel before and after occlusion, allowing it to recover the correct identifier and seamlessly continue the track. This prevents track fragmentation, which would otherwise corrupt the historical movement tensor fed into the prediction module.
+
+The \gls{bilstm} trajectory forecasting module itself operates on a sliding window protocol. It continuously ingests the most recent coordinate vectors while discarding older data beyond a predefined temporal threshold. By analyzing the sequence bidirectionally, the network captures both immediate past momentum and broader historical trends, allowing it to generate highly accurate, dynamic predictions. The architecture isolates this heavy computation from the main rendering thread to prevent visual stuttering on the operator's end.
+
+Finally, the presentation module is optimized for low-latency delivery. It utilizes hardware-accelerated rendering to overlay bounding boxes, alphanumeric IDs, and the curved, multi-minute predicted trajectory arcs.
+
+\clearpage
+The end-to-end processing workflow is summarized in Fig.~\ref{fig:pipeline_end_to_end}, which maps each functional stage from ingestion through alerting.
+\par\vspace{0.35\baselineskip}%
+\begin{center}%
+\adjustbox{max width=\textwidth, max height=0.75\textheight,center}{%
+  \includegraphics{Chapter4/Figures/pipeline.png}}%
+\captionof{figure}{End-to-End Processing Pipeline of Proposed Maritime Surveillance System}%
+\label{fig:pipeline_end_to_end}%
+\end{center}%
+\vspace{0.35\baselineskip}%
+\nopagebreak[4]%
+The pipeline diagram in Fig.~\ref{fig:pipeline_end_to_end} shows that detection, tracking, fusion, and prediction remain sequential while \gls{ais} and video inputs are processed in parallel upstream. Each block exposes a narrow interface to the next, which supports independent testing and replacement of individual models without redesigning the full stack.
 
 
 \section{Data Flow Diagrams}
@@ -58,33 +62,34 @@ The complete end-to-end processing workflow of the proposed maritime surveillanc
 To rigorously define the exchange of information across external entities and internal modules, the system's operational logic was mapped using standardized Data Flow Diagrams (DFDs).
 
 \subsection{Data Flow Diagram Level 0, 1 and 2 for Maritime Surveillance and Trajectory Prediction}
-The Level-0 Context Diagram, presented in Figure~\ref{fig:dfd0}, establishes the system boundaries. It provides a macro-level view illustrating how external entities interact with our central surveillance platform. On the input side, these entities include the physical coastal cameras providing the video stream and the satellite/VHF receivers supplying the \gls{ais} data. On the output side, the primary entity is the end-user or port operator, who receives the aggregated threat alerts and visual dashboards.
+\begin{reportfigblock}
+The Level-0 Context Diagram establishes the system boundaries. It provides a macro-level view illustrating how external entities interact with our central surveillance platform. On the input side, these entities include the physical coastal cameras providing the video stream and the satellite/VHF receivers supplying the \gls{ais} data. On the output side, the primary entity is the end-user or port operator, who receives the aggregated threat alerts and visual dashboards. Fig.~\ref{fig:dfd0} presents this context view.
+\reportinlinediagram{Chapter4/Figures/dfd_level0_context.png}{Level-0 Context Diagram of Proposed Maritime Surveillance System}{fig:dfd0}
+Figure~\ref{fig:dfd0} confines the surveillance platform to a single process boundary and shows only the principal data flows between external entities and the system. This abstraction is useful for stakeholder briefings because it avoids premature detail while still making the ingestion of video and \gls{ais} data, and the delivery of alerts and dashboards, explicit.
+\end{reportfigblock}
 
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.95\textwidth]{Chapter4/Figures/dfd_level0_context.png}
-\caption{Level-0 Context Diagram of Proposed Maritime Surveillance System}
-\label{fig:dfd0}
-\end{figure}
+\begin{reportfigblock}
+Expanding significantly on this high-level view, the Level-1 DFD unpacks the central system bubble to reveal the internal routing and transformation of data. It traces the exact path a raw video frame takes: entering the preprocessing buffer, moving into the detection node to generate spatial coordinates, and passing into the tracking database to establish temporal continuity. It further illustrates how these localized pixel coordinates are mathematically transformed into real-world geographic coordinates via camera calibration matrices. Crucially, the diagram shows the convergence point where this visual telemetry is fused with incoming \gls{ais} data, creating the comprehensive historical tensor that drives the \gls{bilstm} prediction and collision analysis modules. The Level-1 view is given in Fig.~\ref{fig:dfd1}.
+\reportinlinediagram{Chapter4/Figures/dfd_level1_context.png}{Level-1 Data Flow Diagram of Proposed Maritime Surveillance System}{fig:dfd1}
+At Level~1, the diagram clarifies how each major internal stage---preprocessing, detection, tracking, coordinate transformation, fusion, prediction, and alerting---receives and emits structured data stores. Operators can trace a single video frame from ingress through to a fused vessel record without referring to implementation-level module names.
+\end{reportfigblock}
 
-Expanding significantly on this high-level view, the Level-1 DFD (Figure~\ref{fig:dfd1}) unpacks the central system bubble to reveal the internal routing and transformation of data. It traces the exact path a raw video frame takes: entering the preprocessing buffer, moving into the detection node to generate spatial coordinates, and passing into the tracking database to establish temporal continuity. It further illustrates how these localized pixel coordinates are mathematically transformed into real-world geographic coordinates via camera calibration matrices. Crucially, the diagram shows the convergence point where this visual telemetry is fused with incoming \gls{ais} data, creating the comprehensive historical tensor that drives the \gls{bilstm} prediction and collision analysis modules.
+\begin{reportfigblock}
+The Level-2 DFD provides a highly granular, functional breakdown of the predictive analysis and collision alerting sub-processes. At this deepest logical layer, the historical trajectory tensors---formed by combining YOLOv8 pixel coordinates with fused \gls{ais} data---are fed directly into the \gls{bilstm} neural network block. This diagram exposes the internal operations of the sequence modeling, where past positional data is mathematically weighed to generate future geospatial estimates. Subsequently, these forecasts are routed into the Closest Point of Approach (CPA) calculation node, which continuously cross-references predicted paths to determine intersection risks, ultimately triggering categorical threat alerts for the end-user dashboard. Fig.~\ref{fig:dfd2} documents this refinement.
 
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.95\textwidth]{Chapter4/Figures/dfd_level1_context.png}
-\caption{Level-1 Data Flow Diagram of Proposed Maritime Surveillance System}
-\label{fig:dfd1}
-\end{figure}
+\par\vspace{0.35\baselineskip}%
+\begin{center}%
+\adjustbox{max width=\textwidth, max height=0.65\textheight,center}{%
+  \includegraphics{Chapter4/Figures/dfd_level2_context.png}}%
+\captionof{figure}{Level-2 Data Flow Diagram of Proposed Maritime Surveillance System}%
+\label{fig:dfd2}%
+\end{center}%
+\vspace{0.35\baselineskip}%
+\nopagebreak[4]%
 
-The Level-2 DFD (Figure~\ref{fig:dfd2}) provides a highly granular, functional breakdown of the predictive analysis and collision alerting sub-processes. At this deepest logical layer, the historical trajectory tensors---formed by combining YOLOv8 pixel coordinates with fused \gls{ais} data---are fed directly into the \gls{bilstm} neural network block. This diagram exposes the internal operations of the sequence modeling, where past positional data is mathematically weighed to generate future geospatial estimates. Subsequently, these forecasts are routed into the Closest Point of Approach (CPA) calculation node, which continuously cross-references predicted paths to determine intersection risks, ultimately triggering categorical threat alerts for the end-user dashboard.
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.95\textwidth]{Chapter4/Figures/dfd_level2_context.png}
-\caption{Level-2 Data Flow Diagram of Proposed Maritime Surveillance System}
-\label{fig:dfd2}
-\end{figure}
-\clearpage
+Figure~\ref{fig:dfd2} exposes the predictive and collision-analysis subprocesses in full detail, including how historical tensors feed the \gls{lstm} block and how \gls{cpa} outputs are classified before they reach the operator dashboard. Together, the three DFD levels form a consistent top-down specification of information flow across the proposed system.
+\end{reportfigblock}
+\FloatBarrier
 \section{Summary}
-This chapter detailed the High Level Design of the proposed platform. The architecture prioritizes modularity and robust data flow, ensuring complex models operate synchronously. Data Flow Diagrams provide a clear roadmap of how raw sensor inputs transform into actionable intelligence.
+This chapter established the foundational High Level Design and architectural framework of the proposed maritime surveillance platform. By prioritizing strict modularity and utilizing an asynchronous, feed-forward pipeline, the architecture guarantees that computationally intensive deep learning models—such as YOLOv8, DeepSORT, and the \gls{bilstm} forecasting networks—can operate synchronously without introducing critical bottlenecks. The selection of a robust Python-based technology stack, paired with PyTorch and OpenCV, ensures both real-time performance and long-term scalability. Furthermore, the detailed Data Flow Diagrams (Levels 0 through 2) provided a clear, logical roadmap demonstrating exactly how raw, uncoordinated sensor inputs (video frames and \gls{ais} telemetry) are systematically fused, transformed into historical movement tensors, and ultimately refined into actionable collision-avoidance intelligence for end-users. This structured approach ensures the system remains reliable under challenging maritime conditions while leaving explicit pathways open for future multimodal sensor integration.
 

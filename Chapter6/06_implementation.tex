@@ -28,14 +28,11 @@ At the highest level, the implementation is structured around a sequential pipel
 
 The overall framework is compartmentalized into six interconnected stages: continuous video ingestion, frame-level ship detection, persistent multi-object tracking, sensor fusion, recurrent trajectory prediction, and final geospatial visualization. Organizing the system into these discrete steps ensures that data transitions smoothly from raw pixel arrays all the way to actionable geographic intelligence. 
 
-This strict separation of concerns allows the backend environment to leverage multi-threading and asynchronous processing effectively. For example, while the \gls{lstm} module is busy computing complex trajectory predictions based on the previous frame's data, the video ingestion and \gls{yolov8} detection modules are already processing the current frame in parallel. This concurrent execution model is the primary reason the system can maintain a real-time 30 FPS throughput without dropping frames. Figure~\ref{fig:deployment} provides a detailed schematic of how these disparate modules are deployed and traces the flow of information across the backend environment.
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.95\textwidth]{Chapter4/Figures/deployment_architecture.jpeg}
-\caption{Deployment and Backend Communication Architecture of Proposed Maritime Surveillance System}
-\label{fig:deployment}
-\end{figure}
+\begin{reportfigblock}
+This strict separation of concerns allows the backend environment to leverage multi-threading and asynchronous processing effectively. For example, while the \gls{lstm} module is busy computing complex trajectory predictions based on the previous frame's data, the video ingestion and \gls{yolov8} detection modules are already processing the current frame in parallel. This concurrent execution model is the primary reason the system can maintain a real-time 30 FPS throughput without dropping frames. Fig.~\ref{fig:deployment} shows how these services are deployed and how messages flow between them.
+\reportinlinediagram{Chapter3/Figures/deployment_architecture.png}{Deployment and Backend Communication Architecture of Proposed Maritime Surveillance System}{fig:deployment}
+Figure~\ref{fig:deployment} confirms that ingestion, inference, fusion, and visualization run as communicating backend components rather than as a single monolithic process. Clear service boundaries simplified unit testing, allowed \gls{gpu} workloads to be scheduled independently, and made it straightforward to scale the dashboard tier without restarting the vision pipeline.
+\end{reportfigblock}
 
 \subsection{Development Environment Configuration}
 
@@ -62,32 +59,26 @@ The continuous buffering of centroid coordinates for every confirmed track forms
 Operating alongside the vision pipeline, the sensor fusion component is responsible for processing the incoming stream of \gls{ais} broadcast telemetry. These maritime transmissions contain highly reliable metadata, including the unique \gls{mmsi} identifier, exact global coordinates, speed over ground (\gls{sog}), and course over ground (\gls{cog}). The primary challenge lies in combining the pixel-space tracking data with this geographic telemetry. To bridge this gap, the system applies a homographic transformation matrix, mathematically projecting the pixel coordinates onto a geographic plane. Following this transformation, a nearest-neighbor algorithm evaluates the Haversine distance separating the projected camera positions and the corresponding \gls{ais} reports to establish a definitive link between the two sources.
 
 Upon successful data association, the rich \gls{ais} metadata is grafted onto the ongoing visual track. It is understood, however, that visual projections derived from a camera feed possess an inherent degree of noise and jitter. To counter this instability, a Kalman filtering mechanism is introduced into the fused data state. The filter effectively balances the rapid, high-frequency updates provided by the optical tracker against the less frequent but highly precise \gls{ais} positional reports. 
-
-Without this filtering layer, any slight vibration in the physical camera mount—caused by heavy coastal winds or nearby port machinery—would translate into massive coordinate jumps on the geographic map, triggering false collision alerts. By continuously predicting the next state and correcting it with incoming measurements, the Kalman filter essentially mathematically anchors the visual data to the verified \gls{ais} telemetry. The result of this filtering process is a remarkably stable, real-time approximation of the target's true geographic location and movement vector, an operation visualized in Figure~\ref{fig:fusion}.
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.95\textwidth]{Chapter4/Figures/cv_ais_fusion.png}
-\caption{\gls{ais}--Computer Vision Data Fusion Process}
-\label{fig:fusion}
-\end{figure}
+\begin{reportfigblock}
+Without this filtering layer, any slight vibration in the physical camera mount—caused by heavy coastal winds or nearby port machinery—would translate into massive coordinate jumps on the geographic map, triggering false collision alerts. By continuously predicting the next state and correcting it with incoming measurements, the Kalman filter essentially mathematically anchors the visual data to the verified \gls{ais} telemetry. The result is a stable, real-time approximation of each vessel's geographic state; Fig.~\ref{fig:fusion} summarizes the fusion pipeline.
+\reportinlinediagram{Chapter4/Figures/cv_ais_fusion.png}{\gls{ais}--Computer Vision Data Fusion Process}{fig:fusion}
+Figure~\ref{fig:fusion} shows that Kalman smoothing and nearest-neighbor \gls{ais} association occur in a single fusion stage, so downstream prediction always consumes a geographically consistent state vector. Dark-vessel tracks that lack a matching \gls{ais} record are still forwarded, but are flagged before trajectory forecasting so operators can prioritize them.
+\end{reportfigblock}
 
 \subsection{LSTM Trajectory Prediction}
 
 Once a reliable history of geographic positions has been compiled and smoothed by the filter, the data is channeled directly into the trajectory prediction engine. The movement characteristics of large maritime vessels are highly sequential; a ship's future position is inextricably tied to its recent maneuvering behavior. To properly model these deep temporal relationships, a Long Short-Term Memory (\gls{lstm}) neural network architecture was implemented, which significantly outperforms traditional statistical regression techniques when dealing with complex, time-series motion data.
 
-The predictive network is constructed using two stacked \gls{lstm} layers that process the sequential inputs before passing the hidden state into a dense, fully connected output layer to generate the coordinate forecast (Figure~\ref{fig:lstm}). For any given timestep, the input structure consists of a multidimensional feature vector detailing the ship's current latitude and longitude, its measured speed over ground, sine and cosine transformations of its course over ground, alongside a discrete classification label representing the vessel type. Training the network involved feeding it extensive sets of historical movement data, utilizing Mean Squared Error (\gls{mse}) to quantify the loss, and refining the weights using the highly efficient Adam optimization algorithm.
+The predictive network is constructed using two stacked \gls{lstm} layers that process the sequential inputs before passing the hidden state into a dense, fully connected output layer to generate the coordinate forecast. For any given timestep, the input structure consists of a multidimensional feature vector detailing the ship's current latitude and longitude, its measured speed over ground, sine and cosine transformations of its course over ground, alongside a discrete classification label representing the vessel type. Training the network involved feeding it extensive sets of historical movement data, utilizing Mean Squared Error (\gls{mse}) to quantify the loss, and refining the weights using the highly efficient Adam optimization algorithm.
 
 During operational runtime, the system continuously extracts fixed-length temporal slices from the Kalman-filtered location history. These historical windows are pushed through the optimized neural network to map out the vessel's likely path over the coming minutes. A common edge case arises when a ship first enters the camera's field of view, as it lacks the required data history to properly populate the network's input window. To address this without halting the forecasting pipeline, a parallel kinematic linear regression module acts as an immediate fallback mechanism. 
 
-This dual-tier approach guarantees a continuous predictive output regardless of how long the vessel has been tracked. As the ship moves further into the frame, the initial linear regression path seamlessly hands over control to the non-linear, highly accurate \gls{lstm} forecast, ensuring the operator always has some degree of predictive situational awareness. This ensures that even immature tracks receive a basic trajectory projection while the system accumulates enough historical data points to engage the primary neural network (illustrated in Figure~\ref{fig:lstm}).
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.90\textwidth]{Chapter4/Figures/lstm_architecture.png}
-\caption{\gls{bilstm} Architecture for Vessel Trajectory Prediction}
-\label{fig:lstm}
-\end{figure}
+This dual-tier approach guarantees a continuous predictive output regardless of how long the vessel has been tracked. As the ship moves further into the frame, the initial linear regression path seamlessly hands over control to the non-linear, highly accurate \gls{lstm} forecast, ensuring the operator always has some degree of predictive situational awareness. This ensures that even immature tracks receive a basic trajectory projection while the system accumulates enough historical data points to engage the primary neural network.
+\begin{reportfigblock}
+Figure~\ref{fig:lstm} presents the \gls{bilstm} architecture used for vessel trajectory prediction, including the stacked recurrent blocks and the final regression head that outputs future coordinates.
+\reportinlinediagram{Chapter4/Figures/lstm_architecture.png}{\gls{bilstm} Architecture for Vessel Trajectory Prediction}{fig:lstm}
+The diagram highlights how latitude, longitude, speed, course, and vessel-type features are fed as a fixed-length sequence into the recurrent stack, producing a 20-step forecast horizon aligned with the design parameters in Chapter~5. This layout keeps training and inference interfaces consistent across the prediction service and the dashboard overlay module.
+\end{reportfigblock}
 
 \subsection{Geospatial Validation and Visualization}
 
@@ -95,15 +86,20 @@ A critical requirement of the system is that all predicted movements align with 
 
 Following validation, the complete dataset is dispatched to a sophisticated, dual-pronged visualization interface designed for maximum operator awareness. The first output stream leverages \gls{opencv} to draw dynamic bounding boxes, unique identification markers, current speed metrics, and short-term path projections straight over the live camera footage. This provides personnel with immediate, localized visual confirmation of system operations. 
 
-By having this direct video overlay, operators can instantly verify the AI's deductions against their own visual intuition. If the system flags a potential anomaly, the operator does not have to cross-reference multiple screens; the relevant metrics are painted directly over the suspicious vessel in the video feed. Simultaneously, the geographic coordinates and long-term trajectory forecasts are transmitted to a web-based dashboard engineered with Folium (Figure~\ref{fig:dashboard}). This secondary interface plots the global locations of all tracked targets on an interactive map, granting operators an expansive, top-down perspective of the entire surveillance sector.
+By having this direct video overlay, operators can instantly verify the AI's deductions against their own visual intuition. If the system flags a potential anomaly, the operator does not have to cross-reference multiple screens; the relevant metrics are painted directly over the suspicious vessel in the video feed. Simultaneously, the geographic coordinates and long-term trajectory forecasts are transmitted to a web-based dashboard engineered with Folium. This secondary interface plots the global locations of all tracked targets on an interactive map, granting operators an expansive, top-down perspective of the entire surveillance sector.
 
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.95\textwidth]{Chapter4/Figures/dashboard_architecture.jpeg}
-\caption{Dashboard Communication and Visualization Architecture}
-\label{fig:dashboard}
-\end{figure}
+Beyond real-time situational awareness, this dual-interface architecture is built to support post-incident analysis and reporting. The backend continuously logs all verified tracking paths, threat alerts, and sensor anomalies into a persistent, time-series database. When a critical event occurs—such as a near-miss collision or an unauthorized vessel entering a restricted zone—operators can use the Folium dashboard to rewind the visual playback. This historical playback feature reconstructs the exact state of the port at any given timestamp, overlaying the previously recorded trajectory data onto the map, which proves invaluable for official maritime investigations and compliance audits.
+
+To ensure that the system scales efficiently under heavy load, the dashboard architecture utilizes asynchronous WebSocket connections rather than traditional HTTP polling. As the Sensor Fusion Engine and \gls{bilstm} networks produce updated coordinates and predictions, these lightweight JSON payloads are instantly pushed to all connected visualization clients. This event-driven approach completely eliminates the network overhead associated with continuous client-side requests, ensuring that the geographical map and the video overlay refresh simultaneously with sub-second latency.
+
+Furthermore, the map interface is highly customizable, allowing operators to toggle specific data layers on or off depending on the immediate operational context. For instance, during a severe storm where visibility is paramount, the operator might choose to disable the display of predictive paths for non-critical targets, focusing exclusively on high-risk CPA alerts and raw \gls{ais} data. By granting this level of granular control, the visualization module ensures that the wealth of data generated by the backend deep learning models serves to augment, rather than obscure, the operator's decision-making process.
+\begin{reportfigblock}
+Figure~\ref{fig:dashboard} summarizes how the backend services stream fused tracks, predictions, and alerts to the dual visualization clients.
+\reportinlinediagram{Chapter4/Figures/dashboard_architecture.png}{Dashboard Communication and Visualization Architecture}{fig:dashboard}
+As shown in Figure~\ref{fig:dashboard}, the video overlay path and the Folium map path consume the same fused vessel state, which prevents divergence between on-screen annotations and geospatial plots during live operations. WebSocket broadcasts carry the same payload structure used during offline evaluation, so the dashboard seen in testing matches production behavior.
+\end{reportfigblock}
 
 \section{Summary}
-This chapter detailed the technical implementation of the surveillance platform. Core methodologies for model configuration, data fusion, and latency optimization were outlined, providing a clear blueprint of how theoretical designs were translated into a robust software suite. The operational efficacy of this system will be systematically evaluated in the subsequent chapter.
+This chapter detailed the technical implementation of the surveillance platform. Core methodologies for model configuration, data fusion, and latency optimization were outlined, providing a clear blueprint of how theoretical designs were translated into a robust software suite. The development leveraging Python, \gls{pytorch}, and \gls{cuda} ensured that the computationally heavy deep learning modules could execute seamlessly within strict real-time constraints.
 
+Furthermore, critical implementation challenges—such as mitigating class imbalance during \gls{yolo}v8 training, handling severe visual occlusions using \gls{deepocsort}'s appearance-based embeddings, and anchoring unstable camera coordinates to verified \gls{ais} telemetry via Kalman filtering—were thoroughly addressed. By strictly enforcing a decoupled, asynchronous backend architecture that streams fused intelligence to both \gls{opencv} and Folium interfaces, the platform achieves true end-to-end capability. The operational efficacy of this fully integrated system, along with comprehensive metric analysis, will be systematically evaluated in the subsequent chapter.
